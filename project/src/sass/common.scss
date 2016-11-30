@@ -1,0 +1,17 @@
+@charset "utf-8";
+*{margin:0;padding:0;box-sizing:border-box;}
+*:after, *:before{box-sizing:border-box;}
+img{border:none;vertical-align:middle;}
+input,label{vertical-align:middle;}
+li{list-style:none;}
+fieldset{border:none;}
+.blind{position:absolute;left:-9999px;}
+.clearFix:after{content:"";display:block;clear:both;}
+.clearFix{*zoom:1;}
+caption{text-indent:-9999px;height:0;width:0;font-size:1px;}
+button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;} 
+body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{font:13px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
+input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"]{border:1px solid #dfdfdf;background-color:#fff;height:28px;line-height:28px;width:150px;padding:0 3px;}
+a{color:#222;text-decoration:none;}
+h1,h2,h3,h4,h5,h6,strong,em{font-style:normal;font-weight:normal;font-size:100%;}
+table{width:100%;border-collapse:collapse;}

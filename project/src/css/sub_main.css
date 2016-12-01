@@ -1,0 +1,24 @@
+@charset "utf-8";
+html,body, #wrap{height:100%;overflow:hidden;background-color:#ececec;}
+#header{background-color:#ececec;border:1px solid #dcdcdc;border-bottom-width:2px;height:100px;position:absolute;width:100%;z-index:1;}
+#header nav{min-width:1024px;background:#628299 url(../images/sub_main/bg_gnb.png) repeat-x 0 0;height:30px;padding:0 80px;position:absolute;bottom:0;left:0;width:100%;}
+#header nav ul{overflow:hidden;}
+#header nav ul li{height:30px;line-height:30px;float:left;width:14.2857%;}
+#header nav a{color:#fff;display:inline-block;padding:0 20px;height:30px;}
+#header nav a.on,#header nav a:hover,#header nav a:focus{color:#12ffd5;background:url(../images/sub_main/bg_gnb_ov.png) 0 0 repeat-x;}
+#header nav a.on{color:#fdca00;}
+#container{background-color:yellow;height:100%;padding-left:180px;}
+#lnb_wrap{height:100%;width:180px;padding:110px 10px 10px;background-color:#628299;color:#fff;border:1px solid #dcdcdc;position:absolute;left:0;top:0;}
+#lnb_wrap>.lnb{display:none;}
+#lnb_wrap>.lnb#sub_2{display:block;}
+#lnb_wrap>.lnb>h2:first-child{padding:0 0 10px 25px;background:url(../images/sub_main/ico_lnb_title.png) 8px 5px no-repeat;margin-bottom:10px;position:relative;font-size:14px;}
+#lnb_wrap>.lnb>h2:first-child:after{content:"";display:block;position:absolute;bottom:0;left:0;background:#fff url(../images/sub_main/bg_lnb_title.png) 0 0 no-repeat;width:100%;height:1px;}
+#lnb_wrap>.lnb ul{padding:0 0 0 10px;}
+#lnb_wrap>.lnb ul a{position:relative;color:#eee;padding-left:15px;display:block;height:30px;line-height:30px;}
+#lnb_wrap>.lnb ul a:hover, #lnb_wrap>.lnb ul a:focus{color:#12ffd5;}
+#lnb_wrap>.lnb ul a.on{color:#fdca00;}
+#lnb_wrap>.lnb ul a:before{content:"";display:block;position:absolute;left:0;top:0;width:1px;height:30px;background-color:#fff;}
+#lnb_wrap>.lnb ul li.last a:before{height:15px;}
+#lnb_wrap>.lnb ul a:after{content:"";display:block;position:absolute;left:0;top:50%;width:8px;height:1px;background-color:#fff;}
+#contents{width:100%;height:100%;background-color:#dcdcdc;padding-top:100px;}
+#contents>iframe{width:100%;height:100%;}

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css" media="all" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>코딩리스트</title>
+  <script type="text/javascript" src="../js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $(".guide_table td").hover(function(){
+      $(this).css({backgroundColor:"#ddd"}).siblings().css({backgroundColor:"#ddd"});
+    },function(){
+      $(this).css({backgroundColor:"#fff"}).siblings().css({backgroundColor:"#fff"});
+    })
+    var idxThFile = $(".guide_table th").index($(".guide_table th:contains('파일명')"));
+    var idxThIng = $(".guide_table th").index($(".guide_table th:contains('진행여부')"));
+    $(".guide_table tr").find("td:eq("+idxThFile+")").each(function(i, o){
+      var pageFullName = $(o).text();
+      var pageName;
+      var idxSlash = pageFullName.lastIndexOf("/");
+      if(idxSlash>=0) {
+        pageName = pageFullName.substring(idxSlash+1);
+      } else {
+        pageName= pageFullName;
+      }
+       
+      var pageUrl = $("<a href='"+pageFullName+"' target='_blank'>"+pageName+"</a>");
+      $(o).html(pageUrl);
+    });
+   
+    $(".guide_table tr").find("td:eq("+idxThIng+")").each(function(i, o){
+       var ingTxt = $(o).text();
+       if(ingTxt == "" || ingTxt == "-") {
+         $(o).text("-");
+       } else if (ingTxt == "완료") {
+         $(o).text("완료").css({color:"#000"});
+       } else if (ingTxt == "진행중") {
+         $(o).text("진행중").css({color:"#060"});
+       } else if (ingTxt == "보류중") {
+         $(o).text("보류중").css({color:"#600"});
+       }
+    });
+
+    var cNum = $(".cat, .cat~tr").size();
+    $(".cat, .cat~tr").each(function(i, o) {
+      $(o).find("td:first").text(cNum);
+      cNum--;
+    });
+  });
+  </script>
+ </head>
+ <body>
+  <div id="header">
+   <ul>
+    <li><a href="#" class="on">전체</a></li>
+    <li><a href="#">Coding Guide</a></li>
+    <li><a href="#">시스템관리</a></li>
+    <li><a href="#">공통관리</a></li>
+    <li><a href="#">영업관리</a></li>
+    <li class="last"><a href="#">생산관리</a></li>
+    <li><a href="#">자재관리</a></li>
+    <li><a href="#">품질관리</a></li>
+    <li><a href="#">외주관리</a></li>
+    <li><a href="#">통계분석</a></li>
+    <li><a href="#">공통팝업</a></li>
+    <li><a href="#">기타</a></li>
+   </ul>
+  </div>
+  <div id="container">
+   <table class="guide_table">
+    <thead>
+     <tr>
+      <th>순번</th>
+      <th>1Depth</th>
+      <th>2Depth</th>
+      <th>3Depth</th>
+      <th>페이지명</th>
+      <th>파일명</th>
+      <th>진행여부</th>
+      <th>담당자</th>
+      <th>비고</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr class="skipNum">
+      <td>-</td>
+      <td>코딩가이드</td>
+      <td></td>
+      <td></td>
+      <td>코딩가이드</td>
+      <td>index.html</td>
+      <td></td>
+      <td></td>
+      <td></td>
+     </tr>
+     <tr class="cat part_1">
+      <td>4</td>
+      <td>내용1</td>
+      <td>내용2</td>
+      <td>내용3</td>
+      <td>페이지명</td>
+      <td>../index.html</td>
+      <td>완료</td>
+      <td>홍길동</td>
+      <td>보류</td>
+     </tr>
+     <tr>
+      <td>4</td>
+      <td>내용1</td>
+      <td>내용2</td>
+      <td>내용3</td>
+      <td>페이지명</td>
+      <td>../sub/index.html</td>
+      <td></td>
+      <td>홍길동</td>
+      <td>보류</td>
+     </tr>
+     <tr>
+      <td>4</td>
+      <td>내용1</td>
+      <td>내용2</td>
+      <td>내용3</td>
+      <td>페이지명</td>
+      <td>../sub/index.html</td>
+      <td></td>
+      <td>홍길동</td>
+      <td>보류</td>
+     </tr>
+     <tr class="cat part_2">
+      <td>4</td>
+      <td>내용1</td>
+      <td>내용2</td>
+      <td>내용3</td>
+      <td>페이지명</td>
+      <td>../index.html</td>
+      <td>완료</td>
+      <td>홍길동</td>
+      <td>보류</td>
+     </tr>
+     <tr>
+      <td>4</td>
+      <td>내용1</td>
+      <td>내용2</td>
+      <td>내용3</td>
+      <td>페이지명</td>
+      <td>../index.html</td>
+      <td>진행중</td>
+      <td>홍길동</td>
+      <td>보류</td>
+     </tr>
+     <tr>
+      <td>4</td>
+      <td>내용1</td>
+      <td>내용2</td>
+      <td>내용3</td>
+      <td>페이지명</td>
+      <td>../index.html</td>
+      <td>완료</td>
+      <td>홍길동</td>
+      <td>보류</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </body>
+</html>

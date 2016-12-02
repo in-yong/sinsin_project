@@ -8,6 +8,8 @@ var imagemin = require("gulp-imagemin");
 var cssmin = require("gulp-uglifycss");
 var htmlPath = require("gulp-rewrite-image-path");
 var cssurl = require("gulp-rewrite-cssurl");
+var special = require('gulp-special-html');
+var utf8Convert = require('gulp-utf8-convert');
 
 var src = "src";
 var dist = "dist";
@@ -48,10 +50,16 @@ gulp.task("js-min", function() {
 				.pipe(gulp.dest(path.d_js));
 });
 
+/*.pipe(minifyhtml())*/
+/*.pipe(htmlPath({path:"images"}))*/
+/*.pipe(special())*/
 gulp.task("html-min",function() {
 	return gulp.src(path.s_html)
-				/*.pipe(minifyhtml())*/
-				.pipe(htmlPath({path:"images"}))
+				.pipe(utf8Convert({
+					encNotMatchHandle:function (file) {
+						//notify 
+					}
+				}))
 				.pipe(gulp.dest(path.d_html));
 });
 

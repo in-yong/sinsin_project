@@ -17,8 +17,10 @@
     "gulp-rewrite-cssurl": "0.0.1",
     "gulp-rewrite-image-path": "0.0.4",
     "gulp-sass": "^2.3.2",
+    "gulp-special-html": "0.0.4",
     "gulp-uglify": "^2.0.0",
     "gulp-uglifycss": "^1.0.6",
+    "gulp-utf8-convert": "0.0.7",
     "gulp-webserver": "^0.9.1"
   }
 }

@@ -1,5 +1,5 @@
 @charset "utf-8";
-body{padding-top:100px;}
+body{padding-top:100px;min-width:1024px;}
 #header{position:fixed;top:0;left:0;width:100%;background-color:#333;}
 #header ul li{float:left;width:16.6666%;border:1px solid #ccc;}
 #header ul li.last~li{margin-top:-1px;}

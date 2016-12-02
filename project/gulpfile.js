@@ -9,8 +9,8 @@ var cssmin = require("gulp-uglifycss");
 var htmlPath = require("gulp-rewrite-image-path");
 var cssurl = require("gulp-rewrite-cssurl");
 
-var src = "public_html/src";
-var dist = "public_html/dist";
+var src = "src";
+var dist = "dist";
 
 var path = {
 	s_img : src + "/images/**/*.*",
@@ -44,13 +44,13 @@ gulp.task("compile-sass", function() {
 
 gulp.task("js-min", function() {
 	return gulp.src(path.s_js)
-				.pipe(uglify())
+				/*.pipe(uglify())*/
 				.pipe(gulp.dest(path.d_js));
 });
 
 gulp.task("html-min",function() {
 	return gulp.src(path.s_html)
-				.pipe(minifyhtml())
+				/*.pipe(minifyhtml())*/
 				.pipe(htmlPath({path:"images"}))
 				.pipe(gulp.dest(path.d_html));
 });

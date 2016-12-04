@@ -14,7 +14,7 @@ html,body, #wrap{height:100%;overflow:hidden;background-color:#ececec;}
 #header nav>ul ul li a.on{color:#243E52;font-weight:bold;}
 #header nav>ul ul li a:before{content:"";display:inline-block;width:7px;height:1px;background-color:#999;vertical-align:middle;margin-right:5px;}
 #header nav>ul ul:after{content:"";display:block;position:absolute;left:0;top:0;width:100%;height:100%;background-color:#fff;opacity:0.8;z-index:2;}
-#container{background-color:yellow;height:100%;}
+#container{height:100%;}
 #lnb_wrap{height:100%;width:180px;padding:110px 10px 10px;background-color:#628299;color:#fff;border:1px solid #dcdcdc;position:absolute;left:0;top:0;}
 #contents{width:100%;height:100%;background-color:#dcdcdc;padding-top:100px;}
 #contents>iframe{width:100%;height:100%;}

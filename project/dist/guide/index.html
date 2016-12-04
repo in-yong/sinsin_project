@@ -11,22 +11,22 @@
   <title>코딩리스트</title>
   <script type="text/javascript" src="../js/html5shiv.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  <script type="text/javascript" src="js/guide.js"></script>
+  <script type="text/javascript" src="js/coding_list.js"></script>
  </head>
  <body>
   <div id="header">
    <ul>
-    <li><a href="#" class="on">전체</a></li>
-    <li><a href="#">Coding Guide</a></li>
-    <li><a href="#">시스템관리</a></li>
-    <li><a href="#">공통관리</a></li>
-    <li><a href="#">영업관리</a></li>
-    <li class="last"><a href="#">생산관리</a></li>
-    <li><a href="#">자재관리</a></li>
-    <li><a href="#">품질관리</a></li>
-    <li><a href="#">외주관리</a></li>
-    <li><a href="#">통계분석</a></li>
-    <li><a href="#">공통팝업</a></li>
+    <li><a href="#all" class="on">전체</a></li>
+    <li><a href="#guide">Coding Guide</a></li>
+    <li><a href="#part_1">시스템관리</a></li>
+    <li><a href="#part_2">공통관리</a></li>
+    <li><a href="#part_3">영업관리</a></li>
+    <li class="last"><a href="#part_4">생산관리</a></li>
+    <li><a href="#part_5">자재관리</a></li>
+    <li><a href="#part_6">품질관리</a></li>
+    <li><a href="#part_7">외주관리</a></li>
+    <li><a href="#part_8">공통팝업</a></li>
+    <li><a href="#part_9">통계분석</a></li>
     <li><a href="#">기타</a></li>
    </ul>
   </div>
@@ -41,6 +41,7 @@
 		<dt>보류</dt>
 		<dd>-</dd>
 	</dl>
+ <p><a href="https://docs.google.com/document/d/1u0jgsYehIKyNCB3FPZ24Cinm4BcuDCJcpWRIccccD7s/edit?usp=sharing" target="_blank">작업지시서</a></p>
    <table class="guide_table">
     <thead>
      <tr>
@@ -57,89 +58,651 @@
      </tr>
     </thead>
     <tbody>
-     <tr class="skipNum">
+     <tr class="skipNum guide">
       <td>-</td>
       <td>코딩가이드</td>
-      <td></td>
-      <td></td>
       <td>코딩가이드</td>
-      <td>index.html</td>
       <td></td>
       <td></td>
+      <td>guide.html</td>
+      <td></td>
+      <td>정인용</td>
       <td></td>
       <td></td>
      </tr>
+     <!-- 1. 시스템관리 -->
      <tr class="cat part_1">
-      <td>4</td>
-      <td>페이지명</td>
-      <td>내용1</td>
-      <td>내용2</td>
-      <td>내용3</td>
+      <td>num</td>
+      <td>Login</td>
+      <td rowspan="4"><em>A</em>. 시스템관리<br />(<em>Sys</em>tem <em>M</em>a<em>n</em>a<em>g</em>ement)</td>
+      <td>Login</td>
+      <td></td>
       <td>../index.html</td>
       <td>완료</td>
-      <td>홍길동</td>
+      <td>정인용</td>
       <td><a href="../../../공유문서/설계/화면정의서/생산관리/화면/공정작업결과등록화면.xls"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></a></td>
-      <td>보류</td>
+      <td></td>
      </tr>
      <tr>
-      <td>4</td>
-      <td>페이지명</td>
-      <td>내용1</td>
-      <td>내용2</td>
-      <td>내용3</td>
-      <td>../sub/index.html</td>
+      <td>num</td>
+      <td>메뉴권한관리</td>
+      <td>메뉴권한관리</td>
       <td></td>
-      <td>홍길동</td>
-      <td><a href="#" target="_blank"><a href="#" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></a></td>
-      <td>보류</td>
+      <td>../sub.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/메뉴권한관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></a></td>
+      <td></td>
      </tr>
      <tr>
-      <td>4</td>
-      <td>페이지명</td>
-      <td>내용1</td>
-      <td>내용2</td>
-      <td>내용3</td>
-      <td>../sub/index.html</td>
+      <td>num</td>
+      <td>시스템코드관리</td>
+      <td>시스템코드관리</td>
       <td></td>
-      <td>홍길동</td>
-      <td><a href="#" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
-      <td>보류</td>
+      <td>../a_sys_mng/a_sys_mng_1.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/시스템코드관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
      </tr>
+     <tr>
+      <td>num</td>
+      <td>공지사항등록</td>
+      <td>공지사항등록</td>
+      <td></td>
+      <td>../a_sys_mng/a_sys_mng_2.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/공지사항등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <!-- 2. 공통관리 -->
      <tr class="cat part_2">
-      <td>4</td>
-      <td>페이지명</td>
-      <td>내용1</td>
-      <td>내용2</td>
-      <td>내용3</td>
-      <td>../index.html</td>
-      <td>완료</td>
-      <td>홍길동</td>
-      <td><a href="#" target="_blank"><a href="#" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></a></td>
-      <td>보류</td>
+      <td>num</td>
+      <td>공정코드등록</td>
+      <td rowspan="8"><em>B</em>. 공통관리<br />(<em>C</em>o<em>mm</em>on <em>M</em>a<em>n</em>a<em>g</em>ement)</td>
+      <td>공정코드등록</td>
+      <td></td>
+      <td>../b_cmm_mng/b_cmm_mng_1.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/화면변경(20161129)/공정코드등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
      </tr>
      <tr>
-      <td>4</td>
-      <td>페이지명</td>
-      <td>내용1</td>
-      <td>내용2</td>
-      <td>내용3</td>
-      <td>../index.html</td>
-      <td>진행중</td>
-      <td>홍길동</td>
-      <td><a href="#" target="_blank"><a href="#" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></a></td>
-      <td>보류</td>
+      <td>num</td>
+      <td>BOM등록</td>
+      <td>BOM등록</td>
+      <td></td>
+      <td>../b_cmm_mng/b_cmm_mng_2.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/BOM등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
      </tr>
      <tr>
-      <td>4</td>
-      <td>페이지명</td>
-      <td>내용1</td>
-      <td>내용2</td>
-      <td>내용3</td>
-      <td>../index.html</td>
-      <td>완료</td>
-      <td>홍길동</td>
-      <td><a href="#" target="_blank"><a href="#" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></a></td>
-      <td>보류</td>
+      <td>num</td>
+      <td>거래처관리</td>
+      <td>거래처관리</td>
+      <td></td>
+      <td>../b_cmm_mng/b_cmm_mng_3.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/거래처관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>직원관리</td>
+      <td>직원관리</td>
+      <td></td>
+      <td>../b_cmm_mng/b_cmm_mng_4.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/직원관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>근태관리</td>
+      <td>근태관리</td>
+      <td></td>
+      <td>../b_cmm_mng/b_cmm_mng_5.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/근태관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>부서관리</td>
+      <td>부서관리</td>
+      <td></td>
+      <td>../b_cmm_mng/b_cmm_mng_6.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/부서관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>업무코드관리</td>
+      <td>업무코드관리</td>
+      <td></td>
+      <td>../b_cmm_mng/b_cmm_mng_7.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/업무코드관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>우편번호검색</td>
+      <td>우편번호검색</td>
+      <td></td>
+      <td>../b_cmm_mng/b_cmm_mng_8.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통관리/화면/우편번호검색화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <!-- 3. 영업관리 -->
+     <tr class="cat part_3">
+      <td>num</td>
+      <td>C. 영업관리 TO_DO LIST</td>
+      <td rowspan="8"><em>C</em>. 영업관리<br />(<em>Sal</em>es <em>M</em>a<em>n</em>a<em>g</em>ement)</td>
+      <td>영업관리 TO_DO LIST</td>
+      <td></td>
+      <td>../c_sal_mng/c_sal_mng_1.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/영업관리/화면/영업관리 TO_DO LIST.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>거래처별제품등록</td>
+      <td>거래처별제품등록</td>
+      <td></td>
+      <td>../c_sal_mng/c_sal_mng_2.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/영업관리/화면/거래처별제품등록.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>수주전표등록</td>
+      <td>수주전표등록</td>
+      <td></td>
+      <td>../c_sal_mng/c_sal_mng_3.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/영업관리/화면/수주전표등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>영업계획등록</td>
+      <td>영업계획등록</td>
+      <td></td>
+      <td>../c_sal_mng/c_sal_mng_4.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/영업관리/화면/영업계획등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>영업창고등록</td>
+      <td>영업창고등록</td>
+      <td></td>
+      <td>../c_sal_mng/c_sal_mng_5.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/영업관리/화면/영업창고등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>판매전표등록</td>
+      <td>판매전표등록</td>
+      <td></td>
+      <td>../c_sal_mng/c_sal_mng_6.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/영업관리/화면/판매전표등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>고객불만등록</td>
+      <td>고객불만등록</td>
+      <td></td>
+      <td>../c_sal_mng/c_sal_mng_7.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/영업관리/화면/고객불만등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>고객불만처리</td>
+      <td>고객불만처리</td>
+      <td></td>
+      <td>../c_sal_mng/c_sal_mng_8.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/영업관리/화면/고객불만처리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <!-- 4. 생산관리 -->
+     <tr class="cat part_4">
+      <td>num</td>
+      <td>생산관리 TO_DO LIST</td>
+      <td rowspan="7"><em>D</em>. 생산관리<br />(<em>Pr</em>o<em>d</em>uction <em>M</em>a<em>n</em>a<em>g</em>ement)</td>
+      <td>생산관리 TO_DO LIST</td>
+      <td></td>
+      <td>../d_prd_mng/d_prd_mng_1.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/생산관리/화면/생산관리 TO_DO LIST.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>생산계획등록</td>
+      <td>생산계획등록</td>
+      <td></td>
+      <td>../d_prd_mng/d_prd_mng_2.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/생산관리/화면/생산계획등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>작업지시서</td>
+      <td>작업지시서</td>
+      <td></td>
+      <td>../d_prd_mng/d_prd_mng_3.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/생산관리/화면/작업지시서화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>생산발행번호분할</td>
+      <td>생산발행번호분할</td>
+      <td></td>
+      <td>../d_prd_mng/d_prd_mng_4.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/생산관리/화면/생산발행번호분할화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>자제불출의뢰서</td>
+      <td>자제불출의뢰서</td>
+      <td></td>
+      <td>../d_prd_mng/d_prd_mng_5.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/생산관리/화면/자제불출의뢰서화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>공정창고관리</td>
+      <td>공정창고관리</td>
+      <td></td>
+      <td>../d_prd_mng/d_prd_mng_6.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/화면변경(20161129)/공정창고관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>공정작업결과등록</td>
+      <td>공정작업결과등록</td>
+      <td></td>
+      <td>../d_prd_mng/d_prd_mng_7.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/생산관리/화면/공정작업결과등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <!-- 5. 자재관리 -->
+     <tr class="cat part_5">
+      <td>num</td>
+      <td>자재관리 TO_DO LIST</td>
+      <td rowspan="6"><em>E</em>. 자재관리<br />(<em>Mat</em>erial <em>M</em>a<em>n</em>a<em>g</em>ement)</td>
+      <td>자재관리 TO_DO LIST</td>
+      <td></td>
+      <td>../e_mat_mng/e_mat_mng_1.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/자재관리/화면/자재관리 TO_DO LIST.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>거래처별제품등록</td>
+      <td>거래처별제품등록</td>
+      <td></td>
+      <td>../e_mat_mng/e_mat_mng_2.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/자재관리/화면/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>자재계획등록</td>
+      <td>자재계획등록</td>
+      <td></td>
+      <td>../e_mat_mng/e_mat_mng_3.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/자재관리/화면/자재계획등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>발주전표등록</td>
+      <td>발주전표등록</td>
+      <td></td>
+      <td>../e_mat_mng/e_mat_mng_4.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/자재관리/화면/발주전표등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>입고전표등록</td>
+      <td>입고전표등록</td>
+      <td></td>
+      <td>../e_mat_mng/e_mat_mng_5.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/자재관리/화면/입고전표등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>자재창고관리</td>
+      <td>자재창고관리</td>
+      <td></td>
+      <td>../e_mat_mng/e_mat_mng_6.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/화면변경(20161129)/자재창고관리화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <!-- 6. 품질관리 -->
+     <tr class="cat part_6">
+      <td>num</td>
+      <td>품질관리 TO_DO LIST</td>
+      <td rowspan="3"><em>F</em>. 품질관리<br />(<em>Qua</em>lity <em>M</em>a<em>n</em>a<em>g</em>ement)</td>
+      <td>품질관리 TO_DO LIST</td>
+      <td></td>
+      <td>../f_qua_mng/f_qua_mng_1.html</td>
+      <td>-</td>
+      <td>이성룡</td>
+      <td><a href="../../../공유문서/설계/화면정의서/품질관리/화면/품질관리 TO_DO LIST.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>수입검사등록</td>
+      <td>수입검사등록</td>
+      <td></td>
+      <td>../f_qua_mng/f_qua_mng_2.html</td>
+      <td>-</td>
+      <td>이성룡</td>
+      <td><a href="../../../공유문서/설계/화면정의서/품질관리/화면/수입검사등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>출하검사등록</td>
+      <td>출하검사등록</td>
+      <td></td>
+      <td>../f_qua_mng/f_qua_mng_3.html</td>
+      <td>-</td>
+      <td>이성룡</td>
+      <td><a href="../../../공유문서/설계/화면정의서/품질관리/화면/출하검사등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <!-- 7. 외주관리 -->
+     <tr class="cat part_7">
+      <td>num</td>
+      <td>거래처별제품등록</td>
+      <td rowspan="3"><em>G</em>. 외주관리<br />(<em>Out</em>sourcing <em>M</em>a<em>n</em>a<em>g</em>ement)</td>
+      <td>거래처별제품등록</td>
+      <td></td>
+      <td>../g_out_mng/g_out_mng_1.html</td>
+      <td>-</td>
+      <td>이성룡</td>
+      <td><a href="../../../공유문서/설계/화면정의서/외주관리/화면/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>외주계획등록</td>
+      <td>외주계획등록</td>
+      <td></td>
+      <td>../g_out_mng/g_out_mng_2.html</td>
+      <td>-</td>
+      <td>이성룡</td>
+      <td><a href="../../../공유문서/설계/화면정의서/외주관리/화면/외주계획등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>외주입고등록</td>
+      <td>외주입고등록</td>
+      <td></td>
+      <td>../g_out_mng/g_out_mng_3.html</td>
+      <td>-</td>
+      <td>이성룡</td>
+      <td><a href="../../../공유문서/설계/화면정의서/외주관리/화면/외주입고등록화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <!-- 8. 공통팝업 -->
+     <tr class="cat part_8">
+      <td>num</td>
+      <td>거래처조회</td>
+      <td rowspan="10"><em>H</em>. 공통팝업<br />(<em>C</em>o<em>mm</em>on <em>Pop</em>up)</td>
+      <td>거래처조회</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_1.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/거래처조회.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>공정코드조회</td>
+      <td>공정코드조회</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_2.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/공정코드조회.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>제품코드조회</td>
+      <td>제품코드조회</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_3.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/제품코드조회.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>수주번호조회</td>
+      <td>수주번호조회</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_4.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/수주번호조회.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>발주번호조회</td>
+      <td>발주번호조회</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_5.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/발주번호조회.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>사원번호조회</td>
+      <td>사원번호조회</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_6.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/사원번호조회.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>공지사항조회</td>
+      <td>공지사항조회</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_7.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/공지사항조회화면.xls" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>불량수량등록관리</td>
+      <td>불량수량등록관리</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_8.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>공정별작업지시서조회</td>
+      <td>공정별작업지시서조회</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_9.html</td>
+      <td>-</td>
+      <td>이성룡</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>작업자별 생산결과 공정표</td>
+      <td>작업자별 생산결과 공정표</td>
+      <td></td>
+      <td>../h_cmm_pop/h_cmm_pop_10.html</td>
+      <td>-</td>
+      <td>이성룡</td>
+      <td><a href="../../../공유문서/설계/화면정의서/공통popup/화면/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <!-- 9. 통계분석 -->
+     <tr class="cat part_9">
+      <td>num</td>
+      <td>월마감 통계분석 자료 생성</td>
+      <td rowspan="7"><em>I</em>. 통계분석<br />(<em>Stat</em>istical <em>A</em>na<em>l</em>y<em>s</em>is)</td>
+      <td>월마감 통계분석 자료 생성</td>
+      <td></td>
+      <td>../i_stat_als/i_stat_als_1.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>영업실적현황</td>
+      <td>영업실적현황</td>
+      <td></td>
+      <td>../i_stat_als/i_stat_als_2.html</td>
+      <td>-</td>
+      <td>정인용</td>
+      <td><a href="../../../공유문서/설계/화면정의서/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>불량통계현황</td>
+      <td>불량통계현황</td>
+      <td></td>
+      <td>../i_stat_als/i_stat_als_3.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>생산량실적현황</td>
+      <td>생산량실적현황</td>
+      <td></td>
+      <td>../i_stat_als/i_stat_als_4.html</td>
+      <td>-</td>
+      <td>김영은</td>
+      <td><a href="../../../공유문서/설계/화면정의서/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>제품별공정능력</td>
+      <td>제품별공정능력</td>
+      <td></td>
+      <td>../i_stat_als/i_stat_als_5.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>공정실적현황</td>
+      <td>공정실적현황</td>
+      <td></td>
+      <td>../i_stat_als/i_stat_als_6.html</td>
+      <td>-</td>
+      <td>왕강림</td>
+      <td><a href="../../../공유문서/설계/화면정의서/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
+     </tr>
+     <tr>
+      <td>num</td>
+      <td>공정가동율</td>
+      <td>공정가동율</td>
+      <td></td>
+      <td>../i_stat_als/i_stat_als_7.html</td>
+      <td>-</td>
+      <td>신창호</td>
+      <td><a href="../../../공유문서/설계/화면정의서/" target="_blank"><img src="images/ico_xls.gif" alt="엑셀 설계"></a></td>
+      <td>설계(X)</td>
      </tr>
     </tbody>
    </table>

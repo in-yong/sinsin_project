@@ -15,3 +15,44 @@ input[type="text"], input[type="password"], input[type="tel"], input[type="url"]
 a{color:#222;text-decoration:none;}
 h1,h2,h3,h4,h5,h6,strong,em{font-style:normal;font-weight:normal;font-size:100%;}
 table{width:100%;border-collapse:collapse;}
+#container{
+	background-color:#dcdcdc;
+}
+
+.sub_frame_st2{width:1024px !important;margin:0 auto;}
+
+
+.tit_1{
+	padding:10px 10px 0;
+	font-size:16px;
+	font-weight:bold;
+	color:#253d55;
+	margin-bottom:10px;
+	.tit_bd_wrap{
+		padding-left:10px;
+		display:block;
+		/*border-bottom:1px solid #80909c;*/
+		border-bottom:1px solid #c3c3c3;
+		padding-bottom:8px;
+	}
+}
+.tit_2{
+	font-size:14px;
+	color:#253d55;
+}
+
+#sub_wrap{
+	width:1000px;
+	padding:20px;
+}
+.section_1{
+	>.tit_2{
+		margin:0 -10px;
+	}
+	background-color:#efefef;
+	border:1px solid #bfbfbf;
+	padding:20px;
+	border-radius:5px;
+	position:relative;
+	margin-bottom:20px;
+}

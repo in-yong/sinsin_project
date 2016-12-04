@@ -1,5 +1,8 @@
 @charset "utf-8";
-body{padding-top:100px;min-width:1024px;}
+html{
+	overflow-y:scroll;
+}
+body{padding:100px 0;min-width:1024px;}
 #header{position:fixed;top:0;left:0;width:100%;background-color:#333;}
 #header ul li{float:left;width:16.6666%;border:1px solid #ccc;}
 #header ul li.last~li{margin-top:-1px;}
@@ -12,6 +15,7 @@ body{padding-top:100px;min-width:1024px;}
 .guide_table tr.cat td{border-top:2px solid #000;}
 .guide_table th{font-weight:500;background-color:#25455d;color:#fff;}
 .guide_table th:first-child{width:60px;}
+.guide_table em{color:#c00;}
 
 .status_ing{overflow:hidden;float:right;margin-bottom:10px;min-width:505px;}
 .status_ing dt, .status_ing dd{float:left;border:1px solid #aaa;background-color:#efefef;height:24px;line-height:22px;}

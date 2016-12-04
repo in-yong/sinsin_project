@@ -7,7 +7,7 @@
   <meta name="Description" content="">
   <link rel="stylesheet" type="text/css" href="../../dist/css/common.css" media="all" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-  <title>코딩 가이드</title>
+  <title>코딩 가이드-레이아웃</title>
   <script type="text/javascript" src="../js/html5shiv.min.js"></script>
   <script type="text/javascript" src="../js/jquery.js"></script>
  </head>
@@ -16,16 +16,50 @@
     <header id="sub_header">
       <h1 class="tit_1"><span class="tit_bd_wrap">타이틀-1</span></h1>
     </header>
-    <div id="sub_wrap">
-     <section class="section_1">
-      <h1 class="tit_2">타이틀-2</h1>
-     </section>     
-     <section class="section_1">
-      <h1 class="tit_2">타이틀-2</h1>
-     </section>     
-     <section class="section_1">
-      <h1 class="tit_2">타이틀-2</h1>
-     </section>
+    <div id="sub_wrap" class="grid">
+      <div class="row">     
+       <section class="section_1 col_12">
+        <div class="col">
+          <h1 class="tit_2">타이틀-2</h1>
+        </div>
+       </section>
+     </div>
+     <div class="row">
+       <section class="section_1 col_6">
+        <div class="col">
+          <h1 class="tit_2">타이틀-2</h1>
+        </div>
+       </section>     
+       <section class="section_1 col_6">
+        <div class="col">
+          <h1 class="tit_2">타이틀-2</h1>
+        </div>
+       </section>
+      </div>
+     <div class="row">
+       <section class="section_1 col_4">
+        <div class="col">
+          <h1 class="tit_2">타이틀-2</h1>
+        </div>
+       </section>     
+       <section class="section_1 col_8">
+        <div class="col">
+          <h1 class="tit_2">타이틀-2</h1>
+        </div>
+       </section>
+      </div>
+     <div class="row">
+       <section class="section_1 col_8">
+        <div class="col">
+          <h1 class="tit_2">타이틀-2</h1>
+        </div>
+       </section>     
+       <section class="section_1 col_4">
+        <div class="col">
+          <h1 class="tit_2">타이틀-2</h1>
+        </div>
+       </section>
+      </div>     
     </div>
   </section>
  </body>

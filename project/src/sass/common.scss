@@ -82,7 +82,12 @@ table{width:100%;border-collapse:collapse;}
 
 /*테이블*/
 .basic_table_column_1 {
-
+	th{
+		
+	}
+	th, td{
+		height:25px;
+	}
 }
 
 .header_logo img{width:85px;}

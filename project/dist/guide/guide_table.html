@@ -6,24 +6,14 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <link rel="stylesheet" type="text/css" href="../../dist/css/common.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/guide_page.css" media="all" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-  <title>코딩 가이드-레이아웃</title>
   <script type="text/javascript" src="../js/html5shiv.min.js"></script>
   <script type="text/javascript" src="../js/jquery.js"></script>
-  <script type="text/javascript" src="../../dist/js/jquery.dataTables.min.js"></script>
-  <script>
-      $(document).ready(function() {
-        $('.table_column_1').DataTable( {
-          "scrollY":"200px",
-          "scrollX":true,
-          "scrollCollapse": true,
-          "info":false,
-          "bFilter": false,
-          "paging":false
-        } );
-      });    
-  </script>
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script src="../js/common.js"></script>
+  <title>코딩 가이드-레이아웃</title>
+  <link rel="stylesheet" type="text/css" href="css/guide_page.css" media="all" />
+  
  </head>
  <body>
   <section>
@@ -36,7 +26,7 @@
         <div class="col">
           <h1 class="tit_2">타이틀-2</h1>
           <div class="basic_table_column_1">
-            <table class="table_column_1 display" cellspacing="0" width="100%">
+            <table class="table_column_1 display nowrpa" cellspacing="0" width="100%">
               <thead>
                 <tr>
                   <th scope="col">Name</th>
@@ -47,16 +37,6 @@
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <!-- <tfoot>
-                <tr>
-                  <th>Name</th>
-                  <th>Position</th>
-                  <th>Office</th>
-                  <th>Age</th>
-                  <th>Start date</th>
-                  <th>Salary</th>
-                </tr>
-              </tfoot> -->
               <tbody>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -126,84 +106,30 @@
             </table>          					
           </div>
 <textarea class="ex_tag_zone" cols="30" rows="10">
-<table class="table_column_1 display" cellspacing="0" width="100%">
-	<thead>
-		<tr>
-			<th scope="col">Name</th>
-			<th scope="col">Position</th>
-			<th scope="col">Office</th>
-			<th scope="col">Age</th>
-			<th scope="col">Start date</th>
-			<th scope="col">Salary</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Tiger Nixon</td>
-			<td>System Architect</td>
-			<td class="ta_c">Edinburgh</td>
-			<td class="ta_c">61</td>
-			<td class="ta_c">2011/04/25</td>
-			<td class="ta_r">$320,800</td>
-		</tr>
-		<tr>
-			<td>Tiger Nixon</td>
-			<td>System Architect</td>
-			<td class="ta_c">Edinburgh</td>
-			<td class="ta_c">61</td>
-			<td class="ta_c">2011/04/25</td>
-			<td class="ta_r">$320,800</td>
-		</tr>
-		<tr>
-			<td>Tiger Nixon</td>
-			<td>System Architect</td>
-			<td class="ta_c">Edinburgh</td>
-			<td class="ta_c">61</td>
-			<td class="ta_c">2011/04/25</td>
-			<td class="ta_r">$320,800</td>
-		</tr>
-		<tr>
-			<td>Tiger Nixon</td>
-			<td>System Architect</td>
-			<td class="ta_c">Edinburgh</td>
-			<td class="ta_c">61</td>
-			<td class="ta_c">2011/04/25</td>
-			<td class="ta_r">$320,800</td>
-		</tr>
-		<tr>
-			<td>Tiger Nixon</td>
-			<td>System Architect</td>
-			<td class="ta_c">Edinburgh</td>
-			<td class="ta_c">61</td>
-			<td class="ta_c">2011/04/25</td>
-			<td class="ta_r">$320,800</td>
-		</tr>
-		<tr>
-			<td>Tiger Nixon</td>
-			<td>System Architect</td>
-			<td class="ta_c">Edinburgh</td>
-			<td class="ta_c">61</td>
-			<td class="ta_c">2011/04/25</td>
-			<td class="ta_r">$320,800</td>
-		</tr>
-		<tr>
-			<td>Tiger Nixon</td>
-			<td>System Architect</td>
-			<td class="ta_c">Edinburgh</td>
-			<td class="ta_c">61</td>
-			<td class="ta_c">2011/04/25</td>
-			<td class="ta_r">$320,800</td>
-		</tr>
-		<tr>
-			<td>Tiger Nixon</td>
-			<td>System Architect</td>
-			<td class="ta_c">Edinburgh</td>
-			<td class="ta_c">61</td>
-			<td class="ta_c">2011/04/25</td>
-			<td class="ta_r">$320,800</td>
-		</tr>
-	</tbody>
-</table>       					
+<div class="basic_table_column_1">
+  <table class="table_column_1 display nowrpa" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Position</th>
+        <th scope="col">Office</th>
+        <th scope="col">Age</th>
+        <th scope="col">Start date</th>
+        <th scope="col">Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tiger Nixon</td>
+        <td>System Architect</td>
+        <td class="ta_c">Edinburgh</td>
+        <td class="ta_c">61</td>
+        <td class="ta_c">2011/04/25</td>
+        <td class="ta_r">$320,800</td>
+      </tr>
+    </tbody>
+  </table>                    
+</div>       					
 </textarea> 
           <h1 class="tit_2">타이틀-2</h1>
           <div class="row">

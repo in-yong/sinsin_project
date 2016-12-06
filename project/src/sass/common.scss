@@ -15,6 +15,9 @@ input[type="text"], input[type="password"], input[type="tel"], input[type="url"]
 a{color:#222;text-decoration:none;}
 h1,h2,h3,h4,h5,h6,strong,em{font-style:normal;font-weight:normal;font-size:100%;}
 table{width:100%;border-collapse:collapse;}
+table.dataTable.nowrap th,table.dataTable.nowrap td {
+    white-space: nowrap
+}
 .grid {
 	.row{
 		*zoom:1;
@@ -34,7 +37,7 @@ table{width:100%;border-collapse:collapse;}
 				}
 				background-color:#efefef;
 				border:1px solid #bfbfbf;
-				padding:20px;
+				padding:20px 20px 0;
 				border-radius:5px;
 				position:relative;
 			}
@@ -47,7 +50,7 @@ table{width:100%;border-collapse:collapse;}
 	}
 	*[class*=col_]{
 		float:left;
-		padding:5px;
+		padding:5px 5px 0;
 	}
 	.col_1{
 		width:8.3333%;
@@ -89,6 +92,7 @@ table{width:100%;border-collapse:collapse;}
 
 /*테이블*/
 th{
+	padding:0 10px;
 	height:35px;
 	background-color:#395971;
 	color:#fff;
@@ -320,8 +324,9 @@ span {
 	}
 }
 .tit_2{
-	font-size:14px;
-	color:#253d55;
+	font-size:15px;
+	color:#2c4965;
+	font-weight:500;
 }
 
 #sub_wrap{

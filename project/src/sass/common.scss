@@ -220,6 +220,19 @@ div[class*="btn_row_"]{
 .pb_3{
 	padding-bottom:3px;
 }
+.radio_wrap{
+
+}
+.radio{
+	label{
+
+	}
+	input{
+		position:absolute;
+		left:-9999px;
+	}
+}
+
 .header_logo img{width:85px;}
 #container{
 	background-color:#dcdcdc;

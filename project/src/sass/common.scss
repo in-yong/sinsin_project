@@ -151,12 +151,13 @@ td {
 .basic_table_row_1 {
 	margin-bottom:20px;
 	th {
+		min-width:80px;
 		background:transparent;
 		color:#395971;
 		position:relative;
 		border-bottom:1px solid #395971;
 		text-align:left;
-		padding-left:10px;
+		padding-left:18px;
 		&:after{
 			content:"";
 			display:inline-block;
@@ -216,22 +217,88 @@ div[class*="btn_row_"]{
 	border:none;
 	text-indent:-9999px;
 }
+.btn_date {
+	width:24px;
+	height:24px;
+	background:#efefef url(../images/common/ico_btn_1.png) 0 -45px no-repeat;
+	border:none;
+	text-indent:-9999px;
+}
+label[for^="date_end_"]{
+	margin-left:5px;
+}
+.req{
+	color:#d87b27;
 
+	position:relative;
+	&:before{
+		content:"";
+		display:inline-block;
+		position:absolute;
+		left:-13px;
+		top:7px;
+		width:10px;
+		height:10px;
+		background:url(../images/common/ico_btn_1.png) 0 -147px no-repeat;
+	}
+}
 .pb_3{
 	padding-bottom:3px;
 }
 .radio_wrap{
-
-}
-.radio{
-	label{
-
-	}
-	input{
-		position:absolute;
-		left:-9999px;
+	.radio{
+		&:first-child{
+			margin:0;
+		}
 	}
 }
+span {
+	&.radio, &.checkbox{
+		margin-left:5px;
+		label{
+			display:inline-block;
+			padding-right:20px;
+			background:url(../images/common/ico_form_1.png) no-repeat 100% 3px;
+		}
+		input{
+			position:absolute;
+			left:-9999px;
+			&:checked{
+				+label{
+					background-position:100% -25px;
+				}
+			}
+		}
+		&.no_txt{
+			label {
+				display:block;
+				text-indent:-9999px;
+				text-align:center;
+				width:0;
+				margin:0 auto;
+			}
+		}
+	}
+	&.checkbox {
+		label{
+			background-position:100% -65px;
+		}
+		input {
+			&:checked{
+				+label{
+					background-position:100% -92px;
+				}
+			}
+		}
+	}
+}
+.mml_50{margin-left:-50px;}
+
+.frm_w_1 {width:100% !important;}
+.frm_w_2 {width:250px !important;}
+.frm_w_3 {width:200px !important;}
+.frm_w_4 {width:150px !important;}
+.frm_w_5 {width:100px !important;}
 
 .header_logo img{width:85px;}
 #container{

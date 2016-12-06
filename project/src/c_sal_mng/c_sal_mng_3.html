@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="../css/c_sal_mng.css" media="all" />
+  <script type="text/javascript" src="../js/jquery.js"></script>  
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script> 
+  <title>타이틀</title>
+ </head>
+  <body>
+    <section>
+      <header id="sub_header">
+       <h1 class="tit_1"><span class="tit_bd_wrap">수주전표등록</span></h1>
+      </header>
+      <div id="sub_wrap" class="grid">
+			<div class="row">     
+			 <section class="section_1 col_12">
+				<div class="col">
+					<h1 class="tit_2">검색조건</h1>
+					<form action="#" method="post" class="pos_r">
+						<div class="row">
+							<div class="col_4">
+								<div class="col">
+									<p class="produc_sj pb_3">
+										<label for="produc_code_1_1">수주</label>
+										<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+									</p>
+									<p>
+										<label for="produc_code_1_1">거래처코드</label>
+										<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+										<input type="button" class="btn_search" value="찾기">
+										<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+									</p>
+								</div>
+							</div> 
+							<div class="col_4">
+								<div class="col">
+									<p  class="pb_3">
+										<label for="date_in_1_1">수주일자</label>
+										<input type="text" name="date_in_1_1" id="date_in_1_1">
+										<span class="space"> ~ </span>
+										<input type="text" name="date_in_1_2" id="date_in_1_2">                    
+									</p>
+									<p  class="pb_3">
+										<label for="date_in_1_1">제품코드</label>
+										<input type="text" name="date_in_1_1" id="date_in_1_1">
+										<input type="button" class="btn_search" value="찾기">
+										<input type="text" name="date_in_1_2" id="date_in_1_2">                    
+									</p>
+								</div>
+							</div> 
+						</div>              
+						<p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+					</form>            
+
+				</div>
+			 </section>
+			</div>
+			<div class="row">     
+			 <section class="section_1 col_12">
+				<div class="col">
+					<h1 class="tit_2">매입처별이력 LIST</h1>
+			          <div class="basic_table_column_1">
+			            <table class="table_column_1 display" cellspacing="0" width="100%">
+			              <thead>
+			                <tr>
+			                  <th scope="col">순번</th>
+			                  <th scope="col">수주번호</th>
+			                  <th scope="col">수주일자</th>
+			                  <th scope="col">거래처코드</th>
+			                  <th scope="col">거래처명</th>
+			                  <th scope="col">제품코드</th>
+			                  <th scope="col">제품명</th>
+			                  <th scope="col">규격</th>
+			                  <th scope="col">단위</th>
+			                  <th scope="col">리드타임</th>
+			                  <th scope="col">수주량</th>
+			                  <th scope="col">재고량</th>
+			                  <th scope="col">안전재고량</th>
+			                  <th scope="col">부족재고량</th>
+			                  <th scope="col">예정수량</th>
+			                  <th scope="col">생산의뢰량</th>
+			                  <th scope="col">단가</th>
+			                  <th scope="col">수주금액</th>
+			                  <th scope="col">생산계획일</th>
+			                  <th scope="col">납기일자</th>
+			                  <th scope="col">비고</th>
+			                  <th scope="col">수주금액</th>
+			                  <th scope="col">등록ID</th>
+			                  <th scope="col">변경자ID</th>
+			                </tr>
+			              </thead>
+			              <tbody>
+			                <tr>
+			                  <td class="ta_c">1</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">2</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">3</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">4</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">5</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">6</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">7</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">8</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">9</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">10</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">11</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">12</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">13</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">14</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">15</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">16</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">17</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">18</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">19</td>
+			                  <td></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_c"></td>
+			                  <td class="ta_r"></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			              </tbody>
+			            </table>          					
+			          </div>					     					
+				</div>
+			 </section>
+			</div>
+      </div>
+    </section>
+  </body>
+</html>

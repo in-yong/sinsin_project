@@ -5,7 +5,6 @@ $(document).ready(function() {
     "scrollCollapse": true,
     "info":false,
     "bFilter": false,
-    "paging":false,
-    order: [0, 'desc']
+    "paging":false
   } );
 }); 

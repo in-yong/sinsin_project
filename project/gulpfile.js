@@ -100,7 +100,7 @@ gulp.task("watch",function() {
 	gulp.watch(path.s_sass, ["compile-sass"]);
 	gulp.watch(path.s_sass, ["guide-compile-css"]);
 	gulp.watch(path.s_js, ["js-min"]);
-	gulp.watch(path.s_js, ["guide-js-min"]);
+	gulp.watch(guidePath.s_js, ["guide-js-min"]);
 	gulp.watch(path.s_html, ["html-min"]);
 	gulp.watch(dist + '/**').on('change', livereload.changed);
 });

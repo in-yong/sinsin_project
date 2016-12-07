@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.g_out_1_mgr{
+	margin-right: 26px;
+}
+.g_out_l_mg{
+	margin-left: -50px;
+	margin-top: 30px;
+	span+span+span+span{
+		margin-left: 15px;
+	}
+}
+.circle_rb_2 {
+    display: block;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.circle_gb_2{
+	display: block;
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.widht80 {
+    width: 80%;
+}

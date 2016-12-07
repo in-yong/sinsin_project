@@ -15,7 +15,7 @@ input[type=text] {
     div >p {
         height: 26px;
         line-height: 26px;
-        float: left;
+        float: left; 
         padding-right: 30px;
     }
     ul {
@@ -51,6 +51,11 @@ input[type=text] {
         width: 550px;
         padding: 0 0 5px 30px;
         border-bottom: 1px solid #000;
+    }
+}
+.qua_mng_top_4{
+    label{
+        margin-right: 52px;
     }
 }
 

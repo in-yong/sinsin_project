@@ -5,6 +5,15 @@
 .fl_left{float:left;}
 .fl_right{float:right;}
 .c_b{clear:both;}
+.tit_2 .tit_bd_wrap{
+	text-align:center;
+	width:300px;
+	margin:0 auto;
+	padding-left: 10px;
+	display: block;
+	border-bottom: 1px solid #c3c3c3;
+	padding-bottom: 8px;
+}
 
 /*d_prd_mng_2*/
 .frm_w_1_d2{width:80px !important;}
@@ -75,15 +84,11 @@
 /*//d_prd_mng_6*/
 
 /*d_prd_mng_8*/
-.tit_2 .tit_bd_wrap{
-	text-align:center;
-	width:500px;
-	margin:0 auto;
-	padding-left: 10px;
-	display: block;
-	border-bottom: 1px solid #c3c3c3;
-	padding-bottom: 8px;
-}
 .d_8_margin{margin:0 0 15px 70px;}
 .d_2_table{width:300px;float:right;}
 /*//d_prd_mng_8*/
+
+/*d_prd_mng_9*/
+.d_9_txt_c{text-align:center;}
+.d_9_mt{margin-top:20px;}
+/*//d_prd_mng_9*/

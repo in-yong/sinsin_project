@@ -80,7 +80,10 @@
 				myObj = $(o).prev();
 			}
 			var mngName = myObj.text();
-			if(location.hash != "#sinsin") { mngName = "";}
+			if(location.hash != "#sinsin") { 
+						mngName = "";
+						$(".docReq_1").hide();
+			}
 			if(m) {
 				console.log(m.css("color") == "rgb(34, 177, 76)");
 				if(m.css("color") == "rgb(34, 177, 76)") {

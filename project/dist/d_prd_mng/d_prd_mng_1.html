@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <title>생산관리 TO_DO LIST</title>
+  <link rel="stylesheet" type="text/css" href="../css/d_prd_mng.css" media="all" />
+ </head>
+	<body>
+		<section>
+			<header id="sub_header">
+				<h1 class="tit_1"><span class="tit_bd_wrap">생산관리 TO_DO LIST</span></h1>
+			</header>
+			<div id="sub_wrap" class="grid">
+				<div class="row">
+					<section class="section_1 col_12">
+						<div class="col">
+							<h1 class="tit_2">생산관리 TO DO LIST</h1>
+							<div class="row_box_wrap">
+								<div class="row_box clearFix">
+									<p>생산계획 현황</p>
+									<ul>
+										<li>생산계획 요청량</li>
+										<li>미계획 수립량</li>
+										<li>TO DO 현황</li>
+									</ul>
+									<ul>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소" placeholder="3,500"></li>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소" placeholder="3,500"></li>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소"><span class="circle_rb"></span></li>
+									</ul>
+									<ul>
+										<li>(영업에서 생산계획 요청량)</li>
+										<li>(오늘 계획 세워야할 예정수량)</li>
+									</ul>
+								</div>
+								<div class="row_box clearFix">
+									<p>작업지시 현황</p>
+									<ul class="d_1_pr1">
+										<li>작업지시 예정수량</li>
+										<li>작업 미 지시량</li>
+										<li>TO DO 현황</li>
+									</ul>
+									<ul>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소" placeholder="15,00"></li>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소" placeholder="1,500"></li>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소"><span class="circle_rb"></span></li>
+									</ul>
+									<ul>
+										<li><span class="blind">빈칸</span></li>
+										<li>(오늘 작업지시해야할 예정수량)</li>
+									</ul>
+								</div>
+								<div class="row_box clearFix">
+									<p>영업창고 현황</p>
+									<ul class="d_1_pr2">
+										<li>생산 입고예정 수량</li>
+										<li>생산 입고완료 수량</li>
+										<li>TO DO 현황</li>
+									</ul>
+									<ul>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소" placeholder="15,00"></li>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소" placeholder="0"></li>
+										<li><input type="text" name="frm_inp_1_4" class="frm_w_5" title=" 상세주소"><span class="circle_rb"></span></li>
+									</ul>
+									<ul>
+										<li><span class="blind">빈칸</span></li>
+										<li>(오늘 영업창고 입고해야할 예정수량)</li>
+									</ul>
+								</div>
+								<div class="row_box_3">
+									<span>※ 기준: 오늘까지 생산계획 및 생산 하기로 한 생산량 기준(과거 미완료건 포함)</span>
+								</div>
+							</div>
+							<p class="table_caption">일별 생산 수량 현황</p>
+							<div class="basic_table_column_1">
+								<table class="table_column_1 display" cellspacing="0" width="100%">
+									<thead>
+										<tr>
+											<th scope="col">생산일자</th>
+											<th scope="col">생산계획 요청량</th>
+											<th scope="col">생산계획 미수립량</th>
+											<th scope="col">작업지시 예정수량</th>
+											<th scope="col">작업 미 발주량</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2016-12-20</td>
+											<td>100</td>
+											<td class="ta_c">100</td>
+											<td class="ta_c">100</td>
+											<td class="ta_c">100</td>
+										</tr>
+										<tr>
+											<td>2016-12-21</td>
+											<td>200</td>
+											<td class="ta_c">200</td>
+											<td class="ta_c">200</td>
+											<td class="ta_c">200</td>
+										</tr>
+										<tr>
+											<td>2016-12-22</td>
+											<td>300</td>
+											<td class="ta_c">300</td>
+											<td class="ta_c">300</td>
+											<td class="ta_c">300</td>
+										</tr>
+										<tr>
+											<td>2016-12-23</td>
+											<td>400</td>
+											<td class="ta_c">400</td>
+											<td class="ta_c">400</td>
+											<td class="ta_c">400</td>
+										</tr>
+										<tr>
+											<td>2016-12-24</td>
+											<td>500</td>
+											<td class="ta_c">500</td>
+											<td class="ta_c">500</td>
+											<td class="ta_c">500</td>
+										</tr>
+										<tr>
+											<td>2016-12-25</td>
+											<td>600</td>
+											<td class="ta_c">600</td>
+											<td class="ta_c">600</td>
+											<td class="ta_c">600</td>
+										</tr>
+										<tr>
+											<td>......</td>
+											<td>700</td>
+											<td class="ta_c">700</td>
+											<td class="ta_c">700</td>
+											<td class="ta_c">700</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

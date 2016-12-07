@@ -21,6 +21,7 @@
 	>.section_1 {
 			margin-bottom:20px;
 			>.col {
+				padding: 20px 19px 0 !important;
 				>.tit_2{
 					margin:0 -10px 20px;
 				}
@@ -47,45 +48,4 @@
 				position:relative;
 			}
 		}
-}
-.basic_table_column_1 {
-	border:1px solid #ccc;
-	border-radius:2px;
-	overflow:hidden;
-	margin-bottom:20px;
-	td{
-		height:30px;
-	}
-	.dataTables_scrollHead {
-		th{
-			position:relative;
-			&:before{
-				content:"";
-				display:inline-block;
-				position:absolute;
-				left:0;
-				bottom:0;
-				width:1px;
-				height:8px;
-				background-color:#efefef;
-			}
-			&:first-child{
-				&:before{
-					content:none;
-				}
-			}
-			&:last-child{
-		
-				&:after{
-					content:"";
-					width:20px;
-					height:35px;
-					background:#395971;
-					position:absolute;
-					top:0;
-					right:-20px;
-				}
-			}
-		}
-	}
 }

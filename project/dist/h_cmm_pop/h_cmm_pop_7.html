@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <title>공지사항등록관리</title>
+    <link rel="stylesheet" type="text/css" href="../css/h_cmn_pop.css" media="all" />
+ </head>
+  <body>
+    <section>
+      <header id="sub_header">
+       <h1 class="tit_1"><span class="tit_bd_wrap">공지사항등록관리</span></h1>
+      </header>
+      <div id="sub_wrap" class="grid">
+        <div class="row">
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">검색조건</h1>
+            <form action="#" method="post" class="pos_r">
+              <p class="frm_btn_3 top">
+                <input type="submit" value="조회">
+              </p>
+            </form>
+            <p class="pb_3">
+        					<label for="date_in_1_1">공지사항 등록일자</label>
+        					<input type="text" name="date_in_1_1" id="date_in_1_1">
+                  <input type="button" class="btn_date start" value="달력">
+        					<span>~</span>
+        					<input type="text" name="date_in_1_2" id="date_in_1_2">
+                  <input type="button" class="btn_date start" value="달력">
+        				</p>
+          </div>
+         </section>
+        </div>
+        <div class="row">
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">시스템코드List</h1>
+            <div class="basic_table_column_1">
+              <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th scope="col">순번</th>
+                    <th scope="col">공지일자</th>
+                    <th scope="col">공지일련번호</th>
+                    <th scope="col">공지제목</th>
+                    <th scope="col">공지내용</th>
+                    <th scope="col">등록자ID</th>
+                    <th scope="col">변경자ID</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2016-12-07</td>
+                    <td class="ta_c">100</td>
+                    <td class="ta_c">제목</td>
+                    <td class="ta_c">내용</td>
+                    <td class="ta_c">홍길동</td>
+                    <td class="ta_c">홍길동</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2016-12-07</td>
+                    <td class="ta_c">100</td>
+                    <td class="ta_c">제목</td>
+                    <td class="ta_c">내용</td>
+                    <td class="ta_c">홍길동</td>
+                    <td class="ta_c">홍길동</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>2016-12-07</td>
+                    <td class="ta_c">100</td>
+                    <td class="ta_c">제목</td>
+                    <td class="ta_c">내용</td>
+                    <td class="ta_c">홍길동</td>
+                    <td class="ta_c">홍길동</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>2016-12-07</td>
+                    <td class="ta_c">100</td>
+                    <td class="ta_c">제목</td>
+                    <td class="ta_c">내용</td>
+                    <td class="ta_c">홍길동</td>
+                    <td class="ta_c">홍길동</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+         </section>
+        </div>
+        <div class="row">
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">시스템코드관리</h1>
+            <form action="#" method="post" class="pos_r">
+             <div class="basic_table_row_1">
+            	<table  cellspacing="0" width="100%">
+            	  <tbody>
+            		 <tr>
+            			<th scope="row" class="w150">공지일자</th>
+            			<td class="noback">
+                    <input type="text" name="frm_inp_2_1" value="2016-12-10" class="frm_w_1 w200" title=" ">
+                    <input type="button" class="btn_date start" value="달력">
+                  </td>
+            		 </tr>
+                 <tr>
+                  <th scope="row" class="w150">공지일련번호</th>
+                  <td class="noback"><input type="text" value="1" name="frm_inp_2_1" class="frm_w_1 w200" title=" "></td>
+                 </tr>
+                 <tr>
+                  <th scope="row">공지제목</th>
+                  <td class="noback"><input type="text" value="'생산1팀 망년회" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+                 </tr>
+                 <tr>
+                  <th scope="row" class="w150 pb155">공지내용</th>
+                  <td class="noback">
+                    <textarea name="name" rows="10" cols="125">
+'장소: 추후 공지
+날짜: 미정
+회식비는 팀경비로 처리
+                    </textarea>
+                  </td>
+                 </tr>
+            	  </tbody>
+            	</table>
+             </div>
+             <form action="#" method="post" class="pos_r">
+ <p class="frm_btn_3 top">
+   <input type="reset" value="초기화">
+   <input type="button" value="저장">
+   <input type="submit" value="삭제">
+ </p>
+</form>
+            </form>
+          </div>
+         </section>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

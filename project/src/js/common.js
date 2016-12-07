@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $.each($('.table_column_1'), function(i,o){
+  $.each($('.table_column_1').not(".notScroll"), function(i,o){
       var scrollTable = $(o);
       var dataTableHeight = $(o).attr("data-table-height");
       

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <script type="text/javascript" src="../js/jquery.js"></script>  
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script> 
+  <title>생산관리 작업지시서관리</title>
+  <link rel="stylesheet" type="text/css" href="../css/d_prd_mng.css" media="all" />
+ </head>
+ <body>
+	<section>
+		<header id="sub_header">
+			<h1 class="tit_1"><span class="tit_bd_wrap">작업지시서관리</span></h1>
+		</header>
+		<div id="sub_wrap" class="grid">
+			<div class="row">     
+				<section class="section_1 col_12">
+					<div class="col">
+						<h1 class="tit_2">검색조건</h1>
+						<form action="#" method="post" class="pos_r">
+							<div class="row">
+								<div class="col_4">
+									<div class="col">
+										<p>
+											<label for="produc_code_1_1">수주번호</label>
+											<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+											<input type="button" class="btn_search" value="찾기">
+											<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+										</p>
+										<p  class="pb_3">
+											<label for="date_in_1_1">수주일자</label>
+											<input type="text" name="date_in_1_1" id="date_in_1_1" class="d_3_w">
+											<span class="d_3_center">~</span>
+											<input type="text" name="date_in_1_2" id="date_in_1_2" class="d_3_w">                    
+										</p>
+									</div>
+								</div> 
+								<div class="col_4">
+									<div class="col">
+										<p class="pb_3 radio_wrap">
+											<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">완료</label></span>
+											<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_2" value="2"><label for="cpl_1_2">미완료</label></span>
+											<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_3" value="3"><label for="cpl_1_3">전체</label></span>
+											[공정기준]
+										</p>
+										<p class="pb_3 radio_wrap">
+											<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">작업지시여부</label></span>
+										</p>
+									</div>
+								</div> 
+							</div>              
+							<p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+						</form>            
+					</div>
+				</section>
+			</div>
+			<div class="row">
+				<section class="section_1 col_12">
+					<div class="col">
+						<h1 class="tit_2">공정별 작업지시 합산 현황</h1>
+						<form action="#" method="post" class="pos_r">
+							<div class="basic_table_column_1">
+								<table class="table_column_1 display nowrpa" cellspacing="0" width="100%">
+									<thead>
+										<tr>
+											<th scope="col">공정중분류</th>
+											<th scope="col">컷칭</th>
+											<th scope="col">납땜</th>
+											<th scope="col">정렬</th>
+											<th scope="col">코팅</th>
+											<th scope="col">특성</th>
+											<th scope="col">충진</th>
+											<th scope="col">압착</th>
+											<th scope="col">조립</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">작업지시수량합계</th>
+											<td>컷칭</td>
+											<td class="ta_c">납땜</td>
+											<td class="ta_c">정렬1</td>
+											<td class="ta_c">코팅</td>
+											<td class="ta_c">특성</td>
+											<td class="ta_c">충진</td>
+											<td class="ta_c">압착</td>
+											<td class="ta_c">조립</td>
+										</tr>
+										<tr>
+											<th scope="row">각공정예정풀</th>
+											<td>컷칭</td>
+											<td class="ta_c">납땜</td>
+											<td class="ta_c">정렬</td>
+											<td class="ta_c">코팅</td>
+											<td class="ta_c">특성</td>
+											<td class="ta_c">충진</td>
+											<td class="ta_c">압착</td>
+											<td class="ta_c">조립</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>             
+					</div>
+				</section>
+			</div>
+			<div class="row">     
+				<section class="section_1 col_12">
+					<div class="col">
+						<h1 class="tit_2">공정현황List</h1>
+						<form action="#" method="post" class="pos_r">
+							<p class="d_3_color1">
+								<span class="d_3_white">공정미완료</span>
+								<span class="d_3_yellow">당일작업공정</span>
+								<span class="d_3_green_s">공정완료</span>
+								<span class="d_3_blue">외주공정</span>
+							</p>
+							<p class="d_3_color2">
+								<span class="d_3_red">미완료</span>
+								<span class="d_3_green_r">완료</span>
+							</p>
+							<p class="frm_btn_1 d_3_weijoo"><input type="submit" value="외주"></p>
+							<p class="frm_btn_3 top">
+								<input type="button" value="저장">
+								<input type="submit" value="엑셀Down">
+							</p>
+						</form>             
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+ </body>
+</html>

@@ -16,12 +16,31 @@ $(document).ready(function() {
       }
       scrollTable.DataTable(scrollTableDefault);
   });
-  /*$('.table_column_1').DataTable( {
-    "scrollY":"200px",
-    "scrollX":true,
-    "scrollCollapse": true,
-    "info":false,
-    "bFilter": false,
-    "paging":false
-  } );*/
+
+  var gnbHideInterval = null;
+  function resetGnb() {
+    $("#header nav>ul>li>a.on").removeClass("on");
+    $("#header nav>ul ul:visible").hide();
+  }
+  function gnbClearInterval() {
+    if(gnbHideInterval) {
+       clearTimeout(gnbHideInterval);
+    }  
+  }
+  
+  $(document).on("mouseover focus","#header nav>ul>li>a", function(){
+    gnbClearInterval();
+    var myObj = $(this);
+    resetGnb();
+    myObj.addClass("on");
+    $("#header nav>ul ul:visible").hide();
+    myObj.next().show();
+  });
+  $(document).on("mouseenter","#header nav>ul ul", function(){
+    gnbClearInterval();
+  })
+  $(document).on("mouseleave","#header nav", function() {
+    gnbClearInterval();
+    gnbHideInterval = setTimeout(resetGnb,800);
+  });
 }); 

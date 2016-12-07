@@ -5,13 +5,15 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
   <script type="text/javascript" src="js/html5shiv.min.js"></script>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
   <title>intranet</title>
   <link rel="stylesheet" type="text/css" href="css/sub_main_2.css" media="all" />
   <link rel="shortcut icon" type="image/x-icon" href="images/common/favicon.ico">
-  <script type="text/javascript" src="js/sub_main.js"></script>
+  <!-- <script type="text/javascript" src="js/sub_main.js"></script> -->
  </head>
  <body>
   <div id="wrap">
@@ -22,53 +24,95 @@
     <nav id="gnb">
      <h2 class="blind">주메뉴</h2>
      <ul class="clearFix">
-      <li><a href="#sub_1" target="sub_frame">공통관리</a>
+      <li><a href="#sub_1" class="on">시스템관리</a>
         <ul>
-         <li><a href="#" target="sub_frame" class="on">서브메뉴_2-1</a></li>
-         <li><a href="#" target="sub_frame">서브메뉴_2-2</a></li>
-         <li class="last"><a href="#" target="sub_frame">서브메뉴_2-3</a></li>
+         <li><a href="#" target="sub_frame" class="on">Login화면</a></li>
+         <li><a href="#" target="sub_frame">메뉴권한관리</a></li>
+         <li><a href="#" target="sub_frame">사용자별메뉴등록관리</a></li>
+         <li class="last"><a href="#" target="sub_frame">공지사항등록관리</a></li>
         </ul>
       </li>
-      <li><a href="#sub_2" class="on" target="sub_frame">영업관리</a>
+      <li><a href="b_cmm_mng/b_cmm_mng_1.html" target="sub_frame">공통관리</a>
+        <ul>
+         <li><a href="b_cmm_mng/b_cmm_mng_1.html" target="sub_frame">공정코드관리</a></li>
+         <li><a href="b_cmm_mng/b_cmm_mng_2.html" target="sub_frame">BOM관리</a></li>
+         <li><a href="b_cmm_mng/b_cmm_mng_3.html" target="sub_frame">거래처관리</a></li>
+         <li><a href="b_cmm_mng/b_cmm_mng_4.html" target="sub_frame">직원관리</a></li>
+         <li><a href="b_cmm_mng/b_cmm_mng_5.html" target="sub_frame">근태관리</a></li>
+         <li><a href="b_cmm_mng/b_cmm_mng_6.html" target="sub_frame">월근태집계현황</a></li>
+         <li><a href="b_cmm_mng/b_cmm_mng_7.html" target="sub_frame">부서관리</a></li>
+         <li class="last"><a href="b_cmm_mng/b_cmm_mng_8.html" target="sub_frame">업무코드관리</a></li>
+        </ul>
+      </li>
+      <li><a href="c_sal_mng/c_sal_mng_1.html" target="sub_frame">영업관리</a>
 				<ul>
-				 <li><a href="#" target="sub_frame" class="on">서브메뉴_2-1</a></li>
-				 <li><a href="#" target="sub_frame">서브메뉴_2-2</a></li>
-				 <li class="last"><a href="#" target="sub_frame">서브메뉴_2-3</a></li>
+         <li><a href="c_sal_mng/c_sal_mng_1.html" target="sub_frame">영업관리 TO DO LIST</a></li>
+				 <li><a href="c_sal_mng/c_sal_mng_9.html" target="sub_frame">거래처별제품관리</a></li>
+				 <li><a href="c_sal_mng/c_sal_mng_2.html" target="sub_frame">거래처별제품이력</a></li>
+         <li><a href="c_sal_mng/c_sal_mng_3.html" target="sub_frame">수주전표관리</a></li>
+         <li><a href="c_sal_mng/c_sal_mng_4.html" target="sub_frame">영업계획관리</a></li>
+         <li><a href="c_sal_mng/c_sal_mng_5.html" target="sub_frame">영업창고관리</a></li>
+         <li><a href="c_sal_mng/c_sal_mng_6.html" target="sub_frame">판매전표관리</a></li>
+         <li><a href="c_sal_mng/c_sal_mng_7.html" target="sub_frame">고객불만등록</a></li>
+				 <li class="last"><a href="c_sal_mng/c_sal_mng_8.html" target="sub_frame">고객불만처리</a></li>
 				</ul>
 			</li>
-      <li><a href="#sub_3">생산관리</a>
+      <li><a href="d_prd_mng/d_prd_mng_1.html" target="sub_frame">생산관리</a>
         <ul>
-         <li><a href="#" target="sub_frame" class="on">서브메뉴_2-1</a></li>
-         <li><a href="#" target="sub_frame">서브메뉴_2-2</a></li>
-         <li class="last"><a href="#" target="sub_frame">서브메뉴_2-3</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_1.html" target="sub_frame">생산관리 TO DO LIST</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_2.html" target="sub_frame">생산계획관리</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_3.html" target="sub_frame">작업지시서관리</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_4.html" target="sub_frame">공정별작업지시공정표</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_5.html" target="sub_frame">생산발행번호분할처리</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_6.html" target="sub_frame">자제불출의뢰서관리</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_7.html" target="sub_frame">공정창고관리</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_8.html" target="sub_frame">공정작업결과등록관리</a></li>
+         <li><a href="d_prd_mng/d_prd_mng_9.html" target="sub_frame">작업자별생산결과공정표</a></li>
         </ul>
       </li>
-      <li><a href="#sub_4">자재관리</a>
+      <li><a href="e_mat_mng/e_mat_mng_1.html" target="sub_frame">자재관리</a>
         <ul>
-         <li><a href="#" target="sub_frame" class="on">서브메뉴_2-1</a></li>
-         <li><a href="#" target="sub_frame">서브메뉴_2-2</a></li>
-         <li class="last"><a href="#" target="sub_frame">서브메뉴_2-3</a></li>
+         <li><a href="e_mat_mng/e_mat_mng_1.html" target="sub_frame">자재관리 TO DO LIST</a></li>
+         <li><a href="e_mat_mng/e_mat_mng_3.html" target="sub_frame">자재계획관리</a></li>
+         <li><a href="e_mat_mng/e_mat_mng_4.html" target="sub_frame">발주전표관리</a></li>
+         <li><a href="e_mat_mng/e_mat_mng_5.html" target="sub_frame">입고전표관리</a></li>
+         <li class="last"><a href="e_mat_mng/e_mat_mng_6.html" target="sub_frame">자재창고관리</a></li>
         </ul>
       </li>
-      <li><a href="#sub_5">품질관리</a>
+      <li><a href="#sub_6">품질관리</a>
         <ul>
-         <li><a href="#" target="sub_frame" class="on">서브메뉴_2-1</a></li>
-         <li><a href="#" target="sub_frame">서브메뉴_2-2</a></li>
-         <li class="last"><a href="#" target="sub_frame">서브메뉴_2-3</a></li>
+         <li><a href="f_qua_mng/f_qua_mng_1.html" target="sub_frame">품질관리 TO DO LIST</a></li>
+         <li><a href="f_qua_mng/f_qua_mng_2.html" target="sub_frame">수입검사관리</a></li>
+         <li><a href="dist/f_qua_mng/f_qua_mng_3.html" target="sub_frame">출하검사관리</a></li>
+         <li><a href="f_qua_mng/f_qua_mng_4.html" target="sub_frame">불량현황</a></li>
         </ul>
       </li>
-      <li><a href="#sub_6">외주관리</a>
+      <li><a href="#sub_7">외주관리</a>
         <ul>
-         <li><a href="#" target="sub_frame" class="on">서브메뉴_2-1</a></li>
-         <li><a href="#" target="sub_frame">서브메뉴_2-2</a></li>
-         <li class="last"><a href="#" target="sub_frame">서브메뉴_2-3</a></li>
+         <li><a href="#" target="sub_frame">외주계획관리</a></li>
+         <li><a href="#" target="sub_frame">외주입고관리</a></li>
         </ul>
       </li>
-      <li><a href="#sub_7">분석통계</a>
+      <li><a href="#sub_8">분석통계</a>
         <ul>
-         <li><a href="#" target="sub_frame" class="on">서브메뉴_2-1</a></li>
-         <li><a href="#" target="sub_frame">서브메뉴_2-2</a></li>
-         <li class="last"><a href="#" target="sub_frame">서브메뉴_2-3</a></li>
+         <li><a href="#" target="sub_frame">월마감 통계분석 자료 생성</a></li>
+         <li><a href="#" target="sub_frame">영업-목표(년도별)등록</a></li>
+         <li><a href="#" target="sub_frame">영업-실적(년도별전체)현황</a></li>
+         <li><a href="#" target="sub_frame">영업-실적(년도별거래처별)현황</a></li>
+         <li><a href="#" target="sub_frame">영업-실적(년도별제품별)현황</a></li>
+         <li><a href="#" target="sub_frame">생산-목표(년도별)등록</a></li>
+         <li><a href="#" target="sub_frame">생산-실적(년도별전체)현황</a></li>
+         <li><a href="#" target="sub_frame">생산-실적(년도별생산)현황</a></li>
+         <li><a href="#" target="sub_frame">생산-실적(월별공정생산)현황</a></li>
+         <li><a href="#" target="sub_frame">생산-실적(월별작업자별생산)현황</a></li>
+         <li><a href="#" target="sub_frame">자재-목표(년도별)등록</a></li>
+         <li><a href="#" target="sub_frame">자재-실적(년도별전체)현황</a></li>
+         <li><a href="#" target="sub_frame">자재-실적(년도거래처별)현황</a></li>
+         <li><a href="#" target="sub_frame">자재-실적(년도부품별)현황</a></li>
+         <li><a href="#" target="sub_frame">품질-목표(년도별)등록</a></li>
+         <li><a href="#" target="sub_frame">품질-실적(년도별전체)현황</a></li>
+         <li><a href="#" target="sub_frame">품질-실적(월별불량실적)현황</a></li>
+         <li class="last"><a href="#" target="sub_frame">품질-실적(고객불만실적)현황</a></li>
         </ul>
       </li>
      </ul>

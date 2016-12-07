@@ -15,7 +15,7 @@ input[type=text] {
     div >p {
         height: 26px;
         line-height: 26px;
-        float: left; 
+        float: left;
         padding-right: 30px;
     }
     ul {
@@ -76,13 +76,13 @@ input[type=text] {
 }
 
 .qua_mng_top_3 {
-   
+
     span {
         padding: 0 7px 0 8px;
     }
 }
 .qua_mng_top_4{
-   
+
 }
 .circle_rb_2 {
     display: block;
@@ -103,3 +103,24 @@ input[type=text] {
 
 
 /* //f_qua_mag_3.css */
+.f_qua_mng_2_1{
+    label{
+        margin-right: 33px;
+    }
+}
+.f_qua_mng_2_2{
+    label{
+        margin-right: 13px;
+    }
+}
+.f_qua_radio{
+    p{
+        margin-left: -60px;
+        +p{
+            margin-top: 10px;
+        }
+    }
+    span{
+        margin-left: -5px;
+    }
+}

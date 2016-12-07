@@ -10,13 +10,13 @@
   <script type="text/javascript" src="../js/jquery.js"></script>
   <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="../js/common.js"></script>
-  <title>생산관리 TO_DO LIST</title>
+  <title>자재관리 TO_DO LIST</title>
   <link rel="stylesheet" type="text/css" href="../css/e_mat_mng.css" media="all" />
  </head>
   <body>
     <section>
       <header id="sub_header">
-       <h1 class="tit_1"><span class="tit_bd_wrap">생산관리 TO_DO LIST</span></h1>
+       <h1 class="tit_1"><span class="tit_bd_wrap">자재관리 TO_DO LIST</span></h1>
       </header>
       <div id="sub_wrap" class="grid">
         <div class="row">
@@ -76,7 +76,7 @@
                             </ul>
                         </div>
                         <div class="row_box_3">
-                            <span>※ 기준: 오늘까지 수입검사 및 출고검사 하기로 한 수량 기준(과거 미완료건 포함)</span>
+                            <span>※ 기준: 오늘까지 자재계획 및 입고 하기로 한 발주량 기준(과거 미완료건 포함)</span>
                         </div>
                     </div>
                     <p class="table_caption">일별 생산 수량 현황</p>
@@ -85,12 +85,12 @@
                           <thead>
                             <tr>
                               <th scope="col">일자</th>
-                              <th scope="col">영업수주량</th>
-                              <th scope="col">미판매수량</th>
-                              <th scope="col">자재입고예정수량</th>
-                              <th scope="col">미검사수립량</th>
-                              <th scope="col">영업출고예정수량</th>
-                              <th scope="col">미검사수립량</th>
+                              <th scope="col">자재계획 요청량</th>
+                              <th scope="col">자재계획 미수립량</th>
+                              <th scope="col">발주 예정수량</th>
+                              <th scope="col">미 발주량</th>
+                              <th scope="col">입고 예정수량</th>
+                              <th scope="col">미 입고량</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -100,8 +100,8 @@
                               <td class="ta_c">100</td>
                               <td class="ta_c">100</td>
                               <td class="ta_c">100</td>
-                              <td class="ta_r">100</td>
-                              <td class="ta_r">100</td>
+                              <td class="ta_c">100</td>
+                              <td class="ta_c">100</td>
                             </tr>
                             <tr>
                               <td>2016-12-21</td>
@@ -109,8 +109,8 @@
                               <td class="ta_c">200</td>
                               <td class="ta_c">200</td>
                               <td class="ta_c">200</td>
-                              <td class="ta_r">200</td>
-                              <td class="ta_r">200</td>
+                              <td class="ta_c">200</td>
+                              <td class="ta_c">200</td>
                             </tr>
                             <tr>
                               <td>2016-12-22</td>
@@ -118,8 +118,8 @@
                               <td class="ta_c">300</td>
                               <td class="ta_c">300</td>
                               <td class="ta_c">300</td>
-                              <td class="ta_r">300</td>
-                              <td class="ta_r">300</td>
+                              <td class="ta_c">300</td>
+                              <td class="ta_c">300</td>
                             </tr>
                             <tr>
                               <td>2016-12-23</td>
@@ -127,8 +127,8 @@
                               <td class="ta_c">400</td>
                               <td class="ta_c">400</td>
                               <td class="ta_c">400</td>
-                              <td class="ta_r">400</td>
-                              <td class="ta_r">400</td>
+                              <td class="ta_c">400</td>
+                              <td class="ta_c">400</td>
                             </tr>
                             <tr>
                               <td>2016-12-24</td>
@@ -136,8 +136,8 @@
                               <td class="ta_c">500</td>
                               <td class="ta_c">500</td>
                               <td class="ta_c">500</td>
-                              <td class="ta_r">500</td>
-                              <td class="ta_r">500</td>
+                              <td class="ta_c">500</td>
+                              <td class="ta_c">500</td>
                             </tr>
                             <tr>
                               <td>2016-12-25</td>
@@ -145,8 +145,8 @@
                               <td class="ta_c">600</td>
                               <td class="ta_c">600</td>
                               <td class="ta_c">600</td>
-                              <td class="ta_r">600</td>
-                              <td class="ta_r">600</td>
+                              <td class="ta_c">600</td>
+                              <td class="ta_c">600</td>
                             </tr>
                             <tr>
                               <td>..</td>
@@ -154,8 +154,8 @@
                               <td class="ta_c">700</td>
                               <td class="ta_c">700</td>
                               <td class="ta_c">700</td>
-                              <td class="ta_r">700</td>
-                              <td class="ta_r">700</td>
+                              <td class="ta_c">700</td>
+                              <td class="ta_c">700</td>
                             </tr>
                           </tbody>
                         </table>

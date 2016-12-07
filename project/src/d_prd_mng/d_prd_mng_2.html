@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <script type="text/javascript" src="../js/jquery.js"></script>  
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script> 
+  <title>생산관리 생산계획등록</title>
+  <link rel="stylesheet" type="text/css" href="../css/d_prd_mng.css" media="all" />
+ </head>
+ <body>
+	<section>
+		<header id="sub_header">
+			<h1 class="tit_1"><span class="tit_bd_wrap">생산계획등록</span></h1>
+		</header>
+		<div id="sub_wrap" class="grid">
+			<div class="row">     
+				<section class="section_1 col_12">
+					<div class="col">
+						<h1 class="tit_2">검색조건</h1>
+						<form action="#" method="post" class="pos_r">
+							<div class="row">
+								<div class="col_4">
+									<div class="col">
+										<p>
+											<label for="produc_code_1_1">수주번호</label>
+											<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+											<input type="button" class="btn_search" value="찾기">
+											<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+										</p>
+									</div>
+								</div> 
+								<div class="col_4">
+									<div class="col">
+										<p  class="pb_3">
+											<label for="date_in_1_1">수주일자</label>
+											<input type="text" name="date_in_1_1" id="date_in_1_1">
+											<span>~</span>
+											<input type="text" name="date_in_1_2" id="date_in_1_2">                    
+										</p>
+									</div>
+								</div> 
+								<div class="col_4">
+									<div class="col mml_50">
+										<p class="pb_3 radio_wrap">
+											<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">완료</label></span>
+											<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_2" value="2"><label for="cpl_1_2">미완료</label></span>
+											<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_3" value="3"><label for="cpl_1_3">전체</label></span>
+											[생산계획기준]
+										</p>
+									</div>
+								</div> 
+							</div>              
+							<p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+						</form>            
+					</div>
+				</section>
+			</div>
+			<div class="row">
+				<section class="section_1 col_12">
+					<div class="col">
+						<h1 class="tit_2">생산계획현황List</h1>
+						<form action="#" method="post" class="pos_r">
+							<div class="basic_table_column_1">
+								<table class="table_column_1 display nowrpa" cellspacing="0" width="200%">
+									<thead>
+										<tr>
+											<th scope="col">순번</th>
+											<th scope="col">수주번호</th>
+											<th scope="col">납기일자</th>
+											<th scope="col">업체명</th>
+											<th scope="col">제품명</th>
+											<th scope="col">반제품수</th>
+											<th scope="col">생산요청량</th>
+											<th scope="col">자재입고일</th>
+											<th scope="col">자재확인</th>
+											<th scope="col">생산투입S일</th>
+											<th scope="col">생산투입E일</th>
+											<th scope="col">투입량</th>
+											<th scope="col">미투입량</th>
+											<th scope="col">생산계획완료여부</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td class="ta_c">2016-12-07</td>
+											<td class="ta_c">업체명1</td>
+											<td class="ta_c">제품명1</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">2016-12-07</td>
+											<td class="ta_r">자재확인</td>
+											<td class="ta_r">생산투입S일</td>
+											<td class="ta_r">생산투입E일</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">완료</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td class="ta_c">2016-12-07</td>
+											<td class="ta_c">업체명1</td>
+											<td class="ta_c">제품명1</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">2016-12-07</td>
+											<td class="ta_r">자재확인</td>
+											<td class="ta_r">생산투입S일</td>
+											<td class="ta_r">생산투입E일</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">완료</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td class="ta_c">2016-12-07</td>
+											<td class="ta_c">업체명1</td>
+											<td class="ta_c">제품명1</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">2016-12-07</td>
+											<td class="ta_r">자재확인</td>
+											<td class="ta_r">생산투입S일</td>
+											<td class="ta_r">생산투입E일</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">완료</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td class="ta_c">2016-12-07</td>
+											<td class="ta_c">업체명1</td>
+											<td class="ta_c">제품명1</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">2016-12-07</td>
+											<td class="ta_r">자재확인</td>
+											<td class="ta_r">생산투입S일</td>
+											<td class="ta_r">생산투입E일</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">완료</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td class="ta_c">2016-12-07</td>
+											<td class="ta_c">업체명1</td>
+											<td class="ta_c">제품명1</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">2016-12-07</td>
+											<td class="ta_r">자재확인</td>
+											<td class="ta_r">생산투입S일</td>
+											<td class="ta_r">생산투입E일</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">완료</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td class="ta_c">2016-12-07</td>
+											<td class="ta_c">업체명1</td>
+											<td class="ta_c">제품명1</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">2016-12-07</td>
+											<td class="ta_r">자재확인</td>
+											<td class="ta_r">생산투입S일</td>
+											<td class="ta_r">생산투입E일</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">완료</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td class="ta_c">2016-12-07</td>
+											<td class="ta_c">업체명1</td>
+											<td class="ta_c">제품명1</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">2016-12-07</td>
+											<td class="ta_r">자재확인</td>
+											<td class="ta_r">생산투입S일</td>
+											<td class="ta_r">생산투입E일</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">완료</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td class="ta_c">2016-12-07</td>
+											<td class="ta_c">업체명1</td>
+											<td class="ta_c">제품명1</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">2016-12-07</td>
+											<td class="ta_r">자재확인</td>
+											<td class="ta_r">생산투입S일</td>
+											<td class="ta_r">생산투입E일</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">800</td>
+											<td class="ta_r">완료</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="frm_btn_1 top"><input type="submit" value="엑셀Down"></p>
+						</form>             
+					</div>
+				</section>
+			</div>
+			<div class="row">
+				<section class="section_1 col_9">
+					<div class="col">
+						<h1 class="tit_2">생산계획관리</h1>
+						<form action="#" method="post" class="pos_r clearFix">
+							<div class="basic_table_row_1 d_2_left">
+								<table cellspacing="0" width="100%">
+									<tbody>
+										<tr>
+											<th scope="row">수주량</th>
+											<td><input type="text" name="frm_inp_3_2" class="frm_w_1" title=" " placeholder="5000"></td>
+											<th scope="row">미투입수량</th>
+											<td><input type="text" name="frm_inp_3_2" class="d_2_w" title=" "> (개)</td>
+										</tr>
+										<tr>
+											<th scope="row">생산시작일</th>
+											<!-- 입력금지 -->
+											<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" " placeholder="2016-12-10"></td>
+											<th scope="row">투입수량</th>
+											<td class="ta_r"><input type="text" name="frm_inp_3_2" class="d_2_w" title=" "> (개)</td>
+										</tr>
+										<tr>
+											<th scope="row">생산종료일</th>
+											<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" " placeholder="2016-12-15"></td>
+										</tr>
+										<tr>
+											<th scope="row">제품구분</th>
+											<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" " placeholder="반제품"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col d_2_left">
+								<div class="basic_table_column_1">
+									<table class="table_column_1 display nowrap" cellspacing="0" width="50%">
+										<thead>
+											<tr>
+												<th scope="col">선택</th>
+												<th scope="col">순번</th>
+												<th scope="col">수주번호</th>
+												<th scope="col">납기일자</th>
+												<th scope="col">제품명</th>
+												<th scope="col">생산의뢰량</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>1</td>
+												<td>1</td>
+												<td>2016-12-07</td>
+												<td>A001</td>
+												<td>500</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>2</td>
+												<td>2</td>
+												<td>2016-12-07</td>
+												<td>A001</td>
+												<td>500</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>3</td>
+												<td>3</td>
+												<td>2016-12-07</td>
+												<td>A001</td>
+												<td>500</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>4</td>
+												<td>4</td>
+												<td>2016-12-07</td>
+												<td>A002</td>
+												<td>800</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>5</td>
+												<td>5</td>
+												<td>2016-12-07</td>
+												<td>A002</td>
+												<td>800</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>6</td>
+												<td>6</td>
+												<td>2016-12-07</td>
+												<td>A002</td>
+												<td>800</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>7</td>
+												<td>7</td>
+												<td>2016-12-07</td>
+												<td>A002</td>
+												<td>800</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<p class="frm_btn_3 top">
+								<input type="button" value="저장">
+								<input type="submit" value="삭제">
+							</p>
+						</form>                            
+					</div>
+				</section>     
+				<section class="section_1 col_3">
+					<div class="col">
+						<h1 class="tit_2">일별투입량 현황</h1>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+ </body>
+</html>

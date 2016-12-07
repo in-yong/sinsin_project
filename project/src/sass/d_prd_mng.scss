@@ -15,6 +15,49 @@
 	padding-bottom: 8px;
 }
 
+/*d_prd_mng_1*/
+.row_box_wrap {
+    margin: 0 auto;
+    padding-left: 186px;
+    .row_box {
+        margin-bottom: 30px;
+    }
+    div >p {
+        height: 26px;
+        line-height: 26px;
+        float: left;
+        padding-right: 30px;
+    }
+    ul {
+        float: left;
+        padding-right: 40px;
+        +ul {
+            padding-right: 5px;
+        }
+        li {
+            height: 26px;
+            line-height: 26px;
+            +li+li {
+               position: relative;
+                .circle_rb {
+                    display: block;
+                    background-color: red;
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 5px;
+                    left: 38px;
+                }
+            }
+        }
+    }
+}
+.row_box_wrap .d_1_pr1{padding-right:27px;}
+.row_box_wrap .d_1_pr2{padding-right:22px;}
+/*//d_prd_mng_1*/
+
 /*d_prd_mng_2*/
 .frm_w_1_d2{width:80px !important;}
 .d_2_left{

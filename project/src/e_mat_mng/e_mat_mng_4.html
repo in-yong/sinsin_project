@@ -10,36 +10,355 @@
   <script type="text/javascript" src="../js/jquery.js"></script>
   <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="../js/common.js"></script>
-  <title>타이틀</title>
+  <title>발주전표등록화면</title>
+  <style>
+  div.dataTables_wrapper{width:100%;}
+  </style>
   <link rel="stylesheet" type="text/css" href="../css/e_mat_mng.css" media="all" />
  </head>
   <body>
     <section>
       <header id="sub_header">
-       <h1 class="tit_1"><span class="tit_bd_wrap">페이지 제목</span></h1>
+       <h1 class="tit_1"><span class="tit_bd_wrap">발주전표등록화면</span></h1>
       </header>
       <div id="sub_wrap" class="grid">
         <div class="row">
          <section class="section_1 col_12">
           <div class="col">
-            <h1 class="tit_2">제목1</h1>
+            <h1 class="tit_2">검색조건</h1>
+            <form action="#" method="post" class="pos_r">
+	<div class="row">
+		<div class="col_4">
+			<div class="col">
+				<p>
+					<label for="produc_code_1_1" class="pr33">발주번호</label>
+					<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+					<input type="button" class="btn_search" value="찾기">
+					<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+				</p>
+        <p>
+					<label for="produc_code_1_1">제품(부품)번호</label>
+					<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+					<input type="button" class="btn_search" value="찾기">
+					<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+				</p>
+			</div>
+		</div>
+		<div class="col_4">
+			<div class="col">
+				<p  class="pb_3">
+					<label for="date_in_1_1">발주예정일</label>
+					<input type="text" name="date_in_1_1" id="date_in_1_1">
+					<span>~</span>
+					<input type="text" name="date_in_1_2" id="date_in_1_2">
+				</p>
+			</div>
+		</div>
+		<div class="col_4">
+			<div class="col mml_50">
+			<p class="pb_3 radio_wrap">
+				<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">완료</label></span>
+				<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_2" value="2"><label for="cpl_1_2">미완료</label></span>
+				<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_3" value="3"><label for="cpl_1_3">전체</label></span>
+				[발주계획기준]
+			</p>
+			</div>
+		</div>
+	</div>
+	<p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+</form>
           </div>
          </section>
         </div>
         <div class="row">
          <section class="section_1 col_12">
           <div class="col">
-            <h1 class="tit_2">제목2</h1>
+            <h1 class="tit_2">자재계획현황List</h1>
+            <form action="#" method="post" class="pos_r clearFix">
+							<div class="row">
+								<div class="col_7">
+									<div class="col">
+										<div class="basic_table_column_1">
+											<table class="table_column_1 display nowrap d_5_table" cellspacing="0" width="100%">
+												<thead>
+													<tr>
+														<th scope="col">선택</th>
+														<th scope="col">순번</th>
+														<th scope="col">수주번호</th>
+														<th scope="col">납기일자</th>
+														<th scope="col">제품명</th>
+														<th scope="col">생산의뢰량</th>
+														<th scope="col">부품코드</th>
+														<th scope="col">부품명</th>
+														<th scope="col">자재소요량</th>
+														<th scope="col">발주예정일</th>
+														<th scope="col">입고예정일</th>
+														<th scope="col">자재계획완료여부</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><input type="checkbox"></td>
+														<td>1</td>
+														<td>1</td>
+														<td>2016-12-07</td>
+														<td>A001</td>
+														<td>500</td>
+														<td>A001-01</td>
+														<td>부품명1</td>
+														<td>500</td>
+														<td>자재요청일지1</td>
+														<td>2016-12-07</td>
+														<td>완료</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox"></td>
+														<td>2</td>
+														<td>2</td>
+														<td>2016-12-07</td>
+														<td>A001</td>
+														<td>500</td>
+														<td>A001-02</td>
+														<td>부품명2</td>
+														<td>110</td>
+														<td>자재요청일지2</td>
+														<td>2016-12-07</td>
+														<td>완료</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox"></td>
+														<td>3</td>
+														<td>3</td>
+														<td>2016-12-07</td>
+														<td>A001</td>
+														<td>500</td>
+														<td>A001-03</td>
+														<td>부품명3</td>
+														<td>25</td>
+														<td>자재요청일지3</td>
+														<td>2016-12-07</td>
+														<td>완료</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox"></td>
+														<td>4</td>
+														<td>4</td>
+														<td>2016-12-07</td>
+														<td>A002</td>
+														<td>800</td>
+														<td>A001-01</td>
+														<td>부품명4</td>
+														<td>1000</td>
+														<td>자재요청일지4</td>
+														<td>2016-12-07</td>
+														<td>완료</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox"></td>
+														<td>5</td>
+														<td>5</td>
+														<td>2016-12-07</td>
+														<td>A002</td>
+														<td>800</td>
+														<td>A001-02</td>
+														<td>부품명5</td>
+														<td>700</td>
+														<td>자재요청일지5</td>
+														<td>2016-12-07</td>
+														<td>완료</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox"></td>
+														<td>6</td>
+														<td>6</td>
+														<td>2016-12-07</td>
+														<td>A002</td>
+														<td>800</td>
+														<td>A001-04</td>
+														<td>부품명6</td>
+														<td>800</td>
+														<td>자재요청일지6</td>
+														<td>2016-12-07</td>
+														<td>완료</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox"></td>
+														<td>7</td>
+														<td>7</td>
+														<td>2016-12-07</td>
+														<td>A002</td>
+														<td>800</td>
+														<td>A001-05</td>
+														<td>부품명7</td>
+														<td>800</td>
+														<td>자재요청일지7</td>
+														<td>2016-12-07</td>
+														<td>완료</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="frm_btn_3 top">
+								<input type="submit" value="엑셀 Down">
+							</p>
+						</form>
           </div>
          </section>
         </div>
+        <div class="grid">
+	<div class="row">
+	 <section class="section_1 col_8">
+		<div class="col">
+			<h1 class="tit_2">부품별 자재계획관리</h1>
+      <form action="#" method="post" class="pos_r clearFix">
         <div class="row">
-         <section class="section_1 col_12">
-          <div class="col">
-            <h1 class="tit_2">제목3</h1>
+          <div class="col_7">
+            <div class="col">
+              <div class="basic_table_column_1">
+                <table class="table_column_1 display nowrap d_5_table" cellspacing="0" width="100%">
+                  <thead>
+                    <tr>
+                      <th scope="col">부품코드</th>
+                      <th scope="col">부품명</th>
+                      <th scope="col">발주번호</th>
+                      <th scope="col">발주소요량</th>
+                      <th scope="col">발주수량</th>
+                      <th scope="col">발주예정일</th>
+                      <th scope="col">입고예정일</th>
+                      <th scope="col">발주거래처</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>500</td>
+                      <td>500</td>
+                      <td>2016-12-07</td>
+                      <td>2016-12-07</td>
+                      <td>신신</td>
+                    </tr>
+                    <tr>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>500</td>
+                      <td>500</td>
+                      <td>2016-12-07</td>
+                      <td>2016-12-07</td>
+                      <td>신신</td>
+                    </tr>
+                    <tr>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>500</td>
+                      <td>500</td>
+                      <td>2016-12-07</td>
+                      <td>2016-12-07</td>
+                      <td>신신</td>
+                    </tr>
+                    <tr>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>500</td>
+                      <td>500</td>
+                      <td>2016-12-07</td>
+                      <td>2016-12-07</td>
+                      <td>신신</td>
+                    </tr>
+                    <tr>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>500</td>
+                      <td>500</td>
+                      <td>2016-12-07</td>
+                      <td>2016-12-07</td>
+                      <td>신신</td>
+                    </tr>
+                    <tr>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>A001-01</td>
+                      <td>500</td>
+                      <td>500</td>
+                      <td>2016-12-07</td>
+                      <td>2016-12-07</td>
+                      <td>신신</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-         </section>
         </div>
+        <p class="frm_btn_3 top">
+          <input type="submit" value="저장">
+        </p>
+      </form>
+		</div>
+	 </section>
+	 <section class="section_1 col_4">
+		<div class="col">
+			<h1 class="tit_2">부품별 (현)재고현황</h1>
+      <form action="#" method="post" class="pos_r">
+       <div class="basic_table_row_1">
+      	<table  cellspacing="0" width="100%">
+      	  <tbody>
+      		 <tr>
+      			<th scope="row" class="mw135">부품코드</th>
+      			<td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+      		 </tr>
+           <tr>
+            <th scope="row" class="mw135">부품명</th>
+            <td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+           </tr>
+           <tr>
+            <th scope="row" class="mw135">재고량(재고창고)</th>
+            <td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+            <td>(개)</td>
+           </tr>
+           <tr>
+            <th scope="row" class="mw135">재고량(공정창고)</th>
+            <td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+            <td>(개)</td>
+           </tr>
+           <tr>
+            <th scope="row" class="mw135">발주물량(미입고)</th>
+            <td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+            <td>(개)</td>
+           </tr>
+           <tr>
+            <th scope="row" class="mw135">소계</th>
+            <td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+            <td>(개)</td>
+           </tr>
+           <tr>
+            <th scope="row" class="mw135">안전재고량</th>
+            <td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+            <td>(개)</td>
+           </tr>
+           <tr>
+            <th scope="row" class="mw135"><span class="req">부족재고량</span></th>
+            <td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+            <td><span class="req">(개)</span></td>
+           </tr>
+      	  </tbody>
+      	</table>
+       </div>
+        <p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+      </form>
+
+		</div>
+	 </section>
+	</div>
+</div>
       </div>
     </section>
   </body>

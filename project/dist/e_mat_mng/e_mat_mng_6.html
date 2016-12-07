@@ -10,33 +10,418 @@
   <script type="text/javascript" src="../js/jquery.js"></script>
   <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="../js/common.js"></script>
-  <title>타이틀</title>
+  <title>자재창고관리</title>
   <link rel="stylesheet" type="text/css" href="../css/e_mat_mng.css" media="all" />
  </head>
   <body>
     <section>
       <header id="sub_header">
-       <h1 class="tit_1"><span class="tit_bd_wrap">페이지 제목</span></h1>
+       <h1 class="tit_1"><span class="tit_bd_wrap">자재창고관리</span></h1>
       </header>
       <div id="sub_wrap" class="grid">
         <div class="row">
          <section class="section_1 col_12">
           <div class="col">
-            <h1 class="tit_2">제목1</h1>
+            <h1 class="tit_2">검색조건</h1>
+            <form action="#" method="post" class="pos_r">
+	<div class="row">
+		<div class="col_4">
+			<div class="col">
+				<p>
+					<label for="produc_code_1_1" class="pr33">발주번호</label>
+					<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+					<input type="button" class="btn_search" value="찾기">
+					<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+				</p>
+        <p>
+					<label for="produc_code_1_1">제품(부품)코드</label>
+					<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+					<input type="button" class="btn_search" value="찾기">
+					<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+				</p>
+			</div>
+		</div>
+		<div class="col_4">
+			<div class="col">
+				<p  class="pb_3">
+					<label for="date_in_1_1" class="pr26">입고완료일</label>
+					<input type="text" name="date_in_1_1" id="date_in_1_1">
+					<span>~</span>
+					<input type="text" name="date_in_1_2" id="date_in_1_2">
+				</p>
+				<p>
+					<label for="date_out_1_1" class="pr39">불출일자</label>
+					<input type="text" name="date_out_1_1" id="date_out_1_1">
+					<span>~</span>
+					<input type="text" name="date_out_1_2" id="date_out_1_2">
+				</p>
+			</div>
+		</div>
+		<div class="col_4">
+			<div class="col mml_50">
+			<p class="pb_3 radio_wrap" class="pl40">
+				<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">완료</label></span>
+				<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_2" value="2"><label for="cpl_1_2">미완료</label></span>
+				<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_3" value="3"><label for="cpl_1_3">전체</label></span>
+				<span>[입고기준]</span>
+			</p>
+			<p class="radio_wrap" class="pl40">
+				<span class="radio"><input type="radio" name="cpl_2" id="cpl_2_1" value="1"><label for="cpl_2_1">완료</label></span>
+				<span class="radio"><input type="radio" name="cpl_2" id="cpl_2_2" value="2"><label for="cpl_2_2">미완료</label></span>
+				<span class="radio"><input type="radio" name="cpl_2" id="cpl_2_3" value="3"><label for="cpl_2_3">전체</label></span>
+				<span>[불출기준]</span>
+			</p>
+			</div>
+		</div>
+	</div>
+	<p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+</form>
           </div>
          </section>
         </div>
         <div class="row">
-         <section class="section_1 col_12">
-          <div class="col">
-            <h1 class="tit_2">제목2</h1>
-          </div>
-         </section>
+ <section class="section_1 col_4">
+	<div class="col">
+		<h1 class="tit_2">자재창고 부품 총수량</h1>
+    <form action="#" method="post" class="pos_r mb40">
+    				<p>
+    					<label for="produc_code_1_1">제품(부품)코드</label>
+    					<input type="text" name="produc_code_1_1" id="produc_code_1_1" class="w70">
+    					<input type="button" class="btn_search" value="찾기">
+    					<input type="text" name="produc_code_1_2" id="produc_code_1_2" class="w70">
+    				</p>
+    	<p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+    </form>
+    <form action="#" method="post" class="pos_r">
+      <div class="basic_table_column_1">
+        <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th scope="col">제품(부품)코드</th>
+              <th scope="col">제품명</th>
+              <th scope="col">공정창고재고</th>
+              <th scope="col">총재고수량</th>
+              <th scope="col"><span class="req none">재고조정량</span></th>
+              <th scope="col"><span class="req none">비고</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A00-01</td>
+              <td>A00-01</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+            </tr>
+            <tr>
+              <td>A00-01</td>
+              <td>A00-01</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+            </tr>
+            <tr>
+              <td>A00-01</td>
+              <td>A00-01</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+            </tr>
+            <tr>
+              <td>A00-01</td>
+              <td>A00-01</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+            </tr>
+            <tr>
+              <td>A00-01</td>
+              <td>A00-01</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+              <td class="ta_c">100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="frm_btn_3 top">
+        <input type="reset" value="저장">
+      </p>
+    </form>
+	</div>
+ </section>
+ <section class="section_1 col_8">
+	<div class="col">
+		<h1 class="tit_2">자재불출 요청관리</h1>
+    <form action="#" method="post" class="pos_r">
+      <p class="frm_btn_3 top">
+        <input type="submit" value="조회">
+        <input type="button" value="저장">
+        <input type="reset" value="삭제">
+      </p>
+    </form>
+    <p class="pb_3">
+					<label for="date_in_1_1">불출요청일</label>
+					<input type="text" name="date_in_1_1" id="date_in_1_1">
+					<span>~</span>
+					<input type="text" name="date_in_1_2" id="date_in_1_2">
+				</p>
+        <form action="#" method="post" class="pos_r">
+        <div class="basic_table_column_1">
+          <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th scope="col">선택</th>
+                <th scope="col">순번</th>
+                <th scope="col">불출요청일</th>
+                <th scope="col">부품코드</th>
+                <th scope="col">부품명</th>
+                <th scope="col">불출요청수량</th>
+                <th scope="col">자재불출수량</th>
+                <th scope="col">불출일자</th>
+                <th scope="col">불출완료여부</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>1</td>
+                <td class="ta_c">2016-12-07</td>
+                <td class="ta_c">A001-01</td>
+                <td class="ta_c">나사</td>
+                <td class="ta_c">100</td>
+                <td class="ta_c">100</td>
+                <td class="ta_c">2016-12-07</td>
+                <td class="ta_c"><span class="green"></span></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>2</td>
+                <td class="ta_c">2016-12-07</td>
+                <td class="ta_c">A001-01</td>
+                <td class="ta_c">나사</td>
+                <td class="ta_c">100</td>
+                <td class="ta_c">100</td>
+                <td class="ta_c">2016-12-07</td>
+                <td class="ta_c"><span class="red"></span></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>3</td>
+                <td class="ta_c">2016-12-07</td>
+                <td class="ta_c">A001-01</td>
+                <td class="ta_c">나사</td>
+                <td class="ta_c">100</td>
+                <td class="ta_c">100</td>
+                <td class="ta_c">2016-12-07</td>
+                <td class="ta_c"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </form>
+	</div>
+ </section>
+</div>
         <div class="row">
          <section class="section_1 col_12">
           <div class="col">
-            <h1 class="tit_2">제목3</h1>
+            <h1 class="tit_2">창고 재고 현황 List</h1>
+            <form action="#" method="post" class="pos_r clearFix">
+              <div class="row">
+                <div class="col_7">
+                  <div class="col">
+                    <div class="basic_table_column_1">
+                      <table class="table_column_1 display nowrap d_5_table" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th scope="col">순번</th>
+                            <th scope="col">부품코드</th>
+                            <th scope="col">부품명</th>
+                            <th scope="col">등록일자</th>
+                            <th scope="col">일련번호</th>
+                            <th scope="col">자재창고입고일</th>
+                            <th scope="col">입고수량</th>
+                            <th scope="col">입고담당자</th>
+                            <th scope="col">자재창고출고일</th>
+                            <th scope="col">출고수량</th>
+                            <th scope="col">출고요청자</th>
+                            <th scope="col">재고조정일</th>
+                            <th scope="col">재고조정수량</th>
+                            <th scope="col">재고조정담당자</th>
+                            <th scope="col">수주번호</th>
+                            <th scope="col">발주번호</th>
+                            <th scope="col">비고</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>A001-01</td>
+                            <td>A001-01</td>
+                            <td>2016-12-07</td>
+                            <td>2A001-017</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동<</td>
+                            <td>2016-12-07</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>A001-01</td>
+                            <td>A001-01</td>
+                            <td>2016-12-07</td>
+                            <td>2A001-017</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동<</td>
+                            <td>2016-12-07</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>A001-01</td>
+                            <td>A001-01</td>
+                            <td>2016-12-07</td>
+                            <td>2A001-017</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동<</td>
+                            <td>2016-12-07</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>A001-01</td>
+                            <td>A001-01</td>
+                            <td>2016-12-07</td>
+                            <td>2A001-017</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동<</td>
+                            <td>2016-12-07</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>A001-01</td>
+                            <td>A001-01</td>
+                            <td>2016-12-07</td>
+                            <td>2A001-017</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동<</td>
+                            <td>2016-12-07</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>A001-01</td>
+                            <td>A001-01</td>
+                            <td>2016-12-07</td>
+                            <td>2A001-017</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동<</td>
+                            <td>2016-12-07</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>A001-01</td>
+                            <td>A001-01</td>
+                            <td>2016-12-07</td>
+                            <td>2A001-017</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동<</td>
+                            <td>2016-12-07</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>A001-01</td>
+                            <td>A001-01</td>
+                            <td>2016-12-07</td>
+                            <td>2A001-017</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>홍길동<</td>
+                            <td>2016-12-07</td>
+                            <td>100</td>
+                            <td>홍길동</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="frm_btn_3 top">
+                <input type="submit" value="엑셀 Down">
+              </p>
+            </form>
           </div>
          </section>
         </div>

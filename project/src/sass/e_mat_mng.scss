@@ -4,6 +4,9 @@
 .pr55{
   padding-right: 55px!important;
 }
+.pr39{
+  padding-right: 39px!important;
+}
 .pl14{
   padding-left: 14px!important;
 }
@@ -19,9 +22,26 @@
 .pl40{
   padding-left: 40px!important;
 }
+.none{
+  &:before{
+    content: none!important;
+  }
+}
 .mml_50{
   margin-left: -20px;
   margin-top: 3px;
+}
+.mb40{
+  margin-bottom: 40px!important;
+}
+.w70{
+  width: 70px!important;
+}
+.frm_w_1_w{
+  width: 90px!important;
+}
+.frm_w_1_w2{
+  width: 160px!important;
 }
 input[type=text] {
     text-align: right;
@@ -84,18 +104,7 @@ input[type=text] {
 .table_caption {
     margin-bottom: 10px;
 }
-// e_mat_mng_1
 
-// e_mat_mng_2
-// e_mat_mng_2
-
-// e_mat_mng_3
-// e_mat_mng_3
-
-// e_mat_mng_4
-// e_mat_mng_4
-
-// e_mat_mng_5
 .green{
   display: inline-block;
   width: 10px;
@@ -112,7 +121,3 @@ input[type=text] {
   border-radius: 100%;
   margin: 0 auto;
 }
-// e_mat_mng_5
-
-// e_mat_mng_6
-// e_mat_mng_6

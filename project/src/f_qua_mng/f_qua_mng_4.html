@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>불량현황</title>
+    <link rel="stylesheet" type="text/css" href="../css/f_qua_mng.css" media="all" />
+</head>
+
+<body>
+    <section>
+        <header id="sub_header">
+            <h1 class="tit_1"><span class="tit_bd_wrap">불량현황</span></h1>
+        </header>
+        <div id="sub_wrap" class="grid">
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">검색조건</h1>
+                        <form action="#" method="post" class="pos_r">
+                            <div class="row">
+                                <div class="col_12 f_qua_wrap">
+                                    <div class="col">
+                                        <div class="basic_table_row_1">
+                                            <table cellspacing="0" width="100%">
+                                                <colgroup>
+                                                    <col width="150px">
+                                                    <col width="*">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">제품코드</th>
+                                                        <td>
+                                                            <p class="textAlingL">
+                                                                <input type="text" name="produc_code_1_4" id="produc_code_1_4">
+                                                                <input type="button" class="btn_search" value="찾기">
+                                                                <input type="text" name="produc_code_1_4" id="produc_code_1_4">
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">공정코드</th>
+                                                        <td>
+                                                            <p class="textAlingL">
+                                                                <input type="text" name="produc_code_1_4" id="produc_code_1_4">
+                                                                <input type="button" class="btn_search" value="찾기">
+                                                                <input type="text" name="produc_code_1_4" id="produc_code_1_4">
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">불량유형</th>
+                                                        <td>
+                                                            <p class="textAlingL">
+                                                                <input type="text" name="produc_code_1_1" id="produc_code_1_1" class="inputwidth">
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">불량발생일</th>
+                                                        <td>
+                                                            <p class="textAlingL">
+                                                                <input type="text" name="date_sart_1_1" id="date_sart_1_1">
+                                                                <input type="button" class="btn_date start" value="달력">
+                                                                <span> ~ </span>
+                                                                <input type="text" name="date_end_1_1" id="date_end_1_1">
+                                                                <input type="button" class="btn_date end" value="달력">
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="f_qua_tit2">소계</p>
+                                            <div class="f_qua_4_2">
+                                                <table cellspacing="0" width="100%">
+                                                    <colgroup>
+                                                        <col width="150px">
+                                                        <col width="*">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">총생산량</th>
+                                                            <td>
+                                                                <p class="textAlingL">
+                                                                    <input type="text" name="frm_inp_1_1" class="frm_w_2" title="">(개)
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">불량수량</th>
+                                                            <td>
+                                                                <p class="textAlingL">
+                                                                    <input type="text" name="frm_inp_1_1" class="frm_w_2" title="">(개)
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">폐기수량</th>
+                                                            <td>
+                                                                <p class="textAlingL">
+                                                                    <input type="text" name="frm_inp_1_1" class="frm_w_2" title="">(개)
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="frm_btn_1 top">
+                                <input type="submit" value="조회">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">불량상세내역</h1>
+                        <form action="#" method="post" class="pos_r">
+                            <div class="basic_table_column_1">
+                                <table class="table_column_1 display nowrap" data-table-height="200px" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">불량발생일</th>
+                                            <th scope="col">제품명</th>
+                                            <th scope="col">거래처명</th>
+                                            <th scope="col">산업분류</th>
+                                            <th scope="col">발행번호</th>
+                                            <th scope="col">불량유형</th>
+                                            <th scope="col">공정명</th>
+                                            <th scope="col">생산수량</th>
+                                            <th scope="col">불량구분</th>
+                                            <th scope="col">불량수량</th>
+                                            <th scope="col">작업자</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2016-12-07</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>aa0011</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>20</td>
+                                            <td>폐기</td>
+                                            <td>200</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-12-07</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>aa0011</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>20</td>
+                                            <td>재생</td>
+                                            <td>200</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-12-07</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>aa0011</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>20</td>
+                                            <td>폐기</td>
+                                            <td>200</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-12-07</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>aa0011</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>20</td>
+                                            <td>폐기</td>
+                                            <td>200</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-12-07</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>aa0011</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>20</td>
+                                            <td>폐기</td>
+                                            <td>200</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-12-07</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>aa0011</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>20</td>
+                                            <td>폐기</td>
+                                            <td>200</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-12-07</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>aa0011</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>20</td>
+                                            <td>폐기</td>
+                                            <td>200</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016-12-07</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>aa0011</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>20</td>
+                                            <td>폐기</td>
+                                            <td>200</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="frm_btn_1 top">
+                                <input type="submit" value="엑셀Down">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

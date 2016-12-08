@@ -12,12 +12,15 @@ caption{text-indent:-9999px;height:0;width:0;font-size:1px;}
 button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;} 
 body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{font:13px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
 input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"]{border:1px solid #dfdfdf;background-color:#fff;height:26px;line-height:26px;width:85px;padding:0 3px;}
+textarea{padding:3px;border:1px solid #dfdfdf;background-color:#fff;}
 a{color:#222;text-decoration:none;}
 h1,h2,h3,h4,h5,h6,strong,em{font-style:normal;font-weight:normal;font-size:100%;}
 table{width:100%;border-collapse:collapse;}
 table.dataTable.nowrap th,table.dataTable.nowrap td {
     white-space: nowrap
 }
+.pBoth_7{padding-left:7px !important;padding-right:7px !important;}
+.pb_20{padding-bottom:20px !important;}
 .grid {
 	.row{
 		*zoom:1;
@@ -184,11 +187,10 @@ td {
 				}
 			}
 			&:last-child{
-		
 				&:after{
 					content:"";
 					width:20px;
-					height:35px;
+					height:36px;
 					background:#395971;
 					position:absolute;
 					top:0;
@@ -373,6 +375,12 @@ span {
 	font-size:15px;
 	color:#2c4965;
 	font-weight:600;
+}
+.tit_3{
+	font-size:13px;
+	color:#2c4965;
+	font-weight:600;
+	margin-bottom:10px;
 }
 
 #sub_wrap{

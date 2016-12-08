@@ -49,3 +49,21 @@
 			}
 		}
 }
+.txta{
+	resize:none;
+	border: 1px solid #DFDFDF;
+}
+.stock_wrap{
+	margin: 0 0 20px 25px;
+
+	p{
+		label{
+			display: inline-block;
+			width: 118px;
+		}
+	&:first-child+p{
+		margin-bottom: 15px;
+	}
+	}
+}
+

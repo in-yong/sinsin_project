@@ -16,7 +16,7 @@
   <body>
     <section>
       <header id="sub_header">
-       <h1 class="tit_1"><span class="tit_bd_wrap">수주전표등록</span></h1>
+       <h1 class="tit_1"><span class="tit_bd_wrap">거래처별제품이력</span></h1>
       </header>
       <div id="sub_wrap" class="grid">
 			<div class="row">     
@@ -27,9 +27,10 @@
 						<div class="row">
 							<div class="col_4">
 								<div class="col">
-									<p class="produc_sj pb_3">
-										<label for="produc_code_1_1">수주</label>
+									<p class ="pb_3 produc_sj">
+										<label for="produc_code_1_1">수주번호</label>
 										<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+										<input type="button" class="btn_search" value="찾기">
 									</p>
 									<p>
 										<label for="produc_code_1_1">거래처코드</label>
@@ -47,7 +48,7 @@
 										<span class="space"> ~ </span>
 										<input type="text" name="date_in_1_2" id="date_in_1_2">                    
 									</p>
-									<p  class="pb_3">
+									<p  class="pb_3" >
 										<label for="date_in_1_1">제품코드</label>
 										<input type="text" name="date_in_1_1" id="date_in_1_1">
 										<input type="button" class="btn_search" value="찾기">
@@ -65,537 +66,249 @@
 			<div class="row">     
 			 <section class="section_1 col_12">
 				<div class="col">
-					<h1 class="tit_2">매입처별이력 LIST</h1>
+					<h1 class="tit_2">수주현황LIST</h1>
 			          <div class="basic_table_column_1">
 			            <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
 			              <thead>
 			                <tr>
 			                  <th scope="col">순번</th>
 			                  <th scope="col">수주번호</th>
-			                  <th scope="col">수주일자</th>
-			                  <th scope="col">거래처코드</th>
-			                  <th scope="col">거래처명</th>
+			                  <th scope="col">영업등록구분</th>
+			                  <th scope="col">수주거래처코드</th>
+			                  <th scope="col">수주거래처명</th>
 			                  <th scope="col">제품코드</th>
 			                  <th scope="col">제품명</th>
-			                  <th scope="col">규격</th>
-			                  <th scope="col">단위</th>
-			                  <th scope="col">리드타임</th>
 			                  <th scope="col">수주량</th>
-			                  <th scope="col">재고량</th>
-			                  <th scope="col">안전재고량</th>
-			                  <th scope="col">부족재고량</th>
-			                  <th scope="col">예정수량</th>
-			                  <th scope="col">생산의뢰량</th>
-			                  <th scope="col">단가</th>
 			                  <th scope="col">수주금액</th>
-			                  <th scope="col">생산계획일</th>
+			                  <th scope="col">수주일자</th>
 			                  <th scope="col">납기일자</th>
+			                  <th scope="col">수주사원명</th>
+			                  <th scope="col">리드타임</th>
+			                  <th scope="col">수주단가</th>
 			                  <th scope="col">비고</th>
-			                  <th scope="col">수주금액</th>
-			                  <th scope="col">등록ID</th>
-			                  <th scope="col">변경자ID</th>
+			                  <th scope="col">종료여부</th>
 			                </tr>
 			              </thead>
 			              <tbody>
 			                <tr>
 			                  <td class="ta_c">1</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
+			                  <td class="ta_c">SU161201-1</td>
+			                  <td>ORDER 수주</td>
+			                  <td>'C00001</td>
+			                  <td class="ta_c">'㈜대한</td>
+			                  <td class="ta_c">'JEA0001</td>
+			                  <td class="ta_c">완제품A</td>
+			                  <td class="ta_r">10,000</td>
+			                  <td class="ta_c">100억</td>
+			                  <td class="ta_c">2016-12-01</td>
+			                  <td class="ta_c">2017-12-31</td>
+			                  <td class="ta_c">홍길동</td>
+			                  <td class="ta_c">25d</td>
+			                  <td class="ta_r">5,000</td>
+			                  <td></td>
+			                  <td></td>
 			                </tr>
 			                <tr>
 			                  <td class="ta_c">2</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
+			                  <td class="ta_c">SU161201-1</td>
+			                  <td>ORDER 수주</td>
+			                  <td>'C00001</td>
+			                  <td class="ta_c">'㈜대한</td>
+			                  <td class="ta_c">'JEA0001</td>
+			                  <td class="ta_c">완제품A</td>
+			                  <td class="ta_r">10,000</td>
+			                  <td class="ta_c">100억</td>
+			                  <td class="ta_c">2016-12-01</td>
+			                  <td class="ta_c">2017-12-31</td>
+			                  <td class="ta_c">홍길동</td>
+			                  <td class="ta_c">25d</td>
+			                  <td class="ta_r">5,000</td>
+			                  <td></td>
+			                  <td></td>
 			                </tr>
 			                <tr>
 			                  <td class="ta_c">3</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
+			                  <td class="ta_c">SU161201-1</td>
+			                  <td>ORDER 수주</td>
+			                  <td>'C00001</td>
+			                  <td class="ta_c">'㈜대한</td>
+			                  <td class="ta_c">'JEA0001</td>
+			                  <td class="ta_c">완제품A</td>
+			                  <td class="ta_r">10,000</td>
+			                  <td class="ta_c">100억</td>
+			                  <td class="ta_c">2016-12-01</td>
+			                  <td class="ta_c">2017-12-31</td>
+			                  <td class="ta_c">홍길동</td>
+			                  <td class="ta_c">25d</td>
+			                  <td class="ta_r">5,000</td>
+			                  <td></td>
+			                  <td></td>
 			                </tr>
 			                <tr>
 			                  <td class="ta_c">4</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">5</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">6</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">7</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">8</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">9</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">10</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">11</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">12</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">13</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">14</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">15</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">16</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">17</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">18</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
-			                </tr>
-			                <tr>
-			                  <td class="ta_c">19</td>
-			                  <td class="ta_c">내용1</td>
-			                  <td>내용2</td>
-			                  <td>내용3</td>
-			                  <td>내용4</td>
-			                  <td>내용5</td>
-			                  <td>내용6</td>
-			                  <td>내용7</td>
-			                  <td>내용8</td>
-			                  <td>내용9</td>
-			                  <td>내용10</td>
-			                  <td>내용11</td>
-			                  <td>내용12</td>
-			                  <td>내용13</td>
-			                  <td>내용14</td>
-			                  <td>내용15</td>
-			                  <td>내용16</td>
-			                  <td>내용17</td>
-			                  <td>내용18</td>
-			                  <td>내용19</td>
-			                  <td>내용20</td>
-			                  <td>내용21</td>
-			                  <td>내용22</td>
-			                  <td>내용23</td>
+			                  <td class="ta_c">SU161201-1</td>
+			                  <td>ORDER 수주</td>
+			                  <td>'C00001</td>
+			                  <td class="ta_c">'㈜대한</td>
+			                  <td class="ta_c">'JEA0001</td>
+			                  <td class="ta_c">완제품A</td>
+			                  <td class="ta_r">10,000</td>
+			                  <td class="ta_c">100억</td>
+			                  <td class="ta_c">2016-12-01</td>
+			                  <td class="ta_c">2017-12-31</td>
+			                  <td class="ta_c">홍길동</td>
+			                  <td class="ta_c">25d</td>
+			                  <td class="ta_r">5,000</td>
+			                  <td></td>
+			                  <td></td>
 			                </tr>
 			              </tbody>
 			            </table>          					
 			          </div>					     					
 				</div>
 			 </section>
+			</div>
+			<div class="row">
+			<div class="l_wrap col_6">  
+			 <section class="section_1 col_12">
+				<div class="col">
+					<h1 class="tit_2">수주현황LIST</h1>	
+					<form action="#" method="post" class="pos_r">
+						 <div class="basic_table_row_1">
+							<table  cellspacing="0" width="100%">
+							  <tbody>
+								 <tr>
+									<th scope="row">수주번호</th>
+									<td><input type="text" name="frm_inp_2_1" class="frm_w_1" title=" "></td>
+								 </tr>
+								 <tr>
+									<th scope="row">영업등록구분</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title="영업등록구분"></td>
+									<th scope="row">이전수주번호</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_2" class="frm_w_1" title="이전수주번호"></td>
+								 </tr>
+								 <tr>
+									<th scope="row">수주거래처코드</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title="수주거래처코드"></td>
+									<th scope="row">수주거래처명</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_2" class="frm_w_1" title="수주거래처명"></td>
+								 </tr>
+								 <tr>
+									<th scope="row">제품코드</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title="제품코드"></td>
+									<th scope="row">제품명</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_2" class="frm_w_1" title="제품명"></td>
+								 </tr>
+								 <tr>
+									<th scope="row">단위</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title="단위"></td>
+									<th scope="row">리드타임</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_2" class="frm_w_1" title="리드타임"></td>
+								 </tr>
+								 <tr>
+									<th scope="row">안전재고량</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title="안전재고량"></td>
+									<th scope="row">부족재고량</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_2" class="frm_w_1" title="부족재고량"></td>
+								 </tr>
+								 <tr>
+									<th scope="row">수주단가</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" "></td>
+									<th scope="row">재고량</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_2" class="frm_w_1" title=" "></td>
+								 </tr>
+								 <tr>
+									<th scope="row">수주량</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" "></td>
+									<th scope="row">수주금액</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_2" class="frm_w_1" title=" "></td>
+								 </tr>
+								 <tr>
+									<th scope="row">수주일자</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" "></td>
+									<th scope="row">납기일자</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_2" class="frm_w_1" title=" "></td>
+								 </tr>
+								 <tr>
+									<th scope="row">수주사원명</th>
+									<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" "></td>
+								 </tr>
+								 <tr>
+									<th scope="row" class="th_txta">적요</th>
+									<td class="ta_r" colspan="3"><textarea name="sj_txta" id="sj_txta" cols="50" rows="3" class="txta"></textarea></td>
+								 </tr>
+
+							  </tbody>
+							</table>
+						 </div> 
+						 <p class="frm_btn_1 top">
+						 	<input type="button" value="조회">
+						 	<input type="submit" value="저장">
+						 	<input type="reset" value="삭제">
+						 </p>
+					</form>               		
+				</div>
+			 </section>
+			 </div>
+			 <div class="l_wrap col_4">
+			 	<section class="section_1 col_12">
+			 		<div class="col">
+			 			<h1 class="tit_2">영업창고(현)재고현황</h1>
+		 				<div class="stock_wrap">
+		 					<p class="pb_3"><label for="stock_1">제품코드</label><input type="text" name="stock_1" id="stock_1"></p>
+		 					<p class="pb_3"><label for="stock_2">제품명</label><input type="text" name="stock_2" id="stock_2"></p>
+		 					<p class="pb_3"><label for="stock_3">안전재고량</label><input type="text" name="stock_3" id="stock_3">(개)</p>
+		 					<p class="pb_3"><label for="stock_4">부족재고량</label><input type="text" name="stock_4" id="stock_4">(개)</p>
+		 					<p class="pb_3"><label for="stock_5">영업창고(현)재고량</label><input type="text" name="stock_5" id="stock_5">(개)</p>
+		 					<p class="pb_3">※ 출고 요청분 제외한 수량</p>
+		 				</div>
+			 		</div>
+			 	</section>
+			 </div> 
+			 <div class="r_wrap col_2">
+			 	<section class="section_1 col_12">
+			 		<div class="col">
+			          <div class="basic_table_column_1">
+			            <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+			              <thead>
+		              		<tr>
+			                  <th scope="col" colspan="3">거래처 단가변동 현황</th>
+			                </tr>
+			                <tr>
+			                  <th scope="col">순번</th>
+			                  <th scope="col">수주일자</th>
+			                  <th scope="col">수주단가</th>
+			                </tr>
+			              </thead>
+			              <tbody>
+			                <tr>
+			                  <td class="ta_c">1</td>
+			                  <td class="ta_c">2016-12-6</td>
+			                  <td class="ta_r">10,000</td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">2</td>
+			                  <td class="ta_c">2016-12-6</td>
+			                  <td class="ta_r">10,000</td>
+			                  <td></td>
+			                  <td></td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">3</td>
+			                  <td class="ta_c">2016-12-6</td>
+			                  <td class="ta_r">10,000</td>
+			                </tr>
+			                <tr>
+			                  <td class="ta_c">4</td>
+			                  <td class="ta_c">2016-12-6</td>
+			                  <td class="ta_r">10,000</td>
+			                </tr>
+			              </tbody>
+			            </table>          					
+			          </div>		
+			 		</div>
+			 	</section>
+			 </div>
 			</div>
       </div>
     </section>

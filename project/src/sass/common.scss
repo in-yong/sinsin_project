@@ -12,12 +12,15 @@ caption{text-indent:-9999px;height:0;width:0;font-size:1px;}
 button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;} 
 body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{font:13px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
 input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"]{border:1px solid #dfdfdf;background-color:#fff;height:26px;line-height:26px;width:85px;padding:0 3px;}
+textarea{padding:3px;border:1px solid #dfdfdf;background-color:#fff;}
 a{color:#222;text-decoration:none;}
 h1,h2,h3,h4,h5,h6,strong,em{font-style:normal;font-weight:normal;font-size:100%;}
 table{width:100%;border-collapse:collapse;}
 table.dataTable.nowrap th,table.dataTable.nowrap td {
     white-space: nowrap
 }
+.pBoth_7{padding-left:7px !important;padding-right:7px !important;}
+.pb_20{padding-bottom:20px !important;}
 .grid {
 	.row{
 		*zoom:1;
@@ -30,7 +33,7 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 				border-radius:5px;
 		}
 		>.section_1 {
-			margin-bottom:20px;
+			margin-bottom:20px;		
 			>.col {
 				>.tit_2{
 					margin:0 -10px 20px;
@@ -39,9 +42,33 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 				border:1px solid #bfbfbf;
 				padding:20px 20px 0;
 				border-radius:5px;
-				position:relative;
+				position:relative;				
 			}
 		}
+		.col {
+			&.noBd{
+				background-color:transparent;
+				border:none;
+				border-radius:0;
+				position:relative;
+				>.row {
+					margin:0 -20px;
+					>.section_1 {
+						>.col {
+							background-color:#efefef;
+							border:1px solid #bfbfbf;
+							padding:20px 20px 0;
+							border-radius:5px;
+							position:relative;				
+							>.tit_2{
+								margin:0 -10px 20px;
+							}							
+						}
+					}
+				}
+
+			}
+		} 
 		&:after{
 			content:"";
 			display:block;
@@ -67,6 +94,9 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 	.col_5{
 		width:8.3333%*5;
 	}
+	.col_55{
+		width:8.3333%*5.5;
+	}	
 	.col_6{
 		width:8.3333%*6;
 	}
@@ -89,6 +119,14 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 		width:100%;
 	}
 }
+/*버튼*/
+.btn_mv_1{
+	background:url(../images/common/btn_move.png) 0 0 no-repeat;
+	width:60px;
+	height:60px;
+	border:none;
+	text-indent:-9999px;
+}
 
 /*테이블*/
 th{
@@ -97,6 +135,16 @@ th{
 	background-color:#395971;
 	color:#fff;
 }
+.ta_l{
+	text-align:left;
+}
+.ta_r{
+	text-align:right;
+}
+.ta_c{
+		text-align:center;	
+}
+
 td {
 	background:#fafafa;
 	padding:0 10px;
@@ -139,11 +187,10 @@ td {
 				}
 			}
 			&:last-child{
-		
 				&:after{
 					content:"";
 					width:20px;
-					height:35px;
+					height:36px;
 					background:#395971;
 					position:absolute;
 					top:0;
@@ -309,7 +356,7 @@ span {
 #container{
 	background-color:#dcdcdc;
 }
-.sub_frame_st2{width:1024px !important;margin:0 auto;}
+
 .tit_1{
 	padding:10px 10px 0;
 	font-size:16px;
@@ -329,8 +376,15 @@ span {
 	color:#2c4965;
 	font-weight:600;
 }
+.tit_3{
+	font-size:13px;
+	color:#2c4965;
+	font-weight:600;
+	margin-bottom:10px;
+}
 
 #sub_wrap{
-	width:1000px;
+	width:1250px;
 	padding:20px;
+	margin:0 auto;
 }

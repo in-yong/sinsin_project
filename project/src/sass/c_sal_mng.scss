@@ -48,6 +48,9 @@
 		}
 }
 .ta_l{text-align: left}
+.mb_45{
+	margin-bottom: 45px;
+}
 /*//common*/
 
 /*c_sal_mng_1*/
@@ -123,5 +126,22 @@
 	margin-right: 11px;
 }
 /*//c_sal_mng_3*/
-
+/*c_sal_mng_5*/
+form{
+	&.m_0{
+		margin: 0 !important;
+	}
+	&.pos_r{
+		margin-bottom:20px;
+		position:relative;
+		p[class*="frm_btn_"], div[class*="frm_btn_"] {
+			&.top_2{
+				position:absolute;
+				top:35px;
+				right:5px;		
+			}	
+		}
+	}
+}
+/*//c_sal_mng_5*/
 

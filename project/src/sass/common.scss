@@ -116,6 +116,14 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 		width:100%;
 	}
 }
+/*버튼*/
+.btn_mv_1{
+	background:url(../images/common/btn_move.png) 0 0 no-repeat;
+	width:60px;
+	height:60px;
+	border:none;
+	text-indent:-9999px;
+}
 
 /*테이블*/
 th{

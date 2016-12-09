@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <script type="text/javascript" src="../js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.js"></script>  
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script> 
+  <title>거래처관리</title>
+ </head>
+  <body>
+    <section>
+      <header id="sub_header">
+       <h1 class="tit_1"><span class="tit_bd_wrap">거래처관리</span></h1>
+      </header>
+      <div id="sub_wrap" class="grid">
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">검색조건</h1>
+            <form action="#" method="post" class="pos_r">
+              <div class="row">
+                <div class="col_4">
+                  <div class="col">
+                    <div class="pb_3 chTable">
+                      <div class="chRow">
+                        <div class="chTd th">
+                          <label for="acc_num_1_1">거래처번호</label>
+                        </div>
+                        <div class="chTd"><input type="text" name="acc_num_1_1" id="acc_num_1_1"></div>
+                      </div>
+                      <div class="chRow">
+                        <div class="chTd">
+                          <label for="owner">대표자</label>
+                        </div>
+                        <div class="chTd">
+                          <input type="text" name="owner" id="owner">
+                          <label for="owner">담당자</label>
+                          <input type="text" name="owner" id="owner">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col_8">
+                  <div class="col">
+                    <div class="chTable">
+                      <div  class="chRow">
+                        <div class="chTd th">
+                          <label for="bsn_num_1">사업자번호</label>
+                        </div>
+                        <div class="chTd">
+                          <input type="text" name="bsn_num_1" id="bsn_num_1" class="frm_w_4 mr_10">
+                          <label for="bsn_num_2">법인번호</label>
+                          <input type="text" name="bsn_num_2" id="bsn_num_2" class="frm_w_4">
+                        </div>
+                      </div>
+                      <div class="chRow">
+                        <div class="chTd">
+                          <label for="part_cat_1_1">거래처구분</label>
+                        </div>
+                        <div class="chTd">
+                          <p class="radio_wrap pb_3">
+                            <span class="radio"><input type="radio" name="part_cat_1" id="part_cat_1_1" value="1"><label for="part_cat_1_1">수주</label></span>
+                            <span class="radio"><input type="radio" name="part_cat_1" id="part_cat_1_2" value="2"><label for="part_cat_1_2">발주</label></span>
+                            <span class="radio"><input type="radio" name="part_cat_1" id="part_cat_1_3" value="3"><label for="part_cat_1_3">외주</label></span>
+                            <span class="radio"><input type="radio" name="part_cat_1" id="part_cat_1_4" value="4"><label for="part_cat_1_4">전체</label></span>
+                          </p>                          
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>              
+              <p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+            </form>            
+          </div>
+         </section>
+        </div>
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">거래선현황 LIST</h1>
+            <form action="#" method="post" class="pos_r">
+            <div class="basic_table_column_1">
+              <table class="table_column_1 display nowrap" data-table-height="200px" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th scope="col">순번</th>
+                    <th scope="col">거래처번호</th>
+                    <th scope="col">거래처명</th>
+                    <th scope="col">대표자</th>
+                    <th scope="col">핸드폰(대표자)</th>
+                    <th scope="col">담당자</th>
+                    <th scope="col">전화번호</th>
+                    <th scope="col">핸드폰(담당자)</th>
+                    <th scope="col">사업자번호</th>
+                    <th scope="col">법인번호</th>
+                    <th scope="col">우편번호</th>
+                    <th scope="col">주소</th>
+                    <th scope="col">상세주소</th>
+                    <th scope="col">계좌번호</th>
+                    <th scope="col">변경자ID</th>
+                    <th scope="col">변경자ID</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
+                    <td>내용15</td>
+                    <td>내용16</td>
+                  </tr>
+                  <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
+                    <td>내용15</td>
+                    <td>내용16</td>
+                  </tr>
+                  <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
+                    <td>내용15</td>
+                    <td>내용16</td>
+                  </tr>
+                  <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
+                    <td>내용15</td>
+                    <td>내용16</td>
+                  </tr>
+                  <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
+                    <td>내용15</td>
+                    <td>내용16</td>
+                  </tr>
+                  <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
+                    <td>내용15</td>
+                    <td>내용16</td>
+                  </tr>
+                  <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
+                    <td>내용15</td>
+                    <td>내용16</td>
+                  </tr>
+                </tbody>
+              </table>                    
+            </div>
+              <p class="frm_btn_1 top"><input type="submit" value="엑셀 Down"></p>
+            </form>             
+          </div>
+         </section>
+        </div>
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">거래처내역</h1>
+            <form action="#" method="post" class="pos_r">
+            <div class="row">
+              <div class="col_8">
+                <div class="col noBd pBoth_7">
+                  <h2 class="tit_3">타이틀3</h2>
+                  <div class="basic_table_row_1">
+                    <table  cellspacing="0" width="100%">
+                      <colgroup>
+                        <col width="120px">
+                        <col width="*">
+                        <col width="95px">
+                        <col width="*">
+                        <col width="95px">
+                        <col width="*">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">거래처번호</th>
+                          <td><input type="text" name="frm_inp_1_1" class="frm_w_1"></td>
+                          <th scope="row">약어명</th>
+                          <td><input type="text" name="frm_inp_1_2" class="frm_w_1"></td>
+                          <th scope="row">거래처명</th>
+                          <td><input type="text" name="frm_inp_1_3" class="frm_w_1"></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                          <th scope="row">대표자</th>
+                          <td><input type="text" name="frm_inp_2_1" class="frm_w_1"></td>
+                          <th scope="row">등록경로</th>
+                          <td><input type="text" name="frm_inp_2_2" class="frm_w_1"></td>
+                          <th scope="row">부가세적용</th>
+                          <td><input type="text" name="frm_inp_2_3" class="frm_w_1"></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                          <th scope="row">핸드폰(대표자)</th>
+                          <td><input type="text" name="frm_inp_3_1" class="frm_w_1"></td>
+                          <th scope="row">사업자번호</th>
+                          <td><input type="text" name="frm_inp_3_2" class="frm_w_1"></td>
+                          <th scope="row">법인번호</th>
+                          <td><input type="text" name="frm_inp_3_3" class="frm_w_1"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">담당자</th>
+                          <td><input type="text" name="frm_inp_4_1" class="frm_w_1"></td>
+                          <th scope="row">업태</th>
+                          <td colspan="4" class="ta_l"><input type="text" name="frm_inp_4_2" class="frm_w_5"> <input type="text" name="frm_inp_4_2" class="frm_w_2"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">담당자(부서)</th>
+                          <td><input type="text" name="frm_inp_3_1" class="frm_w_1"></td>
+                          <th scope="row">종목</th>
+                          <td><input type="text" name="frm_inp_3_2" class="frm_w_1"></td>
+                          <th scope="row">마감일</th>
+                          <td><p class="frm_unit">
+                              <input type="text" name="frm_inp_1_1" class="frm_w_1" style=""><span>일</span>
+                            </p></td>
+                        </tr>                        
+                        <tr>
+                          <th scope="row">제목4</th>
+                          <td colspan="6">
+                            <p class="frm_unit">
+                              <input type="text" name="frm_inp_1_1" class="frm_w_1" style=""><span>(개)</span>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>
+              </div>
+            </div>              
+              <p class="frm_btn_1 top"><input type="submit" value="엑셀 Down"></p>
+            </form>             
+          </div>
+         </section>
+        </div>
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">공정관리</h1>
+          </div>
+         </section>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

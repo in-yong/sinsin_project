@@ -125,9 +125,16 @@
 	width: 105px !important;
 	margin-right: 11px;
 }
+.frm_w_7 {
+	width: 123px !important;
+	margin-right: 11px;
+}
 /*//c_sal_mng_3*/
 /*c_sal_mng_5*/
 form{
+	&.mt_33{
+		margin-top: 33px !important;
+	}
 	&.m_0{
 		margin: 0 !important;
 	}
@@ -139,9 +146,17 @@ form{
 				position:absolute;
 				top:35px;
 				right:5px;		
-			}	
+			}
 		}
 	}
 }
 /*//c_sal_mng_5*/
 
+/*//c_sal_mng_7*/
+.frm_sel_1_1{
+	width: 123px;
+	border: 1px solid #DFDFDF;
+	padding: 2px 0;
+	color: #A9A9A9;
+}
+/*//c_sal_mng_7*/

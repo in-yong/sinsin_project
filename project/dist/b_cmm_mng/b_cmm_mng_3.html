@@ -24,7 +24,7 @@
             <h1 class="tit_2">검색조건</h1>
             <form action="#" method="post" class="pos_r">
               <div class="row">
-                <div class="col_12">
+                <div class="col_4">
                   <div class="col">
                     <p>
                       <label for="produc_code_1_1">제품(부품)코드</label>
@@ -34,9 +34,41 @@
                     </p>
                   </div>
                 </div> 
-              </div>
+                <div class="col_4">
+                  <div class="col">
+                    <p  class="pb_3">
+                      <label for="date_in_1_1">입고일자</label>
+                      <input type="text" name="date_in_1_1" id="date_in_1_1">
+                      <span>~</span>
+                      <input type="text" name="date_in_1_2" id="date_in_1_2">                    
+                    </p>
+                    <p>
+                      <label for="date_out_1_1">불출일자</label>
+                      <input type="text" name="date_out_1_1" id="date_out_1_1">
+                      <span>~</span>
+                      <input type="text" name="date_out_1_2" id="date_out_1_2"> 
+                    </p>
+                  </div>
+                </div> 
+                <div class="col_4">
+                  <div class="col mml_50">
+                  <p class="pb_3 radio_wrap">
+                    <span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">완료</label></span>
+                    <span class="radio"><input type="radio" name="cpl_1" id="cpl_1_2" value="2"><label for="cpl_1_2">미완료</label></span>
+                    <span class="radio"><input type="radio" name="cpl_1" id="cpl_1_3" value="3"><label for="cpl_1_3">전체</label></span>
+                    [공정창고입고기준]
+                  </p>
+                  <p class="radio_wrap">
+                    <span class="radio"><input type="radio" name="cpl_2" id="cpl_2_1" value="1"><label for="cpl_2_1">완료</label></span>
+                    <span class="radio"><input type="radio" name="cpl_2" id="cpl_2_2" value="2"><label for="cpl_2_2">미완료</label></span>
+                    <span class="radio"><input type="radio" name="cpl_2" id="cpl_2_3" value="3"><label for="cpl_2_3">전체</label></span>
+                    <span>[공정창고불출기준]</span>
+                  </p>
+                  </div>
+                </div> 
+              </div>              
               <p class="frm_btn_1 top"><input type="submit" value="조회"></p>
-            </form>             
+            </form>            
           </div>
          </section>
         </div>

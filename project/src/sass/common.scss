@@ -241,6 +241,17 @@ td {
 	}
 }
 
+
+.frm_unit {
+	padding-right:40px;
+	>input {
+		margin-right:-35px;
+		+span{
+			position:relative;left:40px;
+		}
+	}
+}
+
 /*버튼*/
 form{
 	&.pos_r{

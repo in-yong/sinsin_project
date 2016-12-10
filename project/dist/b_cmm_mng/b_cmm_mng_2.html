@@ -11,12 +11,12 @@
   <script type="text/javascript" src="../js/html5shiv.min.js"></script>
   <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="../js/common.js"></script> 
-  <title>공정코드등록</title>
+  <title>BOM관리</title>
  </head>
   <body>
     <section>
       <header id="sub_header">
-       <h1 class="tit_1"><span class="tit_bd_wrap">공정코드등록</span></h1>
+       <h1 class="tit_1"><span class="tit_bd_wrap">BOM관리</span></h1>
       </header>
       <div id="sub_wrap" class="grid">
         <div class="row">     
@@ -28,7 +28,7 @@
                 <div class="col_12">
                   <div class="col">
                     <p>
-                      <label for="produc_code_1_1">제품(부품)코드</label>
+                      <label for="produc_code_1_1">제품코드</label>
                       <input type="text" name="produc_code_1_1" id="produc_code_1_1">
                       <input type="button" class="btn_search" value="찾기">
                       <input type="text" name="produc_code_1_2" id="produc_code_1_2">
@@ -51,14 +51,18 @@
                 <thead>
                   <tr>
                     <th scope="col">순번</th>
-                    <th scope="col">공정코드</th>
-                    <th scope="col">공정명</th>
-                    <th scope="col">공정일련번호</th>
-                    <th scope="col">공정팀</th>
-                    <th scope="col">중분류</th>
-                    <th scope="col">적용시작일</th>
-                    <th scope="col">적용종료일</th>
-                    <th scope="col">변경일자</th>
+                    <th scope="col">제품코드</th>
+                    <th scope="col">제품명</th>
+                    <th scope="col">제품구분</th>
+                    <th scope="col">규격</th>
+                    <th scope="col">매입량단위</th>
+                    <th scope="col">생산단가</th>
+                    <th scope="col">매입가격</th>
+                    <th scope="col">판매가격</th>
+                    <th scope="col">적용기준S일</th>
+                    <th scope="col">적용기준E일</th>
+                    <th scope="col">공정차수</th>
+                    <th scope="col">변경사유</th>
                     <th scope="col">등록ID</th>
                     <th scope="col">변경자ID</th>
                   </tr>
@@ -66,120 +70,88 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
                     <td>내용1</td>
                     <td>내용2</td>
                     <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
                     <td>내용4</td>
                     <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
                   </tr>
                   <tr>
                     <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
                     <td>내용1</td>
                     <td>내용2</td>
                     <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
                     <td>내용4</td>
                     <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
                   </tr>
                   <tr>
                     <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
                     <td>내용1</td>
                     <td>내용2</td>
                     <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
                     <td>내용4</td>
                     <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
                   </tr>
                   <tr>
                     <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
                     <td>내용1</td>
                     <td>내용2</td>
                     <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
                     <td>내용4</td>
                     <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
                   </tr>
                   <tr>
                     <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
                     <td>내용1</td>
                     <td>내용2</td>
                     <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
                     <td>내용4</td>
                     <td>내용5</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
-                    <td>내용1</td>
-                    <td>내용2</td>
-                    <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
-                    <td>내용4</td>
-                    <td>내용5</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
-                    <td>내용1</td>
-                    <td>내용2</td>
-                    <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
-                    <td>내용4</td>
-                    <td>내용5</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
-                    <td>내용1</td>
-                    <td>내용2</td>
-                    <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
-                    <td>내용4</td>
-                    <td>내용5</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>A100</td>
-                    <td>납땜</td>
-                    <td>1</td>
-                    <td>내용1</td>
-                    <td>내용2</td>
-                    <td>내용3</td>
-                    <td>2016-01-01</td>
-                    <td>2016-01-02</td>
-                    <td>내용4</td>
-                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                    <td>내용9</td>
+                    <td>내용10</td>
+                    <td>내용11</td>
+                    <td>내용12</td>
+                    <td>내용13</td>
+                    <td>내용14</td>
                   </tr>
                 </tbody>
               </table>                    
@@ -192,7 +164,162 @@
         <div class="row">     
          <section class="section_1 col_12">
           <div class="col pb_20">
-            <h1 class="tit_2">공정관리</h1>
+            <h1 class="tit_2">제품등록관리</h1>
+            <form action="#" method="post" class="pos_r">
+              <div class="row">
+                <div class="col_5">
+                  <div class="col noBd pBoth_7">
+                    <div class="basic_table_row_1">
+                      <table  cellspacing="0" width="100%">
+                        <colgroup>
+                          <col width="110px">
+                          <col width="*">
+                          <col width="95px">
+                          <col width="*">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">제품코드</th>
+                            <td><input type="text" name="frm_inp_1_1" class="frm_w_1"></td>
+                            <th scope="row">제품명</th>
+                            <td><input type="text" name="frm_inp_1_2" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">규격</th>
+                            <td><input type="text" name="frm_inp_1_3" class="frm_w_1"></td>
+                            <th scope="row">매입량단위</th>
+                            <td><input type="text" name="frm_inp_1_4" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">매입가격</th>
+                            <td class="ta_l">
+                              <p class="frm_unit">
+                                <input type="text" name="frm_inp_1_5" class="frm_w_1"><span>(원)</span>
+                              </p>
+                            </td>
+                            <th scope="row">판매가격</th>
+                            <td class="ta_l">
+                              <p class="frm_unit">
+                                <input type="text" name="frm_inp_1_6" class="frm_w_1"><span>(원)</span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">최종납품처</th>
+                            <td><input type="text" name="frm_inp_1_7" class="frm_w_1"></td>
+                            <th scope="row">AS가격</th>
+                            <td><input type="text" name="frm_inp_1_8" class="frm_w_1"></td>
+                          </tr>                      
+                          <tr>
+                            <th scope="row">적용기준일자</th>
+                            <td class="ta_l" colspan="3">
+                              <input type="text" name="frm_inp_1_9" class="frm_w_5"> ~ <input type="text" name="frm_inp_1_10" class="frm_w_5">
+                            </td>
+                          </tr> 
+                          <tr>
+                            <th scope="row">변경사유</th>
+                            <td colspan="3">
+                            <textarea name="frm_inp_1_11" cols="30" rows="3" class="frm_w_1"></textarea>
+                            </td>
+                          </tr>                      
+                        </tbody>
+                      </table>
+                    </div>                                
+                  </div>
+                </div>
+                <div class="col_3">
+                  <div class="col noBd pBoth_7">
+                    <div class="basic_table_row_1">
+                      <table  cellspacing="0" width="100%">
+                        <colgroup>
+                          <col width="110px">
+                          <col width="*">
+                          <col width="95px">
+                          <col width="*">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">제품코드</th>
+                            <td><input type="text" name="frm_inp_2_1" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">생산단가</th>
+                            <td class="ta_l">
+                              <p class="frm_unit">
+                                <input type="text" name="frm_inp_2_2" class="frm_w_1"><span>(원)</span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">수출가격</th>
+                            <td><input type="text" name="frm_inp_2_3" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">재질</th>
+                            <td><input type="text" name="frm_inp_2_4" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">비고</th>
+                            <td><input type="text" name="frm_inp_2_5" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">안전재고량</th>
+                            <td><input type="text" name="frm_inp_2_6" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">공정차수</th>
+                            <td><input type="text" name="frm_inp_2_7" class="frm_w_1"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>                      
+                  </div>
+                </div>
+                <div class="col_3">
+                  <div class="col noBd pBoth_7">
+                    <div class="basic_table_row_1">
+                      <table  cellspacing="0" width="100%">
+                        <colgroup>
+                          <col width="110px">
+                          <col width="*">
+                          <col width="95px">
+                          <col width="*">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row" colspan="2">파일(이미지)경로 <input type="button" value="Upload" class="btn_upload"></th>
+                          </tr>
+                          <tr>
+                            <td colspan="2"><input type="file" name="frm_inp_1_2" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">리드타임</th>
+                            <td><input type="text" name="frm_inp_1_3" class="frm_w_1"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">산업분류구분</th>
+                            <td><input type="text" name="frm_inp_1_4" class="frm_w_1"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>                       
+                  </div>
+                </div>
+              </div>
+              <p class="frm_btn_3 top">
+                <input type="reset" value="초기">  
+                <input type="button" value="저장">
+                <input type="button" value="삭제">
+              </p>            
+            </form>            
+          </div>
+         </section>
+        </div>
+
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col pb_20">
+            <h1 class="tit_2">공정항목별규격</h1>
             <div class="row">
               <div class="col_4">
                 <div class="col noBd pBoth_7">
@@ -403,6 +530,96 @@
           </div>
          </section>
         </div>
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col pb_20">
+            <h1 class="tit_2">부품별제품 Mapping현황</h1>
+            <div class="row">
+              <div class="col_5">
+                <div class="col noBd pBoth_7">
+                      <p class="ta_c pb_3">완제품 Total <input type="text" name="frm_inp_5_1" id="frm_inp_5_1" class="frm_w_5"> (개)</p>                         
+                      <p class="ta_c">반제품 Total <input type="text" name="frm_inp_5_2" id="frm_inp_5_1" class="frm_w_5"> (개)</p>                         
+                </div>
+              </div>
+              <div class="col_1">
+              </div>
+              <div class="col_5">
+                  <div class="basic_table_column_1">
+                    <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                          <th scope="col">순번</th>
+                          <th scope="col">제품코드</th>
+                          <th scope="col">제품명</th>
+                          <th scope="col">제품구분</th>
+                          <th scope="col">공정갯수</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>자재</td>
+                          <td>내용1</td>
+                          <td>반제품</td>
+                          <td>내용1</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>자재</td>
+                          <td>내용1</td>
+                          <td>반제품</td>
+                          <td>내용1</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>자재</td>
+                          <td>내용1</td>
+                          <td>반제품</td>
+                          <td>내용1</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>자재</td>
+                          <td>내용1</td>
+                          <td>반제품</td>
+                          <td>내용1</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>자재</td>
+                          <td>내용1</td>
+                          <td>반제품</td>
+                          <td>내용1</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>자재</td>
+                          <td>내용1</td>
+                          <td>반제품</td>
+                          <td>내용1</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>자재</td>
+                          <td>내용1</td>
+                          <td>반제품</td>
+                          <td>내용1</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>자재</td>
+                          <td>내용1</td>
+                          <td>반제품</td>
+                          <td>내용1</td>
+                        </tr>
+                      </tbody>
+                    </table>                    
+                  </div>                
+              </div>
+            </div>
+          </div>
+         </section>
+        </div>        
       </div>
     </section>
   </body>

@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/c_sal_mng.css" media="all" />
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>고객불만처리</title>
+</head>
+
+<body>
+    <section>
+        <header id="sub_header">
+            <h1 class="tit_1"><span class="tit_bd_wrap">고객불만처리</span></h1>
+        </header>
+        <div id="sub_wrap" class="grid">
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">검색조건</h1>
+                        <form action="#" method="post" class="pos_r">
+                            <div class="row">
+                                <div class="col_4">
+                                    <div class="col">
+                                        <p class="pb_3 produc_sj">
+                                            <label for="produc_code_1_1">수주번호</label>
+                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                                        </p>
+                                        <p>
+                                            <label for="produc_code_1_1">거래처코드</label>
+                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                                            <input type="button" class="btn_search" value="찾기">
+                                            <input type="text" name="produc_code_1_2" id="produc_code_1_2">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col_4">
+                                    <div class="col">
+                                        <p class="pb_3">
+                                            <label for="date_in_1_1">수주일자</label>
+                                            <input type="text" name="date_in_1_1" id="date_in_1_1">
+                                            <span class="space"> ~ </span>
+                                            <input type="text" name="date_in_1_2" id="date_in_1_2">
+                                        </p>
+                                        <p class="pb_3">
+                                            <label for="date_in_1_1">제품코드</label>
+                                            <input type="text" name="date_in_1_1" id="date_in_1_1">
+                                            <input type="button" class="btn_search" value="찾기">
+                                            <input type="text" name="date_in_1_2" id="date_in_1_2">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col_4">
+                                    <div class="col mml_50">
+                                        <p class="pb_3 radio_wrap">
+                                            <span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">완료</label></span>
+                                            <span class="radio"><input type="radio" name="cpl_1" id="cpl_1_2" value="2"><label for="cpl_1_2">미완료</label></span>
+                                            <span class="radio"><input type="radio" name="cpl_1" id="cpl_1_3" value="3"><label for="cpl_1_3">전체</label></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="frm_btn_1 top">
+                                <input type="submit" value="조회">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">고객불만 LIST</h1>
+                        <div class="basic_table_column_1">
+                            <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">수주번호</th>
+                                        <th scope="col">수주일자</th>
+                                        <th scope="col">납기일자</th>
+                                        <th scope="col">거래처명</th>
+                                        <th scope="col">제품명</th>
+                                        <th scope="col">발행번호</th>
+                                        <th scope="col">판매번호</th>
+                                        <th scope="col">판매일자</th>
+                                        <th scope="col">판매수량</th>
+                                        <th scope="col">고객불만처리</th>
+                                        <th scope="col">고객불만유형</th>
+                                        <th scope="col">불량수량</th>
+                                        <th scope="col">조치내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="ta_c">1</td>
+                                        <td>SJ0001</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>2011/04/25</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ta_c">2</td>
+                                        <td>SJ0001</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>2011/04/25</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ta_c">3</td>
+                                        <td>SJ0001</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>2011/04/25</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ta_c">4</td>
+                                        <td>SJ0001</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>2011/04/25</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ta_c">5</td>
+                                        <td>SJ0001</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>2011/04/25</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ta_c">6</td>
+                                        <td>SJ0001</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>2011/04/25</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ta_c">7</td>
+                                        <td>SJ0001</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">2011/04/25</td>
+                                        <td class="ta_c">내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>2011/04/25</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="l_wrap col_9">
+                    <section class="section_1 col_12">
+                        <div class="col">
+                            <h1 class="tit_2"></h1>
+                            <form action="#" method="post" class="pos_r mt_33">
+                                <div class="basic_table_row_1">
+                                    <table cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">수주번호</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_2_1" class="frm_w_7 ta_c" placeholder="'S20161116-001">
+                                                    <input type="button" class="btn_search" value="찾기">
+                                                </td>
+                                                <th scope="row">수주일자</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_2_1" class="frm_w_7 ta_c">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">거래처코드</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_1" class="frm_w_7 ta_c">
+                                                    <input type="button" class="btn_search" value="찾기">
+                                                </td>
+                                                <th scope="row">거래처명</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7 ta_c" placeholder="'㈜신신전자공업">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">제품코드</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_1" class="frm_w_7 ta_c">
+                                                    <input type="button" class="btn_search" value="찾기">
+                                                </td>
+                                                <th scope="row">제품명</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7 ta_c">
+                                                </td>
+                                                <th scope="row">거래처담당자</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7 ta_c">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수주량</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_1" class="frm_w_7">
+                                                </td>
+                                                <th scope="row">수주금액</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7">
+                                                </td>
+                                                <th scope="row">거래처담당전화번호</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7 ta_c">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">판매번호</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_1" class="frm_w_7">
+                                                    <input type="button" class="btn_search" value="찾기">
+                                                </td>
+                                                <th scope="row">판매일자</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7">
+                                                </td>
+                                                <th scope="row">거래처연락번호</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7 ta_c">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">판매수량</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_1" class="frm_w_7">
+                                                </td>
+                                                <th scope="row">판매금액</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7 ta_c">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">납기일자</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_1" class="frm_w_7">
+                                                    <input type="button" class="btn_date start" value="달력">
+                                                </td>
+                                                <th scope="row">불만유형</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_2" class="frm_w_7 ta_c">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">불량수량</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_1" class="frm_w_7 ta_c">
+                                                </td>
+                                                <th scope="row">조치완료여부</th>
+                                                <td class="ta_l">
+                                                    <input type="text" name="frm_inp_3_1" class="frm_w_7 ta_c" placeholder="미완료">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="th_txta">불만내용</th>
+                                                <td class="ta_l" colspan="3">
+                                                    <textarea name="cl_txta" id="sj_txta" cols="30" rows="3" class="txta"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="th_txta">조치내용</th>
+                                                <td class="ta_l" colspan="3">
+                                                    <textarea name="cl_txta" id="sj_txta" cols="30" rows="3" class="txta"></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="frm_btn_1 top">
+                                    <input type="button" value="초기">
+                                    <input type="submit" value="저장">
+                                    <input type="reset" value="삭제">
+                                </p>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

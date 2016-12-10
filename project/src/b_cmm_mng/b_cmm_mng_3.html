@@ -250,17 +250,17 @@
             <h1 class="tit_2">거래처내역</h1>
             <form action="#" method="post" class="pos_r">
             <div class="row">
-              <div class="col_8">
+              <div class="col_9">
                 <div class="col noBd pBoth_7">
                   <h2 class="tit_3">타이틀3</h2>
-                  <div class="basic_table_row_1">
+                  <div class="basic_table_row_1 frm_input">
                     <table  cellspacing="0" width="100%">
                       <colgroup>
                         <col width="120px">
                         <col width="*">
-                        <col width="95px">
+                        <col width="100px">
                         <col width="*">
-                        <col width="95px">
+                        <col width="100px">
                         <col width="*">
                       </colgroup>
                       <tbody>
@@ -273,7 +273,6 @@
                           <td><input type="text" name="frm_inp_1_3" class="frm_w_1"></td>
                         </tr>
                         <tr>
-                        <tr>
                           <th scope="row">대표자</th>
                           <td><input type="text" name="frm_inp_2_1" class="frm_w_1"></td>
                           <th scope="row">등록경로</th>
@@ -281,7 +280,6 @@
                           <th scope="row">부가세적용</th>
                           <td><input type="text" name="frm_inp_2_3" class="frm_w_1"></td>
                         </tr>
-                        <tr>
                         <tr>
                           <th scope="row">핸드폰(대표자)</th>
                           <td><input type="text" name="frm_inp_3_1" class="frm_w_1"></td>
@@ -294,26 +292,81 @@
                           <th scope="row">담당자</th>
                           <td><input type="text" name="frm_inp_4_1" class="frm_w_1"></td>
                           <th scope="row">업태</th>
-                          <td colspan="4" class="ta_l"><input type="text" name="frm_inp_4_2" class="frm_w_5"> <input type="text" name="frm_inp_4_2" class="frm_w_2"></td>
+                          <td class="ta_l"><input type="text" name="frm_inp_4_2" class="frm_w_1"></td>
+                          <td colspan="2"><input type="text" name="frm_inp_4_2" class="frm_w_1"></td>
                         </tr>
                         <tr>
                           <th scope="row">담당자(부서)</th>
-                          <td><input type="text" name="frm_inp_3_1" class="frm_w_1"></td>
+                          <td><input type="text" name="frm_inp_5_1" class="frm_w_1"></td>
                           <th scope="row">종목</th>
-                          <td><input type="text" name="frm_inp_3_2" class="frm_w_1"></td>
+                          <td><input type="text" name="frm_inp_5_2" class="frm_w_1"></td>
                           <th scope="row">마감일</th>
                           <td><p class="frm_unit">
-                              <input type="text" name="frm_inp_1_1" class="frm_w_1" style=""><span>일</span>
+                              <input type="text" name="frm_inp_5_1" class="frm_w_1"><span>(일)</span>
                             </p></td>
-                        </tr>                        
+                        </tr>
                         <tr>
-                          <th scope="row">제목4</th>
-                          <td colspan="6">
-                            <p class="frm_unit">
-                              <input type="text" name="frm_inp_1_1" class="frm_w_1" style=""><span>(개)</span>
+                          <th scope="row">전화번호</th>
+                          <td><input type="text" name="frm_inp_6_1" class="frm_w_1"></td>
+                          <th scope="row">생산유무</th>
+                          <td><input type="text" name="frm_inp_6_2" class="frm_w_1"></td>
+                          <th scope="row">계산방법</th>
+                          <td><input type="text" name="frm_inp_6_3" class="frm_w_1"></td>
+                        </tr> 
+                        <tr>
+                          <th scope="row">핸드폰(담당자)</th>
+                          <td><input type="text" name="frm_inp_7_1" class="frm_w_1"></td>
+                          <th scope="row">입금계좌</th>
+                          <td><input type="text" name="frm_inp_7_2" class="frm_w_1"></td>
+                          <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Fax번호</th>
+                          <td><input type="text" name="frm_inp_8_1" class="frm_w_1"></td>
+                          <th scope="row">e_Mail</th>
+                          <td><input type="text" name="frm_inp_8_2" class="frm_w_1"></td>
+                          <th scope="row">거래처구분</th>
+                          <td>
+                            <p class="radio_wrap pb_3">
+                              <span class="radio"><input type="radio" name="frm_inp_9" id="frm_inp_9_1" value="1"><label for="frm_inp_9_1">수주</label></span>
+                              <span class="radio"><input type="radio" name="frm_inp_9" id="frm_inp_9_2" value="2"><label for="frm_inp_9_2">발주</label></span>
+                              <span class="radio"><input type="radio" name="frm_inp_9" id="frm_inp_9_3" value="3"><label for="frm_inp_9_3">외주</label></span>
+                            </p>
+                          </td>
+                        </tr>                                                                     
+                        <tr>
+                          <th scope="row">우편번호</th>
+                          <td>
+                              <input type="text" name="frm_inp_10_1" class="frm_w_1">
+                          </td>
+                          <td colspan="4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">주소</th>
+                          <td><input type="text" name="frm_inp_11_1" class="frm_w_1"></td>
+                          <td colspan="2"><input type="text" name="frm_inp_11_2" class="frm_w_1"></td>
+                          <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">거래기간</th>
+                          <td colspan="5">
+                            <p>
+                              <label for="date_sart_1_1">거래시작일</label>
+                              <input type="text" name="date_sart_1_1" id="date_sart_1_1">
+                              <input type="button" class="btn_date start" value="달력">
+                              <label for="date_end_1_1">거래종료일</label>
+                              <input type="text" name="date_end_1_1" id="date_end_1_1">
+                              <input type="button" class="btn_date end" value="달력">
                             </p>
                           </td>
                         </tr>
+                        <tr>
+                          <th scope="row">결재조건</th>
+                          <td>
+                              <input type="text" name="frm_inp_12_1" class="frm_w_1">
+                          </td>
+                          <td colspan="4"></td>
+                        </tr>                                      
                       </tbody>
                     </table>
                   </div>                  
@@ -328,7 +381,284 @@
         <div class="row">     
          <section class="section_1 col_12">
           <div class="col">
-            <h1 class="tit_2">공정관리</h1>
+            <h1 class="tit_2">업체현황</h1>
+            <form action="#" method="post" class="pos_r">
+            <div class="row">
+              <div class="col_9">
+                <div class="col noBd pBoth_7">
+                  <h2 class="tit_3">타이틀3</h2>
+                  <div class="basic_table_row_1 frm_input">
+                    <table  cellspacing="0" width="100%">
+                      <colgroup>
+                        <col width="120px">
+                        <col width="*">
+                        <col width="100px">
+                        <col width="*">
+                        <col width="110px">
+                        <col width="*">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">거래처코드</th>
+                          <td>C00001</td>
+                          <td colspan="4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">본사</th>
+                          <td>
+                            <p>
+                              <input type="text" name="frm_inp_13_1" class="frm_w_4">
+                              <input type="button" class="btn_search" value="찾기">
+                            </p>
+                          </td>
+                          <td colspan="2"><input type="text" name="frm_inp_13_2" class="frm_w_1"></td>
+                          <td colspan="2"><input type="text" name="frm_inp_13_3" class="frm_w_1"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">대표사업장</th>
+                          <td>
+                            <p>
+                              <input type="text" name="frm_inp_14_1" class="frm_w_4">
+                              <input type="button" class="btn_search" value="찾기">
+                            </p>
+                          </td>
+                          <td colspan="2"><input type="text" name="frm_inp_14_2" class="frm_w_1"></td>
+                          <td colspan="2"><input type="text" name="frm_inp_14_3" class="frm_w_1"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">거래사업장</th>
+                          <td>
+                            <p>
+                              <input type="text" name="frm_inp_15_1" class="frm_w_4">
+                              <input type="button" class="btn_search" value="찾기">
+                            </p>
+                          </td>
+                          <td colspan="2"><input type="text" name="frm_inp_15_2" class="frm_w_1"></td>
+                          <td colspan="2"><input type="text" name="frm_inp_15_3" class="frm_w_1"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">설립일자</th>
+                          <td>
+                            <input type="text" name="date_sart_16_1" class="frm_w_4">
+                            <input type="button" class="btn_date start" value="달력">
+                          </td>
+                          <th scope="row">주생산품</th>
+                          <td><input type="text" name="frm_inp_16_2" class="frm_w_1"></td>
+                          <th scope="row">(일)생산능력</th>
+                          <td>
+                            <p class="frm_unit">
+                              <input type="text" name="frm_inp_16_3" class="frm_w_1"><span>(개)</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">종업원수</th>
+                          <td>
+                           <p class="frm_unit">
+                              <input type="text" name="frm_inp_17_1" class="frm_w_1"><span>(명)</span>
+                            </p>
+                          </td>
+                          <th scope="row">년매출규모</th>
+                          <td><input type="text" name="frm_inp_17_2" class="frm_w_1"></td>
+                          <th scope="row">(일)생산능력</th>
+                          <td>
+                            <p class="frm_unit">
+                              <input type="text" name="frm_inp_17_3" class="frm_w_1"><span>(%)</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">주거래은행</th>
+                          <td>
+                           <input type="text" name="frm_inp_18_1" class="frm_w_1">
+                          </td>
+                          <th scope="row">주거래업체</th>
+                          <td><input type="text" name="frm_inp_18_2" class="frm_w_1"></td>
+                          <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">당좌은행</th>
+                          <td>
+                           <input type="text" name="frm_inp_19_1" class="frm_w_1">
+                          </td>
+                          <td colspan="4"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">주요경영정보</th>
+                          <td colspan="5">
+                           <textarea name="frm_inp_20_1" cols="30" rows="3" class="frm_w_1"></textarea>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>
+              </div>
+            </div>              
+            <p class="frm_btn_3 top">
+              <input type="reset" value="초기">  
+              <input type="button" value="저장">
+              <input type="button" value="삭제">
+            </p>
+            </form>             
+          </div>
+         </section>
+        </div>
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">담당자현황</h1>
+            <div class="basic_table_column_1">
+              <table class="table_column_1 display nowrap" data-table-height="200px" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th scope="col">순번</th>
+                    <th scope="col">거래처코드</th>
+                    <th scope="col">담당자명</th>
+                    <th scope="col">부서명</th>
+                    <th scope="col">직책</th>
+                    <th scope="col">핸드폰번호</th>
+                    <th scope="col">전화번호</th>
+                    <th scope="col">e_Mail</th>
+                    <th scope="col">담당업무</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                    <td>내용4</td>
+                    <td>내용5</td>
+                    <td>내용6</td>
+                    <td>내용7</td>
+                    <td>내용8</td>
+                  </tr>
+                </tbody>
+              </table>                    
+            </div>                
+          </div>
+         </section>
+        </div>
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">&nbsp;</h1>          
+            <form action="#" method="post" class="pos_r">
+              <div class="row">
+                <div class="col_8">
+                  <div class="col noBd">
+                   <div class="basic_table_row_1 frm_input">
+                    <table  cellspacing="0" width="100%">
+                      <tbody>
+                       <tr>
+                        <th scope="row">거래처코드</th>
+                        <td>C00001</td>
+                        <td colspan="2"></td>
+                       </tr>
+                       <tr>
+                        <th scope="row">담당자명</th>
+                        <td class="ta_r"><input type="text" name="frm_inp_21_1" class="frm_w_1" title=" "></td>
+                        <th scope="row">전화번호</th>
+                        <td class="ta_r"><input type="text" name="frm_inp_21_2" class="frm_w_1" title=" "></td>
+                       </tr>
+                       <tr>
+                        <th scope="row">부서명</th>
+                        <td class="ta_r"><input type="text" name="frm_inp_21_3" class="frm_w_1" title=" "></td>
+                        <th scope="row">Fax번호</th>
+                        <td class="ta_r"><input type="text" name="frm_inp_21_4" class="frm_w_1" title=" "></td>
+                       </tr>
+                       <tr>
+                        <th scope="row">직책</th>
+                        <td class="ta_r"><input type="text" name="frm_inp_21_5" class="frm_w_1" title=" "></td>
+                        <th scope="row">핸드폰번호</th>
+                        <td class="ta_r"><input type="text" name="frm_inp_21_6" class="frm_w_1" title=" "></td>
+                       </tr>
+                       <tr>
+                        <th scope="row">담당업무</th>
+                        <td class="ta_r"><input type="text" name="frm_inp_21_7" class="frm_w_1" title=" "></td>
+                        <th scope="row">e_Mail</th>
+                        <td class="ta_r"><input type="text" name="frm_inp_21_" class="frm_w_1" title=" "></td>
+                       </tr>
+                      </tbody>
+                    </table>
+                   </div>                     
+                  </div>
+                </div>
+              </div>
+              <p class="frm_btn_3 top">
+                <input type="reset" value="초기">  
+                <input type="button" value="저장">
+                <input type="submit" value="조회">
+              </p>
+            </form>
           </div>
          </section>
         </div>

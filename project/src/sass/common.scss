@@ -199,6 +199,19 @@ td {
 			}
 		}
 	}
+	&.sth_1{
+		th{
+			border:1px solid #afafaf;
+			&:before{
+				content:none;
+			}
+		}
+		td{
+			input[type=text]{
+				min-width:60px;
+			}
+		}
+	}	
 }
 .basic_table_row_1 {
 	margin-bottom:20px;
@@ -210,6 +223,8 @@ td {
 		border-bottom:1px solid #395971;
 		text-align:left;
 		padding-left:18px;
+		padding-top:4px;
+		padding-bottom:5px;
 		&:after{
 			content:"";
 			display:inline-block;

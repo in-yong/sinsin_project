@@ -275,22 +275,21 @@
                     </div>                      
                   </div>
                 </div>
-                <div class="col_3">
+                <div class="col_4">
                   <div class="col noBd pBoth_7">
                     <div class="basic_table_row_1">
                       <table  cellspacing="0" width="100%">
                         <colgroup>
-                          <col width="110px">
-                          <col width="*">
-                          <col width="95px">
+                          <col width="120px">
                           <col width="*">
                         </colgroup>
                         <tbody>
                           <tr>
-                            <th scope="row" colspan="2">파일(이미지)경로 <input type="button" value="Upload" class="btn_upload"></th>
-                          </tr>
-                          <tr>
-                            <td colspan="2"><input type="file" name="frm_inp_1_2" class="frm_w_1"></td>
+                            <th scope="row">파일(이미지)<br/>경로 </th>
+                            <td class="ta_l">
+                              <p class="pb_3"><input type="button" value="Upload" class="btn_upload"></p>
+                              <p><input type="file" name="frm_inp_1_2" class="frm_w_1"></p>
+                            </td>
                           </tr>
                           <tr>
                             <th scope="row">리드타임</th>
@@ -327,46 +326,38 @@
                 <div class="basic_table_row_1">
                   <table  cellspacing="0" width="100%">
                     <colgroup>
-                      <col width="95px">
+                      <col width="110px">
                       <col width="*">
-                      <col width="95px">
+                      <col width="90px">
                       <col width="*">
                     </colgroup>
                     <tbody>
                       <tr>
-                        <th scope="row">공정코드</th>
+                        <th scope="row">공정차수</th>
                         <td><input type="text" name="frm_inp_1_1" class="frm_w_1"></td>
                         <th scope="row">공정명</th>
                         <td><input type="text" name="frm_inp_1_2" class="frm_w_1"></td>
                       </tr>
                       <tr>
-                        <th scope="row">일련번호</th>
-                        <td><input type="text" name="frm_inp_1_3" class="frm_w_1"></td>
-                        <th scope="row">공정팀</th>
-                        <td><input type="text" name="frm_inp_1_4" class="frm_w_1"></td>
+                        <th scope="row">공정주의사항</th>
+                        <td colspan="3"><input type="text" name="frm_inp_1_3" class="frm_w_1"></td>
                       </tr>
                       <tr>
-                        <th scope="row">중분류</th>
-                        <td class="ta_l"><input type="text" name="frm_inp_1_5" class="frm_w_1"></td>
-                        <td colspan="2"></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">적용기준일</th>
-                        <td><input type="text" name="frm_inp_1_6" class="frm_w_1"></td>
-                        <th scope="row">적용기준일</th>
-                        <td><input type="text" name="frm_inp_1_7" class="frm_w_1"></td>
-                      </tr>                      
-                      <tr>
-                        <th scope="row">변경사유</th>
-                        <td colspan="3">
-                        <textarea name="frm_inp_1_8" cols="30" rows="3" class="frm_w_1"></textarea>
+                        <th scope="row">파일(이미지)<br/>경로</th>
+                        <td class="ta_l" colspan="3">
+                          <p class="pb_3"><input type="button" value="Upload" class="btn_upload"></p>
+                          <p><input type="file" name="frm_inp_1_2" class="frm_w_1"></p>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">리드타임</th>
-                        <td class="ta_l"><input type="text" name="frm_inp_1_9" class="frm_w_1"></td>
-                        <td colspan="2"></td>
-                      </tr>                      
+                        <th scope="row">표준공정 S/T(시간)</th>
+                        <td colspan="2">
+                          <p class="frm_unit">
+                            <input type="text" name="frm_inp_1_1" class="frm_w_1"><span>(개)</span>
+                          </p>
+                        </td>
+                        <td></td>
+                      </tr>                                         
                     </tbody>
                   </table>
                 </div>                
@@ -378,151 +369,181 @@
                 </form>                
                 </div>
               </div>
-              <div class="col_4">
+              <div class="col_1">
                 <div class="col noBd pBoth_7">
-                  <h2 class="tit_3">공정항목</h2>
-                  <form action="#" method="post" class="pos_r">
                   <div class="basic_table_column_1">
-                    <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+                    <table class="table_column_1 display nowrap" data-table-scrolly="false" cellspacing="0" width="100%">
+                      <colgroup>
+                        <col width="40px">
+                      </colgroup>                      
                       <thead>
                         <tr>
-                          <th scope="col">선택</th>
-                          <th scope="col">순번</th>
-                          <th scope="col">항목구분코드</th>
-                          <th scope="col">항목명</th>
-                          <th scope="col">공정TEXT</th>
+                          <th scope="col">공전단계</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                          <td>1</td>
-                          <td>자재</td>
-                          <td>내용1</td>
-                          <td>내용1</td>
+                          <td>컷팅</td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                          <td>1</td>
-                          <td>자재</td>
-                          <td>내용1</td>
-                          <td>내용1</td>
+                          <td>압착</td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                          <td>1</td>
-                          <td>자재</td>
-                          <td>내용1</td>
-                          <td>내용1</td>
+                          <td>조립</td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                          <td>1</td>
-                          <td>자재</td>
-                          <td>내용1</td>
-                          <td>내용1</td>
+                          <td></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                          <td>1</td>
-                          <td>자재</td>
-                          <td>내용1</td>
-                          <td>내용1</td>
+                          <td></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                          <td>1</td>
-                          <td>자재</td>
-                          <td>내용1</td>
-                          <td>내용1</td>
+                          <td></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                          <td>1</td>
-                          <td>자재</td>
-                          <td>내용1</td>
-                          <td>내용1</td>
+                          <td></td>
                         </tr>
                       </tbody>
                     </table>                    
-                  </div>
-                    <p class="frm_btn_3 top">
-                      <input type="button" value="항목추가">
-                      <input type="submit" value="항목삭제">
-                    </p>
-                  </form>                        
+                  </div>                        
                 </div>
               </div>
-              <div class="col_4">
+              <div class="col_7">
                 <div class="col noBd pBoth_7">
-                  <h2 class="tit_3">불량항목</h2>
                   <form action="#" method="post" class="pos_r">
-                  <div class="basic_table_column_1">
+                  <div class="basic_table_column_1 sth_1">
                     <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
                       <thead>
                         <tr>
-                          <th scope="col">선택</th>
-                          <th scope="col">순번</th>
-                          <th scope="col">불량코드</th>
-                          <th scope="col">불량명</th>
+                          <th scope="col" rowspan="2">항목순번</th>
+                          <th scope="col" rowspan="2">항목구분</th>
+                          <th scope="col" rowspan="2">항목명</th>
+                          <th scope="col" rowspan="2">공정TEXT</th>
+                          <th scope="colgroup" colspan="2">치수</th>
+                          <th scope="colgroup" colspan="3">오차</th>
+                          <th scope="colgroup" colspan="4">자재상세</th>
+                        </tr>
+                        <tr>
+                          <th scope="col">값</th>
+                          <th scope="col">단위</th>
+                          <th scope="col">상한값</th>
+                          <th scope="col">하한값</th>
+                          <th scope="col">단위</th>
+                          <th scope="col">부품코드</th>
+                          <th scope="col">자재규격값</th>
+                          <th scope="col">자재명</th>
+                          <th scope="col">자재특성</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
                           <td>1</td>
+                          <td>자재자재</td>
+                          <td>자재</td>
                           <td>내용1</td>
-                          <td>속기포</td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
                           <td>1</td>
+                          <td>자재자재</td>
+                          <td>자재</td>
                           <td>내용1</td>
-                          <td>속기포</td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
                           <td>1</td>
+                          <td>자재자재</td>
+                          <td>자재</td>
                           <td>내용1</td>
-                          <td>속기포</td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
                           <td>1</td>
+                          <td>자재자재</td>
+                          <td>자재</td>
                           <td>내용1</td>
-                          <td>속기포</td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
                           <td>1</td>
+                          <td>자재자재</td>
+                          <td>자재</td>
                           <td>내용1</td>
-                          <td>속기포</td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
                           <td>1</td>
+                          <td>자재자재</td>
+                          <td>자재</td>
                           <td>내용1</td>
-                          <td>속기포</td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
                         </tr>
                         <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
                           <td>1</td>
+                          <td>자재자재</td>
+                          <td>자재</td>
                           <td>내용1</td>
-                          <td>속기포</td>
-                        </tr>
-                        <tr>
-                          <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                          <td>1</td>
-                          <td>내용1</td>
-                          <td>속기포</td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
+                          <td><input type="text" name="" class="frm_w_1"></td>
                         </tr>
                       </tbody>
                     </table>                    
                   </div>
-                    <p class="frm_btn_3 top">
-                      <input type="button" value="불량추가">
-                      <input type="submit" value="불량삭제">
-                    </p>
                   </form>                   
                 </div>
               </div>

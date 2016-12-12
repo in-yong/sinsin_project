@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <script type="text/javascript" src="../js/jquery.js"></script>  
+  <script type="text/javascript" src="../js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script> 
+  <title>월근태집계현황</title>
+ </head>
+  <body>    
+    <section>
+      <header id="sub_header">
+       <h1 class="tit_1"><span class="tit_bd_wrap">월근태집계현황</span></h1>
+      </header>
+      <div id="sub_wrap" class="grid">
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">검색조건</h1>
+            <form action="#" method="post" class="pos_r">
+              <div class="row">
+                <div class="col_3 noWidth">
+                  <div class="col">
+                    <div class="pb_3 chTable">
+                      <div class="chRow">
+                        <div class="chTd th">
+                          <label for="date_sart_1_1">근태년월</label>
+                        </div>
+                        <div class="chTd">
+                          <input type="text" name="date_sart_1_1" id="date_sart_1_1">
+                          <input type="button" class="btn_date start" value="달력">
+                        </div>
+                      </div>
+                      <div class="chRow">
+                        <div class="chTd">
+                          <label for="worker_id_1_1">사원ID</label>
+                        </div>
+                        <div class="chTd">
+                          <input type="text" name="worker_id_1_1" id="worker_id_1_1">
+                          <input type="button" class="btn_search" value="찾기">
+                          <input type="text" name="worker_id_1_2" id="worker_id_1_2">
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+                <div class="col_3">
+                  <div class="col">
+                    <label for="menu_code_1_2">부서</label>
+                    <input type="text" name="menu_code_1_2" id="menu_code_1_2" class="ta_c frm_w_4">    
+                  </div>
+                </div>
+              </div>
+              <p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+            </form>               
+          </div>
+         </section>
+        </div>
+        <div class="row">     
+         <section class="section_1 col_12">
+          <div class="col">
+            <h1 class="tit_2">근태현황LIST</h1>
+              <form action="#" method="post" class="pos_r">
+                <div class="basic_table_column_1">
+                  <table class="table_column_1 display nowrap" data-table-height="200px" cellspacing="0" width="100%">
+                    <thead>
+                      <tr>
+                        <th scope="col">순번</th>
+                        <th scope="col">근태일자</th>
+                        <th scope="col">부서명</th>
+                        <th scope="col">사원명</th>
+                        <th scope="col">기본근무(h)</th>
+                        <th scope="col">누적근무(h)</th>
+                        <th scope="col">특근누적(h)</th>
+                        <th scope="col">잔업누적(h)</th>
+                        <th scope="col">휴가사용(d)</th>
+                        <th scope="col">외출누적(h)</th>
+                        <th scope="col">조퇴누적(h)</th>
+                        <th scope="col">교육누적(h)</th>
+                        <th scope="col">출장누적(h)</th>
+                        <th scope="col">기타누적(h)</th>
+                        <th scope="col">등록자ID</th>
+                        <th scope="col">변경자ID</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2016-12-20</td>
+                        <td>생산1팀</td>
+                        <td>이규순</td>
+                        <td>200h</td>
+                        <td>204h</td>
+                        <td>12h</td>
+                        <td>내용1</td>
+                        <td>내용2</td>
+                        <td>내용3</td>
+                        <td>내용4</td>
+                        <td>8h</td>
+                        <td>내용5</td>
+                        <td>내용6</td>
+                        <td>내용7</td>
+                        <td>내용8</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2016-12-20</td>
+                        <td>생산1팀</td>
+                        <td>이규순</td>
+                        <td>200h</td>
+                        <td>204h</td>
+                        <td>12h</td>
+                        <td>내용1</td>
+                        <td>내용2</td>
+                        <td>내용3</td>
+                        <td>내용4</td>
+                        <td>8h</td>
+                        <td>내용5</td>
+                        <td>내용6</td>
+                        <td>내용7</td>
+                        <td>내용8</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2016-12-20</td>
+                        <td>생산1팀</td>
+                        <td>이규순</td>
+                        <td>200h</td>
+                        <td>204h</td>
+                        <td>12h</td>
+                        <td>내용1</td>
+                        <td>내용2</td>
+                        <td>내용3</td>
+                        <td>내용4</td>
+                        <td>8h</td>
+                        <td>내용5</td>
+                        <td>내용6</td>
+                        <td>내용7</td>
+                        <td>내용8</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2016-12-20</td>
+                        <td>생산1팀</td>
+                        <td>이규순</td>
+                        <td>200h</td>
+                        <td>204h</td>
+                        <td>12h</td>
+                        <td>내용1</td>
+                        <td>내용2</td>
+                        <td>내용3</td>
+                        <td>내용4</td>
+                        <td>8h</td>
+                        <td>내용5</td>
+                        <td>내용6</td>
+                        <td>내용7</td>
+                        <td>내용8</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2016-12-20</td>
+                        <td>생산1팀</td>
+                        <td>이규순</td>
+                        <td>200h</td>
+                        <td>204h</td>
+                        <td>12h</td>
+                        <td>내용1</td>
+                        <td>내용2</td>
+                        <td>내용3</td>
+                        <td>내용4</td>
+                        <td>8h</td>
+                        <td>내용5</td>
+                        <td>내용6</td>
+                        <td>내용7</td>
+                        <td>내용8</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2016-12-20</td>
+                        <td>생산1팀</td>
+                        <td>이규순</td>
+                        <td>200h</td>
+                        <td>204h</td>
+                        <td>12h</td>
+                        <td>내용1</td>
+                        <td>내용2</td>
+                        <td>내용3</td>
+                        <td>내용4</td>
+                        <td>8h</td>
+                        <td>내용5</td>
+                        <td>내용6</td>
+                        <td>내용7</td>
+                        <td>내용8</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2016-12-20</td>
+                        <td>생산1팀</td>
+                        <td>이규순</td>
+                        <td>200h</td>
+                        <td>204h</td>
+                        <td>12h</td>
+                        <td>내용1</td>
+                        <td>내용2</td>
+                        <td>내용3</td>
+                        <td>내용4</td>
+                        <td>8h</td>
+                        <td>내용5</td>
+                        <td>내용6</td>
+                        <td>내용7</td>
+                        <td>내용8</td>
+                      </tr>
+                    </tbody>
+                  </table>                
+                </div>              
+                <p class="frm_btn_1 top"><input type="submit" value="엑셀 Down"></p>
+              </form>                              
+          </div>
+         </section>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

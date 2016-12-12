@@ -140,6 +140,13 @@ th{
 	height:35px;
 	background-color:#395971;
 	color:#fff;
+	&.bgColor_1{
+		background-color:#8998a6;
+		color:#2c496f;
+	}
+	&.bgColor_2{
+		background-color:#5c5c5c;		
+	}	
 }
 .ta_l{
 	text-align:left;
@@ -451,6 +458,7 @@ span {
 .pl_20{padding-left:20px;}
 .pl_25{padding-left:25px;}
 .pl_30{padding-left:30px;}
+.pl_60{padding-left:60px;}
 
 .plr_5{padding-left:5px;padding-right:5px;}
 .plr_10{padding-left:10px;padding-right:10px;}

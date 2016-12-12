@@ -221,25 +221,52 @@ td {
 }
 .basic_table_row_1 {
 	margin-bottom:20px;
-	th {
-		min-width:80px;
-		background:transparent;
-		color:#395971;
-		position:relative;
-		border-bottom:1px solid #395971;
-		text-align:left;
-		padding-left:18px;
-		padding-top:4px;
-		padding-bottom:5px;
-		&:after{
-			content:"";
-			display:inline-block;
-			width:1px;
-			height:10px;
-			background-color:#395971;
-			position:absolute;
-			right:0;
-			bottom:0;
+	thead{
+		th{
+			position:relative;
+			&:before{
+				content:"";
+				display:inline-block;
+				position:absolute;
+				left:0;
+				bottom:0;
+				width:1px;
+				height:8px;
+				background-color:#efefef;
+			}
+			&:first-child{
+				&:before{
+					content:none;
+				}
+			}				
+		}		
+	}
+	tbody{
+		th {
+			min-width:80px;
+			background:transparent;
+			color:#395971;
+			position:relative;
+			border-bottom:1px solid #395971;
+			text-align:left;
+			padding-left:18px;
+			padding-top:4px;
+			padding-bottom:5px;
+			&:after{
+				content:"";
+				display:inline-block;
+				width:1px;
+				height:10px;
+				background-color:#395971;
+				position:absolute;
+				right:0;
+				bottom:0;
+			}
+			&.tit_col {
+				background-color:#395971;
+				color: #fff;
+				text-align: center
+			}
 		}
 	}
 	td{
@@ -477,6 +504,6 @@ span {
 
 #sub_wrap{
 	width:1250px;
-	padding:20px;
+	padding:10px 20px 20px;
 	margin:0 auto;
 }

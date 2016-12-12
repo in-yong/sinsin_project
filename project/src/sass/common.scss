@@ -33,7 +33,7 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 				border-radius:5px;
 		}
 		>.section_1 {
-			margin-bottom:20px;		
+			margin-bottom:10px;		
 			>.col {
 				>.tit_2{
 					margin:0 -10px 20px;
@@ -78,6 +78,12 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 	*[class*=col_]{
 		float:left;
 		padding:5px 5px 0;
+		&.noWidth{
+			width:auto !important;
+			.col{
+				padding-right:10px;
+			}
+		}
 	}
 	.col_1{
 		width:8.3333%;

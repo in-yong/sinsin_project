@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>(품질)실적(월별불량실적)현황화면</title>
+</head>
+<body>
+    <section>
+        <header id="sub_header">
+            <h1 class="tit_1"><span class="tit_bd_wrap">실적(월별불량실적)현황화면</span></h1>
+        </header>
+        <div id="sub_wrap" class="grid">
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">검색조건</h1>
+                        <form action="#" method="post" class="pos_r">
+                            <div class="row">
+                                <div class="col_4">
+                                    <div class="col">
+                                        <p class="ml_20">
+                                            <label for="produc_code_1_1">년도</label>
+                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1" class="ml_20 ta_c" placeholder="2016">
+                                            <span>(년)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="frm_btn_1 top">
+                                <input type="submit" value="조회">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">월별 불량 실적</h1>
+                        <form action="#" method="post" class="pos_r">
+                            <div class="basic_table_column_1 sth_1">
+                                <table class="table_column_1 display nowrap" data-table-height="200px" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">합계</th>
+                                            <th scope="col">1월</th>
+                                            <th scope="col">2월</th>
+                                            <th scope="col">3월</th>
+                                            <th scope="col">4월</th>
+                                            <th scope="col">5월</th>
+                                            <th scope="col">6월</th>
+                                            <th scope="col">7월</th>
+                                            <th scope="col">8월</th>
+                                            <th scope="col">9월</th>
+                                            <th scope="col">10월</th>
+                                            <th scope="col">11월</th>
+                                            <th scope="col">12월</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="ta_r">재생</th>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">폐기</th>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">합계</th>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="frm_btn_3 top">
+                                <input type="button" value="엑셀 Down">
+                            </p>
+                            <h2 class="tit_3">월별불량비용 LIST</h2>
+                            <div class="basic_table_column_1 sth_1">
+                                <table class="table_column_1 display nowrap" data-table-height="200px" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">불량유형코드</th>
+                                            <th scope="col">불량유형명</th>
+                                            <th scope="col">불량수량</th>
+                                            <th scope="col">불량구분</th>
+                                            <th scope="col">불량율</th>
+                                            <th scope="col">불량 비용</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

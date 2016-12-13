@@ -149,13 +149,13 @@ th{
 	}	
 }
 .ta_l{
-	text-align:left;
+	text-align:left !important;
 }
 .ta_r{
-	text-align:right;
+	text-align:right !important;
 }
 .ta_c{
-		text-align:center;	
+		text-align:center !important;	
 }
 
 td {
@@ -311,6 +311,50 @@ td {
 		}
 	}
 }
+
+/*스크롤 테이블*/
+.sctable{
+	table{
+		table-layout: fixed;
+		&.nowrap{
+			th{
+				white-space:nowrap;
+			}
+		}
+	}
+
+	width:100%;
+	overflow:hidden;
+  
+  .tbody_sc_wrap{
+  	span.radio, span.checkbox{
+  		margin:0;
+  	}
+  	overflow-x:scroll;
+  	max-height:220px;
+  	th{
+  		border:1px solid #000;
+  	}
+  	td{
+  		border:1px solid #aaa;
+  		text-align:center;
+  		height:30px;
+  	}
+  	.tbin_sc_wrap{
+  		position:relative;
+  		vertical-align:top;
+  		height:100%;
+  		padding:0 !important;
+  		>div{
+  			height:100%;
+  			overflow-x:scroll;
+  			overflow-y:hidden;
+  			margin-top:-1px;
+  		}
+  	}
+  }
+}
+
 
 /*버튼*/
 form{

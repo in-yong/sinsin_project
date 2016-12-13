@@ -151,7 +151,7 @@ th{
 .bgColor_3{
 		background-color: #ddd;
 		color: #2c496f;
-	}
+}
 .ta_l{
 	text-align:left !important;
 }
@@ -318,6 +318,12 @@ td {
 
 /*스크롤 테이블*/
 .sctable{
+	.btn{
+		border: none;
+		padding:3px 20px;
+		border-radius:3px;
+		border:1px solid #efefef;
+	}	
 	table{
 		table-layout: fixed;
 		&.nowrap{

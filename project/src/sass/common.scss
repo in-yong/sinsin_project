@@ -318,12 +318,6 @@ td {
 
 /*스크롤 테이블*/
 .sctable{
-	.btn{
-		border: none;
-		padding:3px 20px;
-		border-radius:3px;
-		border:1px solid #efefef;
-	}	
 	table{
 		table-layout: fixed;
 		&.nowrap{
@@ -335,7 +329,37 @@ td {
 
 	width:100%;
 	overflow:hidden;
-  
+  .thead_1{
+  	th{
+  		position:relative;
+		&:before{
+			content:"";
+			display:inline-block;
+			position:absolute;
+			left:0;
+			bottom:0;
+			width:1px;
+			height:8px;
+			background-color:#efefef;
+		}
+		&:first-child{
+			&:before{
+				content:none;
+			}
+		}
+		&:last-child{
+			&:after{
+				content:"";
+				width:20px;
+				height:36px;
+				background:#395971;
+				position:absolute;
+				top:0;
+				right:-20px;
+			}
+		}	
+  	}
+  }
   .tbody_sc_wrap{
   	span.radio, span.checkbox{
   		margin:0;

@@ -13,6 +13,16 @@
   <script type="text/javascript" src="../js/common.js"></script> 
   <title>생산관리 공정작업결과등록관리</title>
   <link rel="stylesheet" type="text/css" href="../css/d_prd_mng.css" media="all" />
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  /*table{border-collapse:collapse;width:100%;}*/
+  .wrap{width:100%;/*background-color:yellow;*/overflow:hidden;}
+  .tbody_sc_wrap th{border:1px solid #000;}
+  .tbody_sc_wrap{overflow-x:scroll;height:220px;}
+  .tbody_sc_wrap td{border:1px solid #aaa;text-align:center;height:30px;}
+  .tbin_sc_wrap{position:relative;vertical-align:top;height:100%;padding:0 !important;}
+  .tbin_sc_wrap>div{height:100%;overflow-x:scroll;overflow-y:hidden;margin-top:-1px;}
+  </style>
  </head>
  <body>
 	<section>
@@ -111,7 +121,7 @@
 			<div class="row">     
 				<section class="section_1 col_12">
 					<div class="col">
-						<h1 class="tit_2">공정현황List</h1>
+						<h1 class="tit_2">공정현황 LIST</h1>
 						<form action="#" method="post" class="pos_r">
 							<p class="d_3_color1">
 								<span class="d_3_white">공정미완료</span>
@@ -122,6 +132,250 @@
 								<span class="d_3_red">미완료</span>
 								<span class="d_3_green_r">완료</span>
 							</p>
+							  <div class="wrap sctable">
+							   <div class="thead_1">
+							    <table style="table-layout: fixed;">
+							     <colgroup>
+							      <col width="200px" />
+							      <col width="200px" />
+							      <col width="200px" />
+							      <col width="500px" />
+							      <col width="200px" />
+							      <col width="200px" />
+							      <col width="200px" />
+							      <col width="200px" />
+							      <col width="200px" />
+							      <col width="200px" />
+							     </colgroup>
+							     <thead>
+							      <tr>
+							       <th>제목1</th>
+							       <th>제목2</th>
+							       <th>제목3</th>
+							       <th>제목4</th>
+							       <th>제목</th>
+							       <th>제목6</th>
+							       <th>제목7</th>
+							       <th>제목8</th>
+							       <th>제목9</th>
+							       <th>제목10</th>
+							      </tr>
+							     </thead>
+							    </table>
+							   </div>
+							   <div class="tbody_sc_wrap">
+							     <div>
+							      <table style="table-layout: fixed;">
+							       <colgroup>
+							        <col width="200px" />
+							        <col width="200px" />
+							        <col width="200px" />
+							        <col width="500px" />
+							        <col width="200px" />
+							        <col width="200px" />
+							        <col width="200px" />
+							        <col width="200px" />
+							        <col width="200px" />
+							        <col width="200px" />
+							       </colgroup>
+							       <thead></thead>
+							       <tbody>
+							        <tr>
+							         <td>내용-1</td>
+							         <td>내용-2</td>
+							         <td>내용-3</td>
+							         <td rowspan="100"  class="tbin_sc_wrap">
+							          <div>
+							            <div>
+							             <table class="tbst_1" style="table-layout: fixed;">
+							              <colgroup>
+							               <col width="100px" />
+							               <col width="100px" />
+							               <col width="100px" />
+							               <col width="100px" />
+							               <col width="100px" />
+							               <col width="100px" />
+							               <col width="100px" />
+							               <col width="100px" />
+							              </colgroup>
+							              <tbody>
+							               <tr>
+							                <td>내용1</td>
+							                <td>내용2</td>
+							                <td>내용3</td>
+							                <td>내용4</td>
+							                <td>내용1</td>
+							                <td>내용6</td>
+							                <td>내용7</td>
+							                <td>내용1</td>
+							               </tr>
+							               <tr>
+							                <td>내용1</td>
+							                <td>내용2</td>
+							                <td>내용3</td>
+							                <td>내용4</td>
+							                <td>내용5</td>
+							                <td>내용6</td>
+							                <td>내용7</td>
+							                <td>내용2</td>
+							               </tr>
+							               <tr>
+							                <td>내용1</td>
+							                <td>내용2</td>
+							                <td>내용3</td>
+							                <td>내용4</td>
+							                <td>내용5</td>
+							                <td>내용6</td>
+							                <td>내용7</td>
+							                <td>내용3</td>
+							               </tr>
+							               <tr>
+							                <td>내용1</td>
+							                <td>내용2</td>
+							                <td>내용3</td>
+							                <td>내용4</td>
+							                <td>내용5</td>
+							                <td>내용6</td>
+							                <td>내용7</td>
+							                <td>내용4</td>
+							               </tr>
+							               <tr>
+							                <td>내용1</td>
+							                <td>내용2</td>
+							                <td>내용3</td>
+							                <td>내용4</td>
+							                <td>내용5</td>
+							                <td>내용6</td>
+							                <td>내용7</td>
+							                <td>내용5</td>
+							               </tr>
+							               <tr>
+							                <td>내용1</td>
+							                <td>내용2</td>
+							                <td>내용3</td>
+							                <td>내용4</td>
+							                <td>내용5</td>
+							                <td>내용6</td>
+							                <td>내용7</td>
+							                <td>내용6</td>
+							               </tr>
+							               <tr>
+							                <td>내용1</td>
+							                <td>내용2</td>
+							                <td>내용3</td>
+							                <td>내용4</td>
+							                <td>내용5</td>
+							                <td>내용6</td>
+							                <td>내용7</td>
+							                <td>내용7</td>
+							               </tr>
+							               <tr>
+							                <td>내용1</td>
+							                <td>내용2</td>
+							                <td>내용3</td>
+							                <td>내용4</td>
+							                <td>내용5</td>
+							                <td>내용6</td>
+							                <td>내용7</td>
+							                <td>내용8</td>
+							               </tr>
+							              </tbody>
+							             </table>
+							            </div>
+							          </div>
+							         </td>
+							         <td>내용-1r</td>
+							         <td>내용-6</td>
+							         <td>내용-7</td>
+							         <td>내용-8</td>
+							         <td>내용-9</td>
+							         <td>내용-10</td>
+							        </tr>
+							        <tr>
+							         <td>내용-1</td>
+							         <td>내용-2</td>
+							         <td>내용-3</td>
+							         <td>내용-2r</td>
+							         <td>내용-6</td>
+							         <td>내용-7</td>
+							         <td>내용-8</td>
+							         <td>내용-9</td>
+							         <td>내용-10</td>
+							        </tr>
+							        <tr>
+							         <td>내용-1</td>
+							         <td>내용-2</td>
+							         <td>내용-3</td>
+							         <td>내용-3r</td>
+							         <td>내용-6</td>
+							         <td>내용-7</td>
+							         <td>내용-8</td>
+							         <td>내용-9</td>
+							         <td>내용-10</td>
+							        </tr>
+							        <tr>
+							         <td>내용-1</td>
+							         <td>내용-2</td>
+							         <td>내용-3</td>
+							         <td>내용-4r</td>
+							         <td>내용-6</td>
+							         <td>내용-7</td>
+							         <td>내용-8</td>
+							         <td>내용-9</td>
+							         <td>내용-10</td>
+							        </tr>
+							        <tr>
+							         <td>내용-1</td>
+							         <td>내용-2</td>
+							         <td>내용-3</td>
+							         <td>내용-5r</td>
+							         <td>내용-6</td>
+							         <td>내용-7</td>
+							         <td>내용-8</td>
+							         <td>내용-9</td>
+							         <td>내용-10</td>
+							        </tr>
+							        <tr>
+							         <td>내용-1</td>
+							         <td>내용-2</td>
+							         <td>내용-3</td>
+							         <td>내용-6r</td>
+							         <td>내용-6</td>
+							         <td>내용-7</td>
+							         <td>내용-8</td>
+							         <td>내용-9</td>
+							         <td>내용-10</td>
+							        </tr>
+							        <tr>
+							         <td>내용-1</td>
+							         <td>내용-2</td>
+							         <td>내용-3</td>
+							         <td>내용-7r</td>
+							         <td>내용-6</td>
+							         <td>내용-7</td>
+							         <td>내용-8</td>
+							         <td>내용-9</td>
+							         <td>내용-10</td>
+							        </tr>
+							        <tr>
+							         <td>내용-1</td>
+							         <td>내용-2</td>
+							         <td>내용-3</td>
+							         <td>내용-8r</td>
+							         <td>내용-6</td>
+							         <td>내용-7</td>
+							         <td>내용-8</td>
+							         <td>내용-9</td>
+							         <td>내용-10</td>
+							        </tr>
+							        <!-- <tr>
+							         <td colspan="10" style="height:21px;border:none;"></td>
+							        </tr> -->
+							       </tbody>
+							      </table>
+							     </div>
+							   </div>
+							  </div>							
 							<p class="frm_btn_1 top"><input type="submit" value="엑셀Down"></p>
 						</form>             
 					</div>

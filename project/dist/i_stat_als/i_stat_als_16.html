@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="ko">
-
 <head>
     <meta charset="utf-8">
     <meta name="Author" content="">
@@ -12,14 +11,12 @@
     <script type="text/javascript" src="../js/html5shiv.min.js"></script>
     <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
-    <title>(영업)년도별실적현황</title>
-  <link rel="stylesheet" type="text/css" href="../css/i_stat_als_sch.css"/>
+    <title>(품질)실적(년도별전체)현황화면</title>
 </head>
-
 <body>
     <section>
         <header id="sub_header">
-            <h1 class="tit_1"><span class="tit_bd_wrap">(영업)년도별실적현황</span></h1>
+            <h1 class="tit_1"><span class="tit_bd_wrap">실적(년도별전체)현황화면</span></h1>
         </header>
         <div id="sub_wrap" class="grid">
             <div class="row">
@@ -32,8 +29,8 @@
                                     <div class="col">
                                         <p class="ml_20">
                                             <label for="produc_code_1_1">년도</label>
-                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1" class="ml_20">
-                                            <input type="button" class="btn_search" value="찾기">
+                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1" class="ml_20 ta_c" placeholder="2016">
+                                            <span>(년)</span>
                                         </p>
                                     </div>
                                 </div>
@@ -48,12 +45,13 @@
             <div class="row">
                 <section class="section_1 col_12">
                     <div class="col">
-                        <h1 class="tit_2">년도별 영업 실적 현황</h1>
+                        <h1 class="tit_2">년도별전체실적</h1>
                         <form action="#" method="post" class="pos_r">
                             <div class="basic_table_column_1 sth_1">
                                 <table class="table_column_1 display nowrap" data-table-height="200px" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
+                                            <th scope="col"></th>
                                             <th scope="col"></th>
                                             <th scope="col">합계</th>
                                             <th scope="col">1월</th>
@@ -72,7 +70,8 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">작년판매실적</th>
+                                            <th scope="row" rowspan="10">자동차</th>
+                                            <th scope="row" class="ta_r bgColor_2">고객불만건수목표</th>
                                             <td>내용1</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -88,10 +87,7 @@
                                             <td>내용1</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" colspan="14" class="ta_l bgColor_1"><span class="pl_60">[영업계획금액]</span></th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="ta_r bgColor_2">영업계획금액</th>
+                                            <th scope="row" class="ta_r">판매 LOT 수</th>
                                             <td>내용3</td>
                                             <td>내용3</td>
                                             <td>내용3</td>
@@ -107,7 +103,7 @@
                                             <td>내용3</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">수주금액</th>
+                                            <th scope="row" class="ta_r">불량 판매 LOT 수</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -123,7 +119,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">판매금액</th>
+                                            <th scope="row" class="ta_r">고객불만건수실적</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -139,7 +135,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">금액 적중율</th>
+                                            <th scope="row" class="ta_r">고객불만달성율</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -155,43 +151,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">금액 달성율</th>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" colspan="14" class="ta_l bgColor_1"><span class="pl_60">[영업계획수량]</span></th>
-
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="ta_r bgColor_2">영업계획수량</th>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="ta_r">수주수량</th>
+                                            <th scope="row" class="ta_r bgColor_2">고객불만반송목표</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -223,7 +183,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">금액 적중율</th>
+                                            <th scope="row" class="ta_r">불량수량</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -239,7 +199,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">금액 달성율</th>
+                                            <th scope="row" class="ta_r">고객불만반송실적</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -255,59 +215,55 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" colspan="14" class="ta_l bgColor_1"><span class="pl_60">[납기]</span></th>
-
+                                            <th scope="row" class="ta_r">반송율달성율</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr><tr>
+                                            <th scope="row" rowspan="10">전체</th>
+                                            <th scope="row" class="ta_r bgColor_2">고객불만건수목표</th>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r bgColor_2">납기준수율목표(자동차)</th>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
+                                            <th scope="row" class="ta_r">출하 LOT수</th>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">수주건수(자동차)</th>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="ta_r">납기준수건수(자동차)</th>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="ta_r">납기준수율(자동차)</th>
+                                            <th scope="row" class="ta_r">불량 LOT 수</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -323,7 +279,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">납기달성율(자동차)</th>
+                                            <th scope="row" class="ta_r">고객불만건수실적</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -339,7 +295,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r bgColor_2">납기준수율목표(전체)</th>
+                                            <th scope="row" class="ta_r">고객불만달성율</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -355,7 +311,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">수주건수(전체)</th>
+                                            <th scope="row" class="ta_r bgColor_2">고객불만반송목표</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -371,7 +327,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">납기준수건수(전체)</th>
+                                            <th scope="row" class="ta_r">판매수량</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -387,7 +343,7 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">납기준수율(전체)</th>
+                                            <th scope="row" class="ta_r">불량수량</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -403,7 +359,23 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">납기달성율(전체)</th>
+                                            <th scope="row" class="ta_r">고객불만반송실적</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>    
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">반송율달성율</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -419,58 +391,40 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" colspan="14" class="ta_l bgColor_1"><span class="pl_60">[양산]</span></th>
+                                            <th scope="row" rowspan="3">재생</th>
+                                            <th scope="row" class="ta_r bgColor_2">재생불량율목표</th>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r bgColor_2">양산전환율목표</th>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
+                                            <th scope="row" class="ta_r">재생불량율실적</th>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_r">샘플건수</th>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="ta_r">양산전환건수</th>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                            <td>내용4</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="ta_r">양산전환율실적</th>
+                                            <th scope="row" class="ta_r">재생불량달성율</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>
@@ -486,7 +440,330 @@
                                             <td>내용4</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="ta_l">양산전환달성율</th>
+                                            <th scope="row" rowspan="6">폐기</th>
+                                            <th scope="row" class="ta_r bgColor_2">폐기불량율목표</th>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">폐기불량율실적</th>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">폐기불량달성율</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r bgColor_2">폐기금액목표</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">폐기금액실적</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">폐기금액달성율</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="10">수입검사</th>
+                                            <th scope="row" class="ta_r bgColor_2">수입검사불량율목표</th>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">입고수량</th>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">수입검사불량수량</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">수입검사불량율실적</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">수입검사달성율</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r bgColor_2">수입검사건수목표</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">입고 LOT수</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">불량 LOT 수</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">LOT 합격률</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">수입검사달성율</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="5">입고검사</th>
+                                            <th scope="row" class="ta_r bgColor_2">입고검사불량율계획</th>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                            <td>내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">입고검사수량</th>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                            <td>내용3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">입고검사불량수량</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">입고검사불량율실적</th>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                            <td>내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="ta_r">입고검사달성율</th>
                                             <td>내용4</td>
                                             <td>내용4</td>
                                             <td>내용4</td>

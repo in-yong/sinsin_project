@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>(영업)실적(년도별제품별)현황</title>
+    <link rel="stylesheet" type="text/css" href="../css/i_stat_als_sch.css" />
+</head>
+
+<body>
+    <section>
+        <header id="sub_header">
+            <h1 class="tit_1"><span class="tit_bd_wrap">(영업)실적(년도별제품별)현황</span></h1>
+        </header>
+        <div id="sub_wrap" class="grid">
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">검색조건</h1>
+                        <form action="#" method="post" class="pos_r">
+                            <div class="row">
+                                <div class="col_4">
+                                    <div class="col">
+                                        <p class="pb_3">
+                                            <label for="produc_code_1_1" class="pr39">년도</label>
+                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                                            <input type="button" class="btn_search" value="찾기"> (년)
+                                        </p>
+                                        <p>
+                                            <label for="produc_code_1_1">거래처코드</label>
+                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                                            <input type="button" class="btn_search" value="찾기">
+                                            <input type="text" name="produc_code_1_2" id="produc_code_1_2">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="frm_btn_1 top">
+                                <input type="submit" value="조회">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">년도별 제품 실적</h1>
+                        <form action="#" method="post" class="pos_r">
+                            <div class="basic_table_column_1 sth_1">
+                                <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="5" rowspan="2"><span class="blind">빈칸</span></th>
+                                            <th scope="col" colspan="5">합계</th>
+                                            <th scope="col" colspan="5">1월</th>
+                                            <th scope="col" colspan="5">2월</th>
+                                            <th scope="col" colspan="5">3월</th>
+                                            <th scope="col" colspan="5">4월</th>
+                                            <th scope="col" colspan="5">5월</th>
+                                            <th scope="col" colspan="5">6월</th>
+                                            <th scope="col" colspan="5">7월</th>
+                                            <th scope="col" colspan="5">8월</th>
+                                            <th scope="col" colspan="5">9월</th>
+                                            <th scope="col" colspan="5">10월</th>
+                                            <th scope="col" colspan="5">11월</th>
+                                            <th scope="col" colspan="5">12월</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+
+                                            <th scope="col" colspan="2">수주</th>
+                                            <th scope="col" colspan="2">판매</th>
+                                            <th scope="col" rowspan="2">달성율</th>
+                                        </tr>
+                                        <tr>
+                                            <th>제품코드</th>
+                                            <th>제품명</th>
+                                            <th>거래처코드</th>
+                                            <th>거래처명</th>
+                                            <th>규격</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                            <th>수량</th>
+                                            <th>금액</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="bgColor_3">합계</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">10</td>
+                                            <td class="bgColor_3">1,000</td>
+                                            <td class="bgColor_3">100%</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                        <td>내용9</td>
+                                        <td>내용10</td>
+                                        <td>내용11</td>
+                                        <td>내용12</td>
+                                        <td>내용13</td>
+                                        <td>내용14</td>
+                                        <td>내용15</td>
+                                        <td>내용16</td>
+                                        <td>내용17</td>
+                                        <td>내용18</td>
+                                        <td>내용19</td>
+                                        <td>내용20</td>
+                                        <td>내용21</td>
+                                        <td>내용22</td>
+                                        <td>내용23</td>
+                                        <td>내용24</td>
+                                        <td>내용25</td>
+                                        <td>내용26</td>
+                                        <td>내용27</td>
+                                        <td>내용28</td>
+                                        <td>내용29</td>
+                                        <td>내용30</td>
+                                        <td>내용31</td>
+                                        <td>내용32</td>
+                                        <td>내용33</td>
+                                        <td>내용34</td>
+                                        <td>내용35</td>
+                                        <td>내용36</td>
+                                        <td>내용37</td>
+                                        <td>내용38</td>
+                                        <td>내용39</td>
+                                        <td>내용40</td>
+                                        <td>내용41</td>
+                                        <td>내용42</td>
+                                        <td>내용43</td>
+                                        <td>내용44</td>
+                                        <td>내용45</td>
+                                        <td>내용46</td>
+                                        <td>내용47</td>
+                                        <td>내용48</td>
+                                        <td>내용49</td>
+                                        <td>내용50</td>
+                                        <td>내용51</td>
+                                        <td>내용52</td>
+                                        <td>내용53</td>
+                                        <td>내용54</td>
+                                        <td>내용55</td>
+                                        <td>내용56</td>
+                                        <td>내용57</td>
+                                        <td>내용58</td>
+                                        <td>내용59</td>
+                                        <td>내용60</td>
+                                        <td>내용61</td>
+                                        <td>내용62</td>
+                                        <td>내용63</td>
+                                        <td>내용64</td>
+                                        <td>내용65</td>
+                                        <td>내용66</td>
+                                        <td>내용67</td>
+                                        <td>내용68</td>
+                                        <td>내용69</td>
+                                        <td>내용70</td>
+                                      </tr>
+                                      <tr>
+                                        <td>내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                        <td>내용9</td>
+                                        <td>내용10</td>
+                                        <td>내용11</td>
+                                        <td>내용12</td>
+                                        <td>내용13</td>
+                                        <td>내용14</td>
+                                        <td>내용15</td>
+                                        <td>내용16</td>
+                                        <td>내용17</td>
+                                        <td>내용18</td>
+                                        <td>내용19</td>
+                                        <td>내용20</td>
+                                        <td>내용21</td>
+                                        <td>내용22</td>
+                                        <td>내용23</td>
+                                        <td>내용24</td>
+                                        <td>내용25</td>
+                                        <td>내용26</td>
+                                        <td>내용27</td>
+                                        <td>내용28</td>
+                                        <td>내용29</td>
+                                        <td>내용30</td>
+                                        <td>내용31</td>
+                                        <td>내용32</td>
+                                        <td>내용33</td>
+                                        <td>내용34</td>
+                                        <td>내용35</td>
+                                        <td>내용36</td>
+                                        <td>내용37</td>
+                                        <td>내용38</td>
+                                        <td>내용39</td>
+                                        <td>내용40</td>
+                                        <td>내용41</td>
+                                        <td>내용42</td>
+                                        <td>내용43</td>
+                                        <td>내용44</td>
+                                        <td>내용45</td>
+                                        <td>내용46</td>
+                                        <td>내용47</td>
+                                        <td>내용48</td>
+                                        <td>내용49</td>
+                                        <td>내용50</td>
+                                        <td>내용51</td>
+                                        <td>내용52</td>
+                                        <td>내용53</td>
+                                        <td>내용54</td>
+                                        <td>내용55</td>
+                                        <td>내용56</td>
+                                        <td>내용57</td>
+                                        <td>내용58</td>
+                                        <td>내용59</td>
+                                        <td>내용60</td>
+                                        <td>내용61</td>
+                                        <td>내용62</td>
+                                        <td>내용63</td>
+                                        <td>내용64</td>
+                                        <td>내용65</td>
+                                        <td>내용66</td>
+                                        <td>내용67</td>
+                                        <td>내용68</td>
+                                        <td>내용69</td>
+                                        <td>내용70</td>
+                                      </tr>
+                                      <tr>
+                                        <td>내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                        <td>내용9</td>
+                                        <td>내용10</td>
+                                        <td>내용11</td>
+                                        <td>내용12</td>
+                                        <td>내용13</td>
+                                        <td>내용14</td>
+                                        <td>내용15</td>
+                                        <td>내용16</td>
+                                        <td>내용17</td>
+                                        <td>내용18</td>
+                                        <td>내용19</td>
+                                        <td>내용20</td>
+                                        <td>내용21</td>
+                                        <td>내용22</td>
+                                        <td>내용23</td>
+                                        <td>내용24</td>
+                                        <td>내용25</td>
+                                        <td>내용26</td>
+                                        <td>내용27</td>
+                                        <td>내용28</td>
+                                        <td>내용29</td>
+                                        <td>내용30</td>
+                                        <td>내용31</td>
+                                        <td>내용32</td>
+                                        <td>내용33</td>
+                                        <td>내용34</td>
+                                        <td>내용35</td>
+                                        <td>내용36</td>
+                                        <td>내용37</td>
+                                        <td>내용38</td>
+                                        <td>내용39</td>
+                                        <td>내용40</td>
+                                        <td>내용41</td>
+                                        <td>내용42</td>
+                                        <td>내용43</td>
+                                        <td>내용44</td>
+                                        <td>내용45</td>
+                                        <td>내용46</td>
+                                        <td>내용47</td>
+                                        <td>내용48</td>
+                                        <td>내용49</td>
+                                        <td>내용50</td>
+                                        <td>내용51</td>
+                                        <td>내용52</td>
+                                        <td>내용53</td>
+                                        <td>내용54</td>
+                                        <td>내용55</td>
+                                        <td>내용56</td>
+                                        <td>내용57</td>
+                                        <td>내용58</td>
+                                        <td>내용59</td>
+                                        <td>내용60</td>
+                                        <td>내용61</td>
+                                        <td>내용62</td>
+                                        <td>내용63</td>
+                                        <td>내용64</td>
+                                        <td>내용65</td>
+                                        <td>내용66</td>
+                                        <td>내용67</td>
+                                        <td>내용68</td>
+                                        <td>내용69</td>
+                                        <td>내용70</td>
+                                      </tr>
+                                      <tr>
+                                        <td>내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                        <td>내용9</td>
+                                        <td>내용10</td>
+                                        <td>내용11</td>
+                                        <td>내용12</td>
+                                        <td>내용13</td>
+                                        <td>내용14</td>
+                                        <td>내용15</td>
+                                        <td>내용16</td>
+                                        <td>내용17</td>
+                                        <td>내용18</td>
+                                        <td>내용19</td>
+                                        <td>내용20</td>
+                                        <td>내용21</td>
+                                        <td>내용22</td>
+                                        <td>내용23</td>
+                                        <td>내용24</td>
+                                        <td>내용25</td>
+                                        <td>내용26</td>
+                                        <td>내용27</td>
+                                        <td>내용28</td>
+                                        <td>내용29</td>
+                                        <td>내용30</td>
+                                        <td>내용31</td>
+                                        <td>내용32</td>
+                                        <td>내용33</td>
+                                        <td>내용34</td>
+                                        <td>내용35</td>
+                                        <td>내용36</td>
+                                        <td>내용37</td>
+                                        <td>내용38</td>
+                                        <td>내용39</td>
+                                        <td>내용40</td>
+                                        <td>내용41</td>
+                                        <td>내용42</td>
+                                        <td>내용43</td>
+                                        <td>내용44</td>
+                                        <td>내용45</td>
+                                        <td>내용46</td>
+                                        <td>내용47</td>
+                                        <td>내용48</td>
+                                        <td>내용49</td>
+                                        <td>내용50</td>
+                                        <td>내용51</td>
+                                        <td>내용52</td>
+                                        <td>내용53</td>
+                                        <td>내용54</td>
+                                        <td>내용55</td>
+                                        <td>내용56</td>
+                                        <td>내용57</td>
+                                        <td>내용58</td>
+                                        <td>내용59</td>
+                                        <td>내용60</td>
+                                        <td>내용61</td>
+                                        <td>내용62</td>
+                                        <td>내용63</td>
+                                        <td>내용64</td>
+                                        <td>내용65</td>
+                                        <td>내용66</td>
+                                        <td>내용67</td>
+                                        <td>내용68</td>
+                                        <td>내용69</td>
+                                        <td>내용70</td>
+                                      </tr>
+                                      <tr>
+                                        <td>내용1</td>
+                                        <td>내용2</td>
+                                        <td>내용3</td>
+                                        <td>내용4</td>
+                                        <td>내용5</td>
+                                        <td>내용6</td>
+                                        <td>내용7</td>
+                                        <td>내용8</td>
+                                        <td>내용9</td>
+                                        <td>내용10</td>
+                                        <td>내용11</td>
+                                        <td>내용12</td>
+                                        <td>내용13</td>
+                                        <td>내용14</td>
+                                        <td>내용15</td>
+                                        <td>내용16</td>
+                                        <td>내용17</td>
+                                        <td>내용18</td>
+                                        <td>내용19</td>
+                                        <td>내용20</td>
+                                        <td>내용21</td>
+                                        <td>내용22</td>
+                                        <td>내용23</td>
+                                        <td>내용24</td>
+                                        <td>내용25</td>
+                                        <td>내용26</td>
+                                        <td>내용27</td>
+                                        <td>내용28</td>
+                                        <td>내용29</td>
+                                        <td>내용30</td>
+                                        <td>내용31</td>
+                                        <td>내용32</td>
+                                        <td>내용33</td>
+                                        <td>내용34</td>
+                                        <td>내용35</td>
+                                        <td>내용36</td>
+                                        <td>내용37</td>
+                                        <td>내용38</td>
+                                        <td>내용39</td>
+                                        <td>내용40</td>
+                                        <td>내용41</td>
+                                        <td>내용42</td>
+                                        <td>내용43</td>
+                                        <td>내용44</td>
+                                        <td>내용45</td>
+                                        <td>내용46</td>
+                                        <td>내용47</td>
+                                        <td>내용48</td>
+                                        <td>내용49</td>
+                                        <td>내용50</td>
+                                        <td>내용51</td>
+                                        <td>내용52</td>
+                                        <td>내용53</td>
+                                        <td>내용54</td>
+                                        <td>내용55</td>
+                                        <td>내용56</td>
+                                        <td>내용57</td>
+                                        <td>내용58</td>
+                                        <td>내용59</td>
+                                        <td>내용60</td>
+                                        <td>내용61</td>
+                                        <td>내용62</td>
+                                        <td>내용63</td>
+                                        <td>내용64</td>
+                                        <td>내용65</td>
+                                        <td>내용66</td>
+                                        <td>내용67</td>
+                                        <td>내용68</td>
+                                        <td>내용69</td>
+                                        <td>내용70</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="frm_btn_3 top">
+                                <input type="button" value="복사">
+                                <input type="button" value="저장">
+                                <input type="submit" value="삭제">
+                                <input type="submit" value="엑셀Down" class="ml_30">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="section_1 col_12">
+                    <div class="col">
+                        <h1 class="tit_2">월별 제품 실적</h1>
+                        <form action="#" method="post" class="pos_r">
+                            <div class="basic_table_column_1 sth_1">
+                                <table class="table_column_1 display nowrap col_9" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                          <th colspan="14"></th>
+                                        </tr>
+                                        <tr>
+                                          <th colspan="6" ></th>
+                                          <th scope="col" colspan="2" >수주</th>
+                                          <th scope="col" colspan="2" >판매</th>
+                                          <th scope="col" colspan="2" >미납</th>
+                                          <th scope="col" colspan="2" >달성율</th>
+                                        </tr>
+
+                                        <tr>
+                                          <th>제품코드</th>
+                                          <th>제품명</th>
+                                          <th>거래처코드</th>
+                                          <th>거래처명</th>
+                                          <th>결제조건</th>
+                                          <th>규격</th>
+                                          <th>수량</th>
+                                          <th>금액</th>
+                                          <th>수량</th>
+                                          <th>금액</th>
+                                          <th>수량</th>
+                                          <th>금액</th>
+                                          <th>수량</th>
+                                          <th>금액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                         <td colspan="6" class="bgColor_3">합계</td>
+                                         <td class="bgColor_3">10</td>
+                                         <td class="bgColor_3">1,000</td>
+                                         <td class="bgColor_3">10</td>
+                                         <td class="bgColor_3">1,000</td>
+                                         <td class="bgColor_3">10</td>
+                                         <td class="bgColor_3">1,000</td>
+                                         <td class="bgColor_3">10</td>
+                                         <td class="bgColor_3">1,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                       </tr>
+                                       <tr>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                       </tr>
+                                       <tr>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                       </tr>
+                                       <tr>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                       </tr>
+                                       <tr>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                       </tr>
+                                       <tr>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                       </tr>
+                                       <tr>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                       </tr>
+                                       <tr>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                         <td>내용1</td>
+                                       </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table_column_1 display nowrap col_3" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                          <th scope="col" colspan="4">2016.10.21</th>
+                                        </tr>
+                                        <tr>
+                                          <th scope="col" colspan="2">수주</th>
+                                          <th scope="col" colspan="2">판매</th>
+                                        </tr>
+                                        <tr>
+                                          <th scope="col">수량</th>
+                                          <th scope="col">금액</th>
+                                          <th scope="col">수량</th>
+                                          <th scope="col">금액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                         <td class="bgColor_3">10</td>
+                                         <td class="bgColor_3">1,000</td>
+                                         <td class="bgColor_3">10</td>
+                                         <td class="bgColor_3">1,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                    </tbody>
+                                </table>
+                                 <table class="table_column_1 display nowrpa col_3" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                          <th scope="col" colspan="4">2016.10.21</th>
+                                        </tr>
+                                        <tr>
+                                          <th scope="col" colspan="2">수주</th>
+                                          <th scope="col" colspan="2">판매</th>
+                                        </tr>
+                                        <tr>
+                                          <th scope="col">수량</th>
+                                          <th scope="col">금액</th>
+                                          <th scope="col">수량</th>
+                                          <th scope="col">금액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                         <td class="bgColor_3">10</td>
+                                         <td class="bgColor_3">1,000</td>
+                                         <td class="bgColor_3">10</td>
+                                         <td class="bgColor_3">1,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                       <tr>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                         <td>20</td>
+                                         <td>2,000</td>
+                                       </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="frm_btn_3 top">
+                                <input type="submit" value="엑셀Down" class="ml_30">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

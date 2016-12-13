@@ -118,4 +118,29 @@ $(document).ready(function() {
    }
 
    $(".sctable").tbinScTable({myObj:".sctable",tbinH:200});
+
+  /*스크롤테이블2*/
+  function ScTable2(myObj) {
+      this.myObj = myObj; 
+      this.headTable = $(".thead_wrap>table", this.myObj);
+      this.bodyWrap = $(".tbody_wrap", this.myObj);
+      this.bindEvent();
+  }
+  ScTable2.prototype.bindEvent = function() {
+      $(this.bodyWrap).on("scroll",$.proxy(this.scrollMove, this));
+  }
+  ScTable2.prototype.scrollMove = function(e) {
+    var evntObj = $(e.target);
+    var scr_l = evntObj.scrollLeft();
+    //console.log(scr_l);
+    this.headTable.css({
+      marginLeft:-scr_l+"px"
+    });
+  }
+  $.fn.scrTable = function() {
+      $(this).each(function(i, o){
+         arrScTb[i] = new ScTable2($(this));
+      });
+  }
+  $(".sctable2").scrTable();
 }); 

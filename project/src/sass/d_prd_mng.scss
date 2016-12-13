@@ -1,4 +1,5 @@
 @charset "utf-8";
+/*d_common*/
 .fl_left{float:left;}
 .fl_right{float:right;}
 .c_b{clear:both;}
@@ -11,6 +12,73 @@
 	border-bottom: 1px solid #c3c3c3;
 	padding-bottom: 8px;
 }
+.d_color1{
+	position:absolute;
+	top:-30px;
+	right:390px;
+}
+.d_color2{
+	position:absolute;
+	top:-30px;
+	right:200px;
+}
+.d_white:before{
+	content:"";
+	display:inline-block;
+	width:20px;
+	height:10px;
+	background:#fff;
+}
+.d_w{
+	background:#fff;
+}
+.d_yellow:before{
+	content:"";
+	display:inline-block;
+	width:20px;
+	height:10px;
+	background:#ffc000;
+}
+.d_y{
+	background:#ffc000;
+}
+.d_green_s:before{
+	content:"";
+	display:inline-block;
+	width:20px;
+	height:10px;
+	background:#00b050;
+}
+.d_g{
+	background:#00b050;
+}
+.d_blue:before{
+	content:"";
+	display:inline-block;
+	width:20px;
+	height:10px;
+	background:#538ed5;
+}
+.d_b{
+	background:#538ed5;
+}
+.d_red:before{
+	content:"";
+	display:inline-block;
+	width:10px;
+	height:10px;
+	background:#f00;
+	border-radius:50%;
+}
+.d_green_r:before{
+	content:"";
+	display:inline-block;
+	width:10px;
+	height:10px;
+	background:#00b050;
+	border-radius:50%;
+}
+/*//d_common*/
 
 /*d_prd_mng_1*/
 .row_box_wrap {
@@ -67,59 +135,7 @@
 /*d_prd_mng_3*/
 #date_in_1_1.d_3_w,#date_in_1_2.d_3_w{width:94px;}
 .d_3_center{display:inline-block;width:24px;text-align:center;}
-.d_3_color1{
-	position:absolute;
-	top:-30px;
-	right:390px;
-	.d_3_white:before{
-		content:"";
-		display:inline-block;
-		width:20px;
-		height:10px;
-		background:#fff;
-	}
-	.d_3_yellow:before{
-		content:"";
-		display:inline-block;
-		width:20px;
-		height:10px;
-		background:#ffc000;
-	}	.d_3_green_s:before{
-		content:"";
-		display:inline-block;
-		width:20px;
-		height:10px;
-		background:#00b050;
-	}	.d_3_blue:before{
-		content:"";
-		display:inline-block;
-		width:20px;
-		height:10px;
-		background:#538ed5;
-	}
-}.d_3_color2{
-	position:absolute;
-	top:-30px;
-	right:200px;
-	.d_3_red:before{
-		content:"";
-		display:inline-block;
-		width:10px;
-		height:10px;
-		background:#f00;
-		border-radius:50%;
-	}
-	.d_3_green_r:before{
-		content:"";
-		display:inline-block;
-		width:10px;
-		height:10px;
-		background:#00b050;
-		border-radius:50%;
-	}
-}
 .d_3_weijoo{position:absolute;top:-35px;right:300px;}
-
 
 /*//d_prd_mng_3*/
 

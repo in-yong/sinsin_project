@@ -148,7 +148,7 @@
 		th{
 			width:50%;
 			height: 35px;
-			border:none;
+			border-bottom:1px solid #afafaf;
 			&:after{
 				display:none;
 			}
@@ -210,4 +210,9 @@
 .d_9_mt{margin-top:20px;}
 .d_9_w1{width:100px;}
 .d_9_w2{width:50px;}
+.basic_table_column_1 .dataTables_scrollHead th.d_9_after_1:after{
+	height:70px;			
+	border-bottom:1px solid #afafaf;
+}
+.d_9_after_2:after{display:none;}
 /*//d_prd_mng_9*/

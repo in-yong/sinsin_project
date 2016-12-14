@@ -78,6 +78,7 @@
 	background:#00b050;
 	border-radius:50%;
 }
+.min_h{min-height:387px;}
 /*//d_common*/
 
 /*d_prd_mng_1*/
@@ -107,13 +108,12 @@
                 .circle_rb {
                     display: block;
                     background-color: red;
-                    width: 20px;
-                    height: 20px;
-                    text-align: center;
-                    border-radius: 10px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
                     position: absolute;
-                    top: 5px;
-                    left: 38px;
+                    top: 10px;
+                    left: 45px;
                 }
             }
         }

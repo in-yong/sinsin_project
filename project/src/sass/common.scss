@@ -234,6 +234,20 @@ td {
 		}
 	}	
 }
+
+.sth_2{
+	th{
+		border:1px solid #afafaf;
+		&:before{
+			content:none;
+		}
+	}
+	td{
+		padding-top:6px;
+		padding-bottom:6px;
+	}
+}	
+
 .basic_table_row_1 {
 	margin-bottom:20px;
 	thead{

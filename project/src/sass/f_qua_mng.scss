@@ -32,12 +32,12 @@ input[type=text] {
                 .circle_rb {
                     display: block;
                     background-color: red;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 10px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
                     position: absolute;
-                    top: 5px;
-                    left: 38px;
+                    top: 10px;
+                    left: 45px;
                 }
             }
         }
@@ -81,7 +81,18 @@ input[type=text] {
         margin-right: 13px;
     }
 }
-
+.mml_80{
+    margin-left: -80px;
+}
+.mml_90{
+    margin-left: -90px;
+}
+.mml_220{
+    margin-left: -220px;
+}
+.mml_160{
+    margin-left: -160px;
+}
 .f_qua_radio {
     p {
         margin-left: -60px;

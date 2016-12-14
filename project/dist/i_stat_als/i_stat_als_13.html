@@ -612,8 +612,8 @@
                                                         <tr>
                                                             <th>거래처코드</th>
                                                             <th>거래처명</th>
-                                                            <th>결제조건</th>
-                                                            <th>전월판매금액</th>
+                                                            <th>결제구분</th>
+                                                            <th>전월매입금액</th>
                                                         </tr>
                                                     </thead>
                                                 </table>
@@ -641,8 +641,8 @@
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="4">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="4">입고</th>
                                                             <th colspan="2">미납</th>
                                                             <th colspan="2">달성율</th>
                                                             <th colspan="3">납기준수</th>
@@ -926,7 +926,7 @@
                                 <div class="thead_wrap">
                                     <table>
                                         <colgroup>
-                                            <col width="480px">
+                                            <col width="560px">
                                             <col width="880px">
                                         </colgroup>
                                         <tr>
@@ -939,15 +939,17 @@
                                                         <col width="80px">
                                                         <col width="80px">
                                                         <col width="80px">
+                                                        <col width="80px">
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
                                                             <th>거래처코드</th>
                                                             <th>거래처명</th>
-                                                            <th>결제조건</th>
-                                                            <th>제품코드</th>
-                                                            <th>제품명</th>
+                                                            <th>결제구분</th>
+                                                            <th>부품코드</th>
+                                                            <th>부품명</th>
                                                             <th>자재규격</th>
+                                                            <th>발주번호</th>
                                                         </tr>
                                                     </thead>
                                                 </table>
@@ -966,24 +968,38 @@
                                                         <col width="70px">
                                                         <col width="70px">
                                                         <col width="90px">
+                                                        <col width="90px">
+                                                        <col width="90px">
+                                                        <col width="90px">
+                                                        <col width="90px">
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th colspan="7">수주</th>
-                                                            <th colspan="3">판매</th>
+                                                            <th colspan="6">발주</th>
+                                                            <th colspan="3">입고</th>
+                                                            <th colspan="2">미납</th>
+                                                            <th colspan="2">달성율</th>
                                                             <th rowspan="2">원가절감액</th>
+                                                            <th rowspan="2">인하율</th>
                                                         </tr>
                                                         <tr>
-                                                            <th>수주번호</th>
-                                                            <th>수주일자</th>
-                                                            <th>마감일</th>
+                                                            <th>발주일자</th>
+                                                            <th>입고예정일자</th>
                                                             <th>이전단가</th>
-                                                            <th>수주단가</th>
-                                                            <th>수주량</th>
-                                                            <th>수주금액</th>
-                                                            <th>판매일자</th>
-                                                            <th>판매수량</th>
-                                                            <th>판매금액</th>
+                                                            <th>이전단가</th>
+                                                            <th>발주단가</th>
+                                                            <th>발주수량</th>
+                                                            <th>발주금액</th>
+
+                                                            <th>입고일자</th>
+                                                            <th>입고금액</th>
+                                                            <th>입고수량</th>
+
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+
+                                                            <th>금액</th>
+                                                            <th>수량</th>
                                                         </tr>
                                                     </thead>
                                                 </table>
@@ -1007,29 +1023,15 @@
                                                         <col width="80px">
                                                         <col width="80px">
                                                         <col width="80px">
+                                                        <col width="80px">
                                                     </colgroup>
                                                     <tbody>
                                                         <tr>
-                                                            <th colspan="6" class="bgColor_4">합계</th>
+                                                            <th colspan="7" class="bgColor_4">합계</th>
                                                         </tr>
                                                         <tr>
                                                             <td>내용1</td>
                                                             <td>내용2</td>
-                                                            <td>내용2</td>
-                                                            <td>내용2</td>
-                                                            <td>내용2</td>
-                                                            <td>내용2</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용2</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>내용1</td>
                                                             <td>내용2</td>
                                                             <td>내용2</td>
                                                             <td>내용2</td>
@@ -1043,13 +1045,15 @@
                                                             <td>내용1</td>
                                                             <td>내용1</td>
                                                             <td>내용2</td>
+                                                            <td>내용2</td>
                                                         </tr>
                                                         <tr>
                                                             <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
+                                                            <td>내용2</td>
+                                                            <td>내용2</td>
+                                                            <td>내용2</td>
+                                                            <td>내용2</td>
+                                                            <td>내용2</td>
                                                             <td>내용2</td>
                                                         </tr>
                                                         <tr>
@@ -1059,13 +1063,6 @@
                                                             <td>내용1</td>
                                                             <td>내용1</td>
                                                             <td>내용2</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
-                                                            <td>내용1</td>
                                                             <td>내용2</td>
                                                         </tr>
                                                         <tr>
@@ -1074,6 +1071,34 @@
                                                             <td>내용1</td>
                                                             <td>내용1</td>
                                                             <td>내용1</td>
+                                                            <td>내용2</td>
+                                                            <td>내용2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용2</td>
+                                                            <td>내용2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용2</td>
+                                                            <td>내용2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용1</td>
+                                                            <td>내용2</td>
                                                             <td>내용2</td>
                                                         </tr>
                                                     </tbody>
@@ -1082,6 +1107,17 @@
                                             <td>
                                                 <table>
                                                     <colgroup>
+                                                        <!-- <col width="120px">
+                                                        <col width="90px">
+                                                        <col width="70px">
+                                                        <col width="70px">
+                                                        <col width="70px">
+                                                        <col width="70px">
+                                                        <col width="70px">
+                                                        <col width="90px">
+                                                        <col width="70px">
+                                                        <col width="70px">
+                                                        <col width="90px"> -->
                                                         <col width="120px">
                                                         <col width="90px">
                                                         <col width="70px">
@@ -1093,6 +1129,10 @@
                                                         <col width="70px">
                                                         <col width="70px">
                                                         <col width="90px">
+                                                        <col width="90px">
+                                                        <col width="90px">
+                                                        <col width="90px">
+                                                        <col width="90px">                                     
                                                     </colgroup>
                                                     <tbody>
                                                         <tr>
@@ -1107,111 +1147,148 @@
                                                             <td class="bgColor_4"></td>
                                                             <td class="bgColor_4"></td>
                                                             <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>S20161220-001</td>
                                                             <td>2016-12-20</td>
-                                                            <td class="ta_r">25</td>
-                                                            <td class="ta_r">30</td>
-                                                            <td class="ta_r">31</td>
-                                                            <td class="ta_r">1000</td>
-                                                            <td class="ta_r">31000</td>
+                                                            <td>2016-12-20</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
                                                             <td>2016-12-26</td>
-                                                            <td class="ta_r">200</td>
-                                                            <td class="ta_r">6200</td>
-                                                            <td class="ta_r">6200</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td>3%</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>S20161220-001</td>
                                                             <td>2016-12-20</td>
-                                                            <td class="ta_r">25</td>
-                                                            <td class="ta_r">30</td>
-                                                            <td class="ta_r">31</td>
-                                                            <td class="ta_r">1000</td>
-                                                            <td class="ta_r">31000</td>
+                                                            <td>2016-12-20</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
                                                             <td>2016-12-26</td>
-                                                            <td class="ta_r">200</td>
-                                                            <td class="ta_r">6200</td>
-                                                            <td class="ta_r">6200</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td>3%</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>S20161220-001</td>
                                                             <td>2016-12-20</td>
-                                                            <td class="ta_r">25</td>
-                                                            <td class="ta_r">30</td>
-                                                            <td class="ta_r">31</td>
-                                                            <td class="ta_r">1000</td>
-                                                            <td class="ta_r">31000</td>
+                                                            <td>2016-12-20</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
                                                             <td>2016-12-26</td>
-                                                            <td class="ta_r">200</td>
-                                                            <td class="ta_r">6200</td>
-                                                            <td class="ta_r">6200</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td>3%</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>S20161220-001</td>
                                                             <td>2016-12-20</td>
-                                                            <td class="ta_r">25</td>
-                                                            <td class="ta_r">30</td>
-                                                            <td class="ta_r">31</td>
-                                                            <td class="ta_r">1000</td>
-                                                            <td class="ta_r">31000</td>
+                                                            <td>2016-12-20</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
                                                             <td>2016-12-26</td>
-                                                            <td class="ta_r">200</td>
-                                                            <td class="ta_r">6200</td>
-                                                            <td class="ta_r">6200</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td>3%</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>S20161220-001</td>
                                                             <td>2016-12-20</td>
-                                                            <td class="ta_r">25</td>
-                                                            <td class="ta_r">30</td>
-                                                            <td class="ta_r">31</td>
-                                                            <td class="ta_r">1000</td>
-                                                            <td class="ta_r">31000</td>
+                                                            <td>2016-12-20</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
                                                             <td>2016-12-26</td>
-                                                            <td class="ta_r">200</td>
-                                                            <td class="ta_r">6200</td>
-                                                            <td class="ta_r">6200</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td>3%</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>S20161220-001</td>
                                                             <td>2016-12-20</td>
-                                                            <td class="ta_r">25</td>
-                                                            <td class="ta_r">30</td>
-                                                            <td class="ta_r">31</td>
-                                                            <td class="ta_r">1000</td>
-                                                            <td class="ta_r">31000</td>
+                                                            <td>2016-12-20</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
                                                             <td>2016-12-26</td>
-                                                            <td class="ta_r">200</td>
-                                                            <td class="ta_r">6200</td>
-                                                            <td class="ta_r">6200</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td>3%</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>S20161220-001</td>
                                                             <td>2016-12-20</td>
-                                                            <td class="ta_r">25</td>
-                                                            <td class="ta_r">30</td>
-                                                            <td class="ta_r">31</td>
-                                                            <td class="ta_r">1000</td>
-                                                            <td class="ta_r">31000</td>
+                                                            <td>2016-12-20</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
                                                             <td>2016-12-26</td>
-                                                            <td class="ta_r">200</td>
-                                                            <td class="ta_r">6200</td>
-                                                            <td class="ta_r">6200</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td>3%</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>S20161220-001</td>
                                                             <td>2016-12-20</td>
-                                                            <td class="ta_r">25</td>
-                                                            <td class="ta_r">30</td>
-                                                            <td class="ta_r">31</td>
-                                                            <td class="ta_r">1000</td>
-                                                            <td class="ta_r">31000</td>
+                                                            <td>2016-12-20</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
                                                             <td>2016-12-26</td>
-                                                            <td class="ta_r">200</td>
-                                                            <td class="ta_r">6200</td>
-                                                            <td class="ta_r">6200</td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td class="ta_r"></td>
+                                                            <td>3%</td>
                                                         </tr>
+                                                        
                                                     </tbody>
                                                 </table>                                       
                                             </td>

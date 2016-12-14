@@ -143,4 +143,38 @@ $(document).ready(function() {
       });
   }
   $(".sctable2").scrTable();
+
+
+
+ /*팝업*/
+  var popup_t = "";
+  popup_t += '<div class="openPopupWrap">';
+  popup_t += '<div class="popup_bar"></div>';
+  popup_t += '<div class="messagepop pop"></div>';
+  popup_t += '<input type="button" class="closeBtn" value="창닫기">';
+  popup_t += '</div>';
+  var popObj = null;
+  var popBefore = null;
+
+  $(document).on("click",".openPopupWrap .closeBtn", function() {
+     popBefore.remove();
+     popBefore = null;
+  });
+
+  $(".openPopTag").on('click', function() {
+        if(popBefore) {
+           console.log(popBefore);
+           popBefore.remove();
+           popBefore = null;
+        }
+
+        $(this).addClass("selected");
+        popObj = $(popup_t);
+        $("body").append(popObj);
+        $.get(this.href, function(data) {
+              $(".pop").html(data);
+        });
+        popBefore = popObj;
+     return false;
+  });  
 }); 

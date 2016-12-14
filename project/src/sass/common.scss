@@ -180,6 +180,7 @@ td {
 	&.ta_c{
 		text-align:center;	
 	}
+	span.checkbox, span.radio{margin:0 !important;}
 }
 .basic_table_column_1 {
 	border:1px solid #ccc;
@@ -676,6 +677,12 @@ span {
 	padding:10px 20px 20px;
 	margin:0 auto;
 }
+.popup_wrap{
+	width:700px;
+	#sub_wrap{
+		width:auto;
+	}
+}
 .circle_rb {
 	display: block;
 	background-color: red;
@@ -685,4 +692,31 @@ span {
 	position: absolute;
 	top: 10px;
 	left: 45px;
+}
+
+/*팝업*/
+.openPopupWrap{
+  position:relative;
+  border:1px solid #bbb;
+  position:fixed;
+  left:50%;
+  top:50px;
+  margin-left:-350px;
+  /*transform:translateY(-50%);*/
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.5);
+}
+.openPopupWrap .closeBtn{
+  position:absolute;
+  right:5px;
+  top:3px;
+  background-color:#f2f2f2;
+  border:1px solid #555;
+  padding:2px 5px;
+  border-radius:3px;
+}
+.popup_bar{
+  background-color:#555;
+  height:30px;
 }

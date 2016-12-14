@@ -4,7 +4,7 @@ html{
 }
 body{padding:100px 0;min-width:1024px;}
 #header{position:fixed;top:0;left:0;width:100%;background-color:#333;}
-#header ul li{float:left;width:16.6666%;border:1px solid #ccc;}
+#header ul li{float:left;width:20%;border:1px solid #ccc;}
 #header ul li.last~li{margin-top:-1px;}
 #header ul a{color:#fff;display:block;height:30px;line-height:30px;text-align:center;overflow:hidden;white-space:nowrap;}
 #header ul a.on{background-color:#efefef;color:#333;font-weight:bold;}

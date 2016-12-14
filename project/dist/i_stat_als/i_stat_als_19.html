@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <title>월마감 통계분석 자료 생성</title>
+  <link rel="stylesheet" href="../css/i_stat_als_1.css">
+  <style>
+  </style>
+ </head>
+  <body>
+    <section>
+      <header id="sub_header">
+       <h1 class="tit_1"><span class="tit_bd_wrap">월마감 통계분석 자료 생성</span></h1>
+      </header>
+      <div id="sub_wrap" class="grid">
+        <div class="row">
+            <section class="section_1 col_12">
+                <div class="col">
+                    <h1 class="tit_2">월마감 통계분석 자료 생성</h1>
+                    <form action="#" method="post" class="pos_r">
+                    <p class="pb_20">
+                      <label for="frm_input_1_1" class="mr_20">년도</label>
+                      <input type="text" name="frm_input_1_1" id="frm_input_1_1">(년)
+                      <label for="frm_input_1_2" class="plr_20">마감월</label>
+                      <input type="text" name="frm_input_1_2" id="frm_input_1_2">
+                    </p>
+                    <p class="pb_20">※마감 통계 생성은 당월 or 전월분만 작업 가능합니다.(전전월은 작업불가)</p>
+                    <div class="plr_60 progress_wrap">
+                      <p class="tit_progress">[ Progess Bar ]</p>
+                      <h3>영업관리 </h3>
+                      <ul>
+                        <li>
+                          <div class="col-1">영업_실적현황_수주거래처/제품별 집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-1">영업_년도별전체실적_집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                      </ul>
+                      <h3>생산관리 </h3>
+                      <ul>
+                        <li>
+                          <div class="col-1">생산_년도별공정실적_집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-1">생산_년도별생산실적_집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-1">생산_년도별작업자실적_집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-1">영업_실적현황_수주거래처/제품별 집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-1">영업_실적현황_수주거래처/제품별 집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                      </ul>
+                      <h3>자재관리 </h3>
+                      <ul>
+                        <li>
+                          <div class="col-1">영업_실적현황_수주거래처/제품별 집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-1">영업_실적현황_수주거래처/제품별 집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                      </ul>
+                      <h3>품질관리 </h3>
+                      <ul>
+                        <li>
+                          <div class="col-1">영업_실적현황_수주거래처/제품별 집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-1">영업_실적현황_수주거래처/제품별 집계</div>
+                          <div class="col-2">
+                            <p><input type="button" value="생성" class="btn_mk"> <input type="button" value="삭제" class="btn_del"></p>
+                          </div>
+                          <div class="col-3">
+                            <p class="graph_1"><span style="width:20%">20%</span></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>                    
+                    </form>                               
+                </div>
+            </section>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

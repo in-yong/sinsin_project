@@ -1,0 +1,42 @@
+@charset "utf-8";
+.progress_wrap{
+	position: relative;
+	.tit_progress{
+		position:absolute;
+		right: 280px;
+		top:-10px;
+	}
+	.col-1, .col-2, .col-3{float: left;padding-bottom: 8px;}
+	input[type="button"] {
+		padding: 1px 10px;
+	}
+	.col-1{
+		width:38%;
+		padding-left:70px; 
+	}
+	.col-2{
+		padding-left:10px;
+		padding-right:60px;
+	}
+	.col-3{
+		width:40%;
+		padding-top:3px;
+		.graph_1{
+			position: relative;
+			border: 1px solid #aaa;
+			height: 19px;
+			overflow: hidden;
+			span{
+				position: absolute;
+				display: inline-block;
+				background-color: #f00;
+				top: 0;
+				left: 0;
+				height:20px;
+				text-indent: -9999px;
+
+			}
+		}	
+	}
+	> ul > li{overflow: hidden;}
+ }

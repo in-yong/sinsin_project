@@ -677,3 +677,13 @@ span {
 	padding:10px 20px 20px;
 	margin:0 auto;
 }
+.circle_rb {
+	display: block;
+	background-color: red;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 45px;
+}

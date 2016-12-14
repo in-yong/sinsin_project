@@ -456,11 +456,10 @@ td {
 				>tr{
 					>td{
 						vertical-align:top;
-						border-left:1px solid #dfdfdf;
-
+						/*border-left:1px solid #dfdfdf;*/
 						th, td{
 							height:30px;
-							border:1px solid #dfdfdf;
+							border-left:1px solid #dfdfdf;
 							border-top:none;
 						}
 						td{

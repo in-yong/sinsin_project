@@ -12,14 +12,14 @@
     <script type="text/javascript" src="../js/html5shiv.min.js"></script>
     <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
-    <title>(영업)실적(년도별제품별)현황</title>
+    <title>(자재)실적(년도별부품별)현황</title>
     <link rel="stylesheet" type="text/css" href="../css/i_stat_als_sch.css" />
 </head>
 
 <body>
     <section>
         <header id="sub_header">
-            <h1 class="tit_1"><span class="tit_bd_wrap">(영업)실적(년도별제품별)현황</span></h1>
+            <h1 class="tit_1"><span class="tit_bd_wrap">(자재)실적(년도별부품별)현황</span></h1>
         </header>
         <div id="sub_wrap" class="grid">
             <div class="row">
@@ -36,8 +36,8 @@
                                             <input type="button" class="btn_search" value="찾기"> (년)
                                         </p>
                                         <p>
-                                            <label for="produc_code_1_1">거래처코드</label>
-                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                                            <label for="produc_code_1_1">제품코드</label>
+                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1" class="ml_15">
                                             <input type="button" class="btn_search" value="찾기">
                                             <input type="text" name="produc_code_1_2" id="produc_code_1_2">
                                         </p>
@@ -87,8 +87,8 @@
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th>제품코드</th>
-                                                            <th>제품명</th>
+                                                            <th>부품코드</th>
+                                                            <th>부품명</th>
                                                             <th>거래처코드</th>
                                                             <th>거래처명</th>
                                                             <th>규격</th>
@@ -110,8 +110,8 @@
                                                             <th colspan="5">합계</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                             <th rowspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -139,8 +139,8 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                             <th rowspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -168,8 +168,8 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                             <th rowspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -197,8 +197,8 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">금액</th>
                                                             <th rowspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -647,8 +647,8 @@
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th>제품코드</th>
-                                                            <th>제품명</th>
+                                                            <th>부품코드</th>
+                                                            <th>부품명</th>
                                                             <th>거래처코드</th>
                                                             <th>거래처명</th>
                                                             <th>결제조건</th>
@@ -671,9 +671,9 @@
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
-                                                            <th colspan="2">미납</th>
+                                                            <th colspan="2">발주합계</th>
+                                                            <th colspan="2">입고합계</th>
+                                                            <th colspan="2">미납합계</th>
                                                             <th colspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -702,8 +702,8 @@
                                                             <th colspan="4">2016.10.21</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                         </tr>
                                                         <tr>
                                                             <th>수량</th>
@@ -727,8 +727,8 @@
                                                             <th colspan="4">2016.10.22</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                         </tr>
                                                         <tr>
                                                             <th>수량</th>
@@ -752,8 +752,8 @@
                                                             <th colspan="4">2016.10.23</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                         </tr>
                                                         <tr>
                                                             <th>수량</th>
@@ -777,8 +777,8 @@
                                                             <th colspan="4">2016.10.24</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                         </tr>
                                                         <tr>
                                                             <th>수량</th>

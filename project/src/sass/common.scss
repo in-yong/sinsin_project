@@ -10,17 +10,50 @@ fieldset{border:none;}
 .clearFix{*zoom:1;}
 caption{text-indent:-9999px;height:0;width:0;font-size:1px;}
 button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;} 
-body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{font:13px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
-input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"]{border:1px solid #dfdfdf;background-color:#fff;height:26px;line-height:26px;width:85px;padding:0 3px;}
+body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{font:12px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
+input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"]{border:1px solid #aaa;background-color:#fff;height:23px;line-height:23px;width:85px;padding:0 3px;}
+.login_f{
+	input[type="text"], input[type="password"] {
+		height:26px;
+		line-height:26px;
+	}
+}
 textarea{padding:3px;border:1px solid #dfdfdf;background-color:#fff;}
 a{color:#222;text-decoration:none;}
 h1,h2,h3,h4,h5,h6,strong,em{font-style:normal;font-weight:normal;font-size:100%;}
 table{width:100%;border-collapse:collapse;}
+table {
+	&.w_100 {
+		width:100px !important;
+	}
+	&.w_150 {
+		width:150px !important;
+	}
+	&.w_200 {
+		width:200px !important;
+	}
+	&.w_250 {
+		width:250px !important;
+	}
+	&.w_300 {
+		width:300px !important;
+	}	
+	&.w_350 {
+		width:350px !important;
+	}
+}
 table.dataTable.nowrap th,table.dataTable.nowrap td {
     white-space: nowrap
 }
 .pBoth_7{padding-left:7px !important;padding-right:7px !important;}
+.pb_10{padding-bottom:10px !important;}
 .pb_20{padding-bottom:20px !important;}
+
+
+.pt_10{padding-top:10px !important;}
+.pt_20{padding-top:20px !important;}
+.pt_30{padding-top:30px !important;}
+.pt_40{padding-top:40px !important;}
 .grid {
 	.row{
 		*zoom:1;
@@ -33,14 +66,14 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 				border-radius:5px;
 		}
 		>.section_1 {
-			margin-bottom:10px;		
+			margin-bottom:1px;		
 			>.col {
 				>.tit_2{
-					margin:0 -10px 20px;
+					margin:0 -10px 7px;
 				}
 				background-color:#efefef;
 				border:1px solid #bfbfbf;
-				padding:20px 20px 0;
+				padding:8px 20px 0;
 				border-radius:5px;
 				position:relative;				
 			}
@@ -137,7 +170,7 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 /*테이블*/
 th{
 	padding:0 10px;
-	height:35px;
+	height:25px;
 	background-color:#395971;
 	color:#fff;
 	&.bgColor_1{
@@ -169,7 +202,7 @@ th{
 td {
 	background:#fafafa;
 	padding:0 10px;
-	border-bottom:1px solid #eee;
+	border-bottom:1px solid #aaa;
 	text-align:center;
 	&.ta_l{
 		text-align:left;
@@ -186,7 +219,7 @@ td {
 	border:1px solid #ccc;
 	border-radius:2px;
 	overflow:hidden;
-	margin-bottom:20px;
+	margin-bottom:8px;
 	td{
 		height:30px;
 	}
@@ -250,7 +283,7 @@ td {
 }	
 
 .basic_table_row_1 {
-	margin-bottom:20px;
+	margin-bottom:7px;
 	thead{
 		th{
 			position:relative;
@@ -475,12 +508,12 @@ td {
 /*버튼*/
 form{
 	&.pos_r{
-		margin-bottom:20px;
+		margin-bottom:5px;
 		position:relative;
 		p[class*="frm_btn_"], div[class*="frm_btn_"] {
 			&.top{
 				position:absolute;
-				top:-35px;
+				top:-25px;
 				right:5px;		
 			}	
 		}
@@ -489,8 +522,9 @@ form{
 
 .frm_btn_1, .frm_btn_3 {
 	input[type=button], input[type=submit], button, input[type=reset]{
-		padding:3px 20px;
+		padding:1px 8px;
 		border-raidus:3px;
+		font-size:12px;
 	}
 } 
 div[class*="btn_row_"]{
@@ -648,7 +682,7 @@ span {
 
 .tit_1{
 	padding:10px 10px 0;
-	font-size:16px;
+	font-size:14px;
 	font-weight:bold;
 	color:#253d55;
 	margin-bottom:10px;
@@ -657,11 +691,11 @@ span {
 		display:block;
 		/*border-bottom:1px solid #80909c;*/
 		border-bottom:1px solid #c3c3c3;
-		padding-bottom:8px;
+		padding-bottom:2px;
 	}
 }
 .tit_2{
-	font-size:15px;
+	font-size:13px;
 	color:#2c4965;
 	font-weight:600;
 }
@@ -674,7 +708,7 @@ span {
 
 #sub_wrap{
 	width:1250px;
-	padding:10px 20px 20px;
+	padding:0 20px 20px;
 	margin:0 auto;
 }
 .popup_wrap{

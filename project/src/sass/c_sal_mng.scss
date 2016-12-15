@@ -22,7 +22,7 @@
 	>.section_1 {
 			margin-bottom:5px;
 			>.col {
-				padding: 20px 19px 0 !important;
+				padding: 0 19px 0 !important;
 				>.tit_2{
 					margin:0 -10px 20px;
 				}
@@ -141,7 +141,7 @@ form{
 		margin: 0 !important;
 	}
 	&.pos_r{
-		margin-bottom:20px;
+		margin-bottom:7px;
 		position:relative;
 		p[class*="frm_btn_"], div[class*="frm_btn_"] {
 			&.top_2{

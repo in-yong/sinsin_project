@@ -1,3 +1,4 @@
+document.domain = "localhost";
 $(document).ready(function() {
   $.each($('.table_column_1').not(".notScroll"), function(i,o){
       var scrollTable = $(o);
@@ -163,7 +164,6 @@ $(document).ready(function() {
 
   $(".openPopTag").on('click', function() {
         if(popBefore) {
-           console.log(popBefore);
            popBefore.remove();
            popBefore = null;
         }

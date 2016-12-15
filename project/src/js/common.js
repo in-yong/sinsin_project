@@ -95,7 +95,7 @@ $(document).ready(function() {
       var evObj = $(e.target);
       var tbody_sc_t = evObj.scrollTop();
       var tbody_sc_l = evObj.scrollLeft();
-
+      //console.log(tbody_sc_t);
       
       $(".thead_1 table", myObj).css({marginLeft:-tbody_sc_l+"px"});
       if(tbody_sc_t > (this.h3+20) || old_tbody_sc_l != tbody_sc_l && old_tbody_sc_t == tbody_sc_t) {
@@ -103,7 +103,8 @@ $(document).ready(function() {
         return false;
       }
       if(old_tbody_sc_t != tbody_sc_t || (tbody_sc_t == 0 && old_tbody_sc_t>0)) {
-        $(".tbin_sc_wrap > div", myObj).css({"max-height":"initial"});
+        $(".tbin_sc_wrap > div", myObj).css({"max-height":"none"});
+        //console.log(this.tbin_sc_h + parseInt(tbody_sc_t));
         $(".tbin_sc_wrap > div", myObj).height(this.tbin_sc_h + parseInt(tbody_sc_t));
       }
       

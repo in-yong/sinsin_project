@@ -176,5 +176,58 @@ $(document).ready(function() {
         });
         popBefore = popObj;
      return false;
-  });  
+  });
+
+  /*탭메뉴*/
+  /*tit 이름과 같아야 작동됩니다*/
+  function Tabmenu_a(obj) {
+    var myThis = this;
+    this.myObj = $(obj);
+    this.tab_a = this.myObj.find("a");
+    this.tab_on = this.myObj.find("a.on");
+    this.arrTit = [];
+    this.tab_a.each(function(i, o){
+        var aText = $(o).text();
+        var theObj = $(document).find(".tit_2:contains('" + aText + "')"); 
+        myThis.arrTit.push(theObj);
+    });
+
+    $.each(this.arrTit, function(i,o){
+      if($(o).text() == myThis.tab_on.text()) {
+        $(o).closest(".row").show();
+      } else {
+        $(o).closest(".row").hide();
+      }
+    });
+
+    this.tit_2 = $(document).find(".tit_2");
+    this.bindEvent(this.tab_a);
+  }
+  Tabmenu_a.prototype.bindEvent = function(tabA) {
+    tabA.on({
+      "click": $.proxy(this.tabShowHide, this)
+    });
+  };
+  Tabmenu_a.prototype.tabShowHide = function(e) {
+    e.preventDefault();
+    var clickA = $(e.target);
+    var clickTxt = clickA.text();
+    this.tab_a.removeClass("on");
+    clickA.addClass("on");
+    $.each(this.arrTit, function(i,o){
+      if($(o).text() == clickTxt) {
+        $(o).closest(".row").show();
+      } else {
+        $(o).closest(".row").hide();
+      }
+    });
+  };
+
+  var arrTag = [];
+  $.fn.tabMenu_a = function() {
+    $(this).each(function(i,o){
+        arrTag[i] = new Tabmenu_a(o);
+    });
+  };
+  $(".tabmenu_wrap").tabMenu_a();
 }); 

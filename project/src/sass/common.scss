@@ -226,6 +226,7 @@ td {
 	.dataTables_scrollHead {
 		th{
 			position:relative;
+			background-clip: padding-box;
 			&:before{
 				content:"";
 				display:inline-block;
@@ -256,7 +257,7 @@ td {
 	}
 	&.sth_1{
 		th{
-			border:1px solid #afafaf;
+			border:1px solid #efefef;
 			&:before{
 				content:none;
 			}
@@ -753,4 +754,25 @@ span {
 .popup_bar{
   background-color:#555;
   height:30px;
+}
+
+/*탭메뉴*/
+.tabmenu_wrap {
+	position:relative;
+	top:6px;
+	li{
+		float:left;
+		a{
+			display:block;
+			padding:4px 10px;
+			border:1px solid #999;
+			border-bottom:none;
+			margin:0 3px;
+			border-radius:3px 3px 0 0;
+			&.on{
+				background:#333;
+				color:#fff;
+			}
+		}
+	}
 }

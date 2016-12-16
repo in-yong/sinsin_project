@@ -104,8 +104,9 @@ input[type=text] {
         margin-left: -5px;
     }
 }
-
-textarea {resize: none; width: 100%; height: 200px;}
+.ovf_none{overflow: hidden;}
+.pd_none{padding: 0;}
+textarea {resize: none; width: 100%; height: 200px; overflow: hidden;}
 /*//f_qua_mag_2.css*/
 
 

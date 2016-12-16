@@ -40,6 +40,21 @@ table {
 	}	
 	&.w_350 {
 		width:350px !important;
+	}	
+	&.w_400 {
+		width:400px !important;
+	}	
+	&.w_450 {
+		width:450px !important;
+	}	
+	&.w_500 {
+		width:500px !important;
+	}
+	&.w_600 {
+		width:600px !important;
+	}
+	&.w_700 {
+		width:700px !important;
 	}
 }
 table.dataTable.nowrap th,table.dataTable.nowrap td {
@@ -283,8 +298,9 @@ td {
 			}
 		}
 		td{
+			min-width:70px;
 			input[type=text]{
-				min-width:60px;
+				min-width:100%;
 			}
 		}
 	}	
@@ -789,6 +805,7 @@ span {
 			border-bottom:none;
 			margin:0 3px;
 			border-radius:3px 3px 0 0;
+			background-color: #fff;
 			&.on{
 				background:#333;
 				color:#fff;

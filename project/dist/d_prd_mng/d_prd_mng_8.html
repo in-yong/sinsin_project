@@ -27,10 +27,10 @@
 						<form action="#" method="post" class="pos_r clearFix">
 							<p class="d_8_margin">
 								오늘
-								<input type="text" name="d_8_input_date" id="d_8_input_date"/>
-								<input type="text" name="d_8_input_work" id="d_8_input_work"/>
+								<input type="text" name="d_8_input_date" id="d_8_input_date" readonly/>
+								<input type="text" name="d_8_input_work" id="d_8_input_work" readonly/>
 								공정의 작업수량은
-								<input type="text" name="d_8_input_num" id="d_8_input_num"/>
+								<input type="text" name="d_8_input_num" id="d_8_input_num" readonly/>
 								건 입니다.
 							</p>
 							<div class="basic_table_column_1">
@@ -176,12 +176,15 @@
 									<tbody>
 										<tr>
 											<th scope="row">합계</th>
-											<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" "></td>
+											<td class="ta_r"><input type="text" name="frm_inp_3_1" class="frm_w_1" title=" " readonly></td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<p class="frm_btn_1 top"><input type="submit" value="출력"></p>
+							<p class="frm_btn_3 top">
+								<input type="button" value="닫기">
+								<input type="submit" value="출력">
+							</p>
 						</form>             
 					</div>
 				</section>

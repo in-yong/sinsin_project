@@ -12,6 +12,11 @@ caption{text-indent:-9999px;height:0;width:0;font-size:1px;}
 button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;} 
 body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{font:12px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
 input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"]{border:1px solid #aaa;background-color:#fff;height:23px;line-height:23px;width:85px;padding:0 3px;}
+input{
+	&[readonly] {
+		background-color: #cfcfcf !important;
+	}
+}
 .login_f{
 	input[type="text"], input[type="password"] {
 		height:26px;

@@ -11,92 +11,68 @@
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
-    <title>출하검사등록화면</title>
+    <title>출하검사결과 등록화면</title>
     <link rel="stylesheet" type="text/css" href="../css/f_qua_mng.css" media="all" />
 </head>
 
 <body>
-    <section>
+    <section class="popup_wrap">
         <header id="sub_header">
-            <h1 class="tit_1"><span class="tit_bd_wrap">출하검사등록화면</span></h1>
+            <h1 class="tit_1"><span class="tit_bd_wrap">출하검사결과 등록화면</span></h1>
         </header>
         <div id="sub_wrap" class="grid">
-            <div class="row col_5">
+            <div class="row">
                 <section class="section_1 col_12">
                     <div class="col">
-                        <h1 class="tit_2">출하검사등록 검색</h1>
+                        <h1 class="tit_2">불량유형등록선택</h1>
                         <form action="#" method="post" class="pos_r">
-                            <div class="basic_table_column_1">
-                                <table class="table_column_1 display nowrap sth_2 th " data-table-height="200px" cellspacing="0" width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">순번</th>
-                                            <th scope="col">불량유형</th>
-                                            <th scope="col">불량수량</th>
-                                            <th scope="col">폐기수량</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>5</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>7</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>8</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>9</th>
-                                            <td><input type="text" name="shipment_type" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_ea" id="shipment_type"></td>
-                                            <td><input type="text" name="shipment_error_ea" id="shipment_error_ea"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="row">
+                                <div class="col_12">
+                                    <div class="col">
+                                        <div class="basic_table_column_1">
+                                            <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">순번</th>
+                                                        <th scope="col">불량유형</th>
+                                                        <th scope="col">불량수량</th>
+                                                        <th scope="col">폐기수량</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>내용1</td>
+                                                        <td>20</td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>내용1</td>
+                                                        <td>20</td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>내용1</td>
+                                                        <td>20</td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>내용1</td>
+                                                        <td>20</td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="frm_btn_3 top">
-                                <input type="button" value="저장">
-                                <input type="submit" value="닫기">
+                            <p class="frm_btn_1 top">
+                                <input type="submit" value="조회">
+                                <input type="button" value="닫기">
                             </p>
                         </form>
                     </div>

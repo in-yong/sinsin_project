@@ -11,14 +11,14 @@
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
-    <title>수입검사관리</title>
+    <title>입고검사관리</title>
     <link rel="stylesheet" type="text/css" href="../css/f_qua_mng.css" media="all" />
 </head>
 
 <body>
     <section>
         <header id="sub_header">
-            <h1 class="tit_1"><span class="tit_bd_wrap">수입검사관리</span></h1>
+            <h1 class="tit_1"><span class="tit_bd_wrap">입고검사관리</span></h1>
         </header>
         <div id="sub_wrap" class="grid">
             <div class="row">
@@ -102,11 +102,13 @@
                                             <th scope="col">입고예정일</th>
                                             <th scope="col">발주일자</th>
                                             <th scope="col">발주수량</th>
+
                                             <th scope="col">입고수량(거래명세표)</th>
                                             <th scope="col">납품확인일</th>
                                             <th scope="col">수입검사일</th>
                                             <th scope="col">불량수량</th>
                                             <th scope="col">불량내용</th>
+
                                             <th scope="col">총불량수량</th>
                                             <th scope="col">수입검사진행상태</th>
                                             <th scope="col">검사완료여부</th>
@@ -127,12 +129,35 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
+                                            <td>불량대기</td>
+                                            <td><span class="circle_rb_2"></span></td>
+                                        </tr>
+                                       <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>1</td>
+                                            <td>aa0011</td>
                                             <td>내용1</td>
-                                            <td>10</td>
+                                            <td>내용1</td>
+                                            <td>A001-01</td>
+                                            <td>내용1</td>
+                                            <td>200</td>
+                                            <td>2016-12-03</td>
+                                            <td>2016-12-03</td>
+                                            <td>2016-12-03</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>
@@ -140,7 +165,7 @@
                                             <td>
                                                 <input type="checkbox">
                                             </td>
-                                            <td>2</td>
+                                            <td>1</td>
                                             <td>aa0011</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -150,35 +175,12 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
-                                            <td>불량대기</td>
-                                            <td><span class="circle_gb_2"></span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox">
-                                            </td>
-                                            <td>3</td>
-                                            <td>aa0011</td>
-                                            <td>내용1</td>
-                                            <td>내용1</td>
-                                            <td>A001-01</td>
-                                            <td>내용1</td>
-                                            <td>200</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>
@@ -186,7 +188,7 @@
                                             <td>
                                                 <input type="checkbox">
                                             </td>
-                                            <td>4</td>
+                                            <td>1</td>
                                             <td>aa0011</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -196,12 +198,12 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>
@@ -209,7 +211,7 @@
                                             <td>
                                                 <input type="checkbox">
                                             </td>
-                                            <td>5</td>
+                                            <td>1</td>
                                             <td>aa0011</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -219,12 +221,12 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>
@@ -232,7 +234,7 @@
                                             <td>
                                                 <input type="checkbox">
                                             </td>
-                                            <td>6</td>
+                                            <td>1</td>
                                             <td>aa0011</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -242,12 +244,12 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>
@@ -255,7 +257,7 @@
                                             <td>
                                                 <input type="checkbox">
                                             </td>
-                                            <td>7</td>
+                                            <td>1</td>
                                             <td>aa0011</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -265,12 +267,12 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>
@@ -278,7 +280,7 @@
                                             <td>
                                                 <input type="checkbox">
                                             </td>
-                                            <td>8</td>
+                                            <td>1</td>
                                             <td>aa0011</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -288,12 +290,12 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>
@@ -301,7 +303,7 @@
                                             <td>
                                                 <input type="checkbox">
                                             </td>
-                                            <td>9</td>
+                                            <td>1</td>
                                             <td>aa0011</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -311,12 +313,12 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>
@@ -324,7 +326,7 @@
                                             <td>
                                                 <input type="checkbox">
                                             </td>
-                                            <td>10</td>
+                                            <td>1</td>
                                             <td>aa0011</td>
                                             <td>내용1</td>
                                             <td>내용1</td>
@@ -334,12 +336,12 @@
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
                                             <td>2016-12-03</td>
-                                            <td>500</td>
-                                            <td>2016-12-03</td>
-                                            <td>2016-12-03</td>
-                                            <td>10</td>
-                                            <td>내용1</td>
-                                            <td>10</td>
+                                            <td><input type="text" name="incoming_ed" id="incoming_ed"></td>
+                                            <td><input type="text" name="incoming_date" id="incoming_date"></td>
+                                            <td><input type="text" name="income_check_d" id="income_check_d"></td>
+                                            <td><input type="text" name="income_error_ea" id="income_error_ea"></td>
+                                            <td><input type="button" name="inc_error_Aea" id="inc_error_Aea" value="내용"></td>
+                                            <td><a href="#">10</a></td>
                                             <td>불량대기</td>
                                             <td><span class="circle_rb_2"></span></td>
                                         </tr>

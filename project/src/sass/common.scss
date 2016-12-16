@@ -158,6 +158,26 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 		width:100%;
 	}
 }
+.col{
+	&.bar_left{
+		position:relative;
+		&:after {
+			content:"";
+			display: block;
+			position: absolute;
+			top:-8%;
+			right:-5px;
+			width: 1px;
+			height:115%;
+			border-right: 1px dotted #aaa;
+		}
+		&.bar_st_2{
+			&:after{
+				height:110%;
+			}
+		}
+	}
+}
 /*버튼*/
 .btn_mv_1{
 	background:url(../images/common/btn_move.png) 0 0 no-repeat;

@@ -298,8 +298,9 @@ td {
 			}
 		}
 		td{
+			min-width:70px;
 			input[type=text]{
-				min-width:60px;
+				min-width:100%;
 			}
 		}
 	}	
@@ -804,6 +805,7 @@ span {
 			border-bottom:none;
 			margin:0 3px;
 			border-radius:3px 3px 0 0;
+			background-color: #fff;
 			&.on{
 				background:#333;
 				color:#fff;

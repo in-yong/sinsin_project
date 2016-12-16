@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $.each($('.table_column_1').not(".notScroll"), function(i,o){
+    $.each($('.table_column_1').not(".notScroll"), function(i,o){
       var scrollTable = $(o);
       var dataTableHeight = $(o).attr("data-table-height");
       var dataTableScrollY = $(o).attr("data-table-scrolly");
@@ -7,12 +7,14 @@ $(document).ready(function() {
       var scrollTableDefault = {
         "scrollY":"200px",
         "scrollX":true,
-        "scrollCollapse": false,
+        "scrollCollapse": true,
+        "autoWidth": false,
         "info":false,
         "bFilter": false,
         "paging":false,
         "bSort":false
       }
+
       if(dataTableHeight) {
         $.extend(scrollTableDefault, {"scrollY":dataTableHeight});
       }

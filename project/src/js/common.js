@@ -7,7 +7,7 @@ $(document).ready(function() {
       var scrollTableDefault = {
         "scrollY":"200px",
         "scrollX":true,
-        "scrollCollapse": false,
+        "scrollCollapse": true,
         "autoWidth": false,
         "info":false,
         "bFilter": false,

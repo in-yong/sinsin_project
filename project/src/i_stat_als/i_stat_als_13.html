@@ -26,25 +26,31 @@
                         <h1 class="tit_2">검색조건</h1>
                         <form action="#" method="post" class="pos_r">
                             <div class="row">
-                                <div class="col_4">
+                                <div class="col_">
                                     <div class="col">
                                         <div class="pb_3 chTable">
                                           <div class="chRow">
                                             <div class="chTd th">
                                               <label for="frm_input_1_1">년도</label>
                                             </div>
-                                            <div class="chTd"><input type="text" name="frm_input_1_1" id="frm_input_1_1">(년)
+                                            <div class="chTd">
+                                                <select name="frm_input_1_1" id="frm_input_1_1" class="year_list">
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                </select> (년)
                                            </div>
-                                          </div>
-                                          <div class="chRow">
-                                            <div class="chTd pr_5">
+                                            <div class="chTd pr_5 pl_20">
                                               <label for="frm_input_1_2">거래처코드</label>
                                             </div>
                                             <div class="chTd">
                                                 <input type="text" name="frm_input_1_2" id="frm_input_1_2">
                                                 <input type="button" class="btn_search" value="찾기">
                                                 <input type="text" name="frm_input_1_3" id="frm_input_1_3">
-                                            </div>
+                                            </div>                                           
                                           </div>
                                         </div>     
                                     </div>
@@ -57,9 +63,16 @@
                     </div>
                 </section>
             </div>
+            <div class="tabmenu_wrap clearFix">
+                <ul>
+                    <li><a href="#" class="on">년도별 거래처 실적</a></li>
+                    <li><a href="#">월별 거래처 실적</a></li>
+                    <li><a href="#">일별 거래처 실적</a></li>
+                </ul>
+            </div>            
             <div class="row">
                 <section class="section_1 col_12">
-                    <div class="col">
+                    <div class="col tit_hide">
                         <h1 class="tit_2">년도별 거래처 실적</h1>
                         <form action="#" method="post" class="pos_r">
                             <div class="sctable2">
@@ -110,8 +123,8 @@
                                                             <th colspan="5">합계</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                             <th rowspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -137,8 +150,8 @@
                                                             <th colspan="5">1월</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                             <th rowspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -164,8 +177,8 @@
                                                             <th colspan="5">2월</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                             <th rowspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -191,8 +204,251 @@
                                                             <th colspan="5">3월</th>
                                                         </tr>
                                                         <tr>
-                                                            <th colspan="2">수주</th>
-                                                            <th colspan="2">판매</th>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">4월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">5월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">6월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">7월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">8월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">9월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">10월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">11월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
+                                                            <th rowspan="2">달성율</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                            <th>수량</th>
+                                                            <th>금액</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>                                 
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="5">12월</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">발주</th>
+                                                            <th colspan="2">입고</th>
                                                             <th rowspan="2">달성율</th>
                                                         </tr>
                                                         <tr>
@@ -575,6 +831,690 @@
                                                     </tbody>
                                                 </table>
                                             </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                        <col width="60px">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">100</td>
+                                                            <td class="bgColor_4">내용2</td>
+                                                            <td class="bgColor_4"></td>
+                                                            <td class="bgColor_4">50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>100</td>
+                                                            <td>내용2</td>
+                                                            <td></td>
+                                                            <td>50%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
                                         </tr>
                                     </table>                                    
                                 </div>
@@ -588,7 +1528,7 @@
             </div>
             <div class="row">
                 <section class="section_1 col_12">
-                    <div class="col">
+                    <div class="col tit_hide case_1">
                         <h1 class="tit_2">월별 거래처 실적</h1>
                         <form action="#" method="post" class="pos_r">
                             <p><input type="text" name="month_1" id="month_1" class="ta_c"> (월) <input type="button" value="상세조회" class="ml_20 plr_10 ptb_3"></p>
@@ -918,10 +1858,10 @@
             </div>
             <div class="row">
                 <section class="section_1 col_12">
-                    <div class="col">
+                    <div class="col tit_hide case_1">
                         <h1 class="tit_2">일별 거래처 실적</h1>
                         <form action="#" method="post" class="pos_r">
-                            <p><label for="period_1_1" class="mr_20">판매일자</label> <input type="text" name="period_1_1" id="period_1_1" class="ta_c"> ~ <input type="text" name="period_1_2" id="period_1_2" class="ta_c"></p>
+                            <p><label for="period_1_1" class="mr_20">발주일자</label>   <input type="text" name="period_1_1" id="period_1_1" class="ta_c"> <input type="button" class="btn_date start" value="달력"> ~ <input type="text" name="period_1_2" id="period_1_2" class="ta_c"> <input type="button" class="btn_date end" value="달력"></p>
                             <div class="sctable2">
                                 <div class="thead_wrap">
                                     <table>

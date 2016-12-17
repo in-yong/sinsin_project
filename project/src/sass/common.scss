@@ -179,6 +179,18 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 	}
 }
 .col{
+	&.tit_hide{
+		padding-top:33px !important;
+		&.case_1{
+			padding-top:8px !important;			
+			p[class*="frm_btn"] {
+				top:0 !important;
+			}
+		}
+		.tit_2{
+			display:none;
+		}
+	}
 	&.bar_left{
 		position:relative;
 		&:after {

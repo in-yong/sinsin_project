@@ -29,27 +29,25 @@
                             <div class="row">
                                 <div class="col_">
                                     <div class="col">
-                                        <p class="pb_3">
-                                            <label for="produc_code_1_1" class="pr36">년도</label>
-                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
-                                            <input type="button" class="btn_search" value="찾기"> (년)
-                                        </p>
-                                        <p>
-                                            <label for="produc_code_1_1">거래처코드</label>
-                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
-                                            <input type="button" class="btn_search" value="찾기">
-                                            <input type="text" name="produc_code_1_2" id="produc_code_1_2">
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col_4">
-                                    <div class="col">
-                                        <p class="pt28">
-                                            <label for="produc_code_1_1">제품코드</label>
+                                            <label for="produc_code_1_1">년도</label>
+                                            <select name="frm_input_1_1" id="frm_input_1_1" class="year_list">
+                                                <option value="2015">2015</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                            </select> (년)                                            
+
+                                            <label for="produc_code_1_1" class="pl_20">거래처코드</label>
                                             <input type="text" name="produc_code_1_1" id="produc_code_1_1">
                                             <input type="button" class="btn_search" value="찾기">
                                             <input type="text" name="produc_code_1_2" id="produc_code_1_2">
-                                        </p>
+
+                                            <label for="produc_code_1_1" class="pl_20">제품코드</label>
+                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                                            <input type="button" class="btn_search" value="찾기">
+                                            <input type="text" name="produc_code_1_2" id="produc_code_1_2">
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +66,7 @@
             </div>
             <div class="row">
                 <section class="section_1 col_12">
-                    <div class="col">
+                    <div class="col tit_hide">
                         <h1 class="tit_2">영업년도별 목표(거래처/제품별)</h1>
                         <form action="#" method="post" class="pos_r">
                             <div class="basic_table_column_1 sth_1">
@@ -90,7 +88,7 @@
                                   </colgroup>
                                     <thead>
                                         <tr>
-                                            <th scope="col" colspan="6" rowspan="2"><span class="blind">빈칸</span></th>
+                                            <th scope="col" colspan="6" rowspan="2">구분</th>
                                             <th scope="col" colspan="6">합계</th>
                                             <th scope="col" colspan="6">1월</th>
                                             <th scope="col" colspan="6">2월</th>
@@ -1114,14 +1112,14 @@
             </div>
             <div class="row">
                 <section class="section_1 col_12">
-                    <div class="col">
+                    <div class="col tit_hide">
                         <h1 class="tit_2">영업 년도별  납기준수율 목표</h1>
                         <form action="#" method="post" class="pos_r">
                             <div class="basic_table_column_1 sth_1">
                                 <table class="table_column_1 display nowrpa" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
-                                            <th scope="col"><span class="blind">빈칸</span></th>
+                                            <th scope="col">구분</th>
                                             <th scope="col">합계</th>
                                             <th scope="col">1월</th>
                                             <th scope="col">2월</th>

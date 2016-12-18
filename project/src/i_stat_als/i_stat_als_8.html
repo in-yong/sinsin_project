@@ -30,10 +30,16 @@
                             <div class="row">
                                 <div class="col_4">
                                     <div class="col">
-                                        <p class="ml_20">
+                                        <p>
                                             <label for="produc_code_1_1">년도</label>
-                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1" class="ml_20">
-                                            <input type="button" class="btn_search" value="찾기">
+                                            <select name="frm_input_1_1" id="frm_input_1_1" class="year_list">
+                                                <option value="2015">2015</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                            </select> (년)
                                         </p>
                                     </div>
                                 </div>
@@ -54,7 +60,7 @@
                                 <table class="table_column_1 display nowrap" data-table-height="200px" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
-                                            <th scope="col"></th>
+                                            <th scope="col">구분</th>
                                             <th scope="col">합계</th>
                                             <th scope="col">1월</th>
                                             <th scope="col">2월</th>

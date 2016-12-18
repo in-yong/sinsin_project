@@ -25,26 +25,56 @@
           <div class="col">
             <h1 class="tit_2">검색조건</h1>
             <form action="#" method="post" class="pos_r">
-	<div class="row">
-		<div class="col_4">
-			<div class="col">
-				<p class="pb_3">
-					<label for="produc_code_1_1" class="pr24">년도</label>
-					<input type="text" name="produc_code_1_1" id="produc_code_1_1">(년)
-          <span class="plpr">월</span>
-          <input type="text" name="produc_code_1_2" id="produc_code_1_2">(월)
-				</p>
-        <p>
-          <label for="produc_code_1_1">직원코드</label>
-          <input type="text" name="produc_code_1_1" id="produc_code_1_1">
-          <input type="button" class="btn_search" value="찾기">
-          <input type="text" name="produc_code_1_2" id="produc_code_1_2" class="w180">
-        </p>
-			</div>
-		</div>
-	</div>
-	<p class="frm_btn_1 top"><input type="submit" value="조회"></p>
-</form>
+            	<div class="row">
+            		<div class="col_">
+            			<div class="col">
+                    <div class="chTable">
+                      <div class="chRow">
+                        <div class="chTd th">
+                          <label for="acc_num_1_1">년도</label>
+                        </div>
+                        <div class="chTd">
+                            <select name="frm_input_1_1" id="frm_input_1_1" class="year_list">
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                            </select> (년)
+                        </div>
+                        <div class="chTd th pl_20">
+                          <label for="acc_num_1_1">월</label>
+                        </div>
+                        <div class="chTd">
+                          <select name="frm_input_1_1" id="frm_input_1_2" class="month_list">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          </select> (월)                 
+                        </div>
+                        <div class="chTd">
+                          <label for="produc_code_1_1" class="pl_20">직원코드</label>
+                          <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                          <input type="button" class="btn_search" value="찾기">
+                          <input type="text" name="produc_code_1_2" id="produc_code_1_2">
+                        </div>
+                      </div>
+                    </div>                  
+            			</div>
+            		</div>
+            	</div>
+            	<p class="frm_btn_1 top"><input type="submit" value="조회"></p>
+            </form>
           </div>
          </section>
         </div>

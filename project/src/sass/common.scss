@@ -17,6 +17,7 @@ input{
 		background-color: #cfcfcf !important;
 	}
 }
+select{vertical-align:middle;}
 .login_f{
 	input[type="text"], input[type="password"] {
 		height:26px;
@@ -226,11 +227,12 @@ th{
 	background-color:#395971;
 	color:#fff;
 	&.bgColor_1{
-		background-color:#8998a6;
+		background-color:#dfdfdf;
 		color:#2c496f;
 	}
 	&.bgColor_2{
-		background-color:#5c5c5c;		
+		background-color:#a1b1be;
+		color:#2c496f;	
 	}	
 }
 .bgColor_3{

@@ -76,7 +76,7 @@ gulp.task("js-min", function() {
 
 gulp.task("guide-js-min", function() {
 	return gulp.src(guidePath.s_js)
-				/*.pipe(uglify())*/
+				.pipe(uglify().on('error',function(e){ console.log(e)}))
 				.pipe(gulp.dest(guidePath.d_js));
 });
 

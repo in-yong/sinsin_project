@@ -185,6 +185,11 @@ $(document).ready(function() {
   function Tabmenu_a(obj) {
     var myThis = this;
     this.myObj = $(obj);
+    this.arrSec = null;
+    if(this.myObj.attr("data-show-controll")){
+      //console.log(JSON.parse(JSON.stringify(this.myObj.attr("data-show-controll"))));
+      this.arrSec = JSON.parse(this.myObj.attr("data-show-controll"));
+    }
     this.tab_a = this.myObj.find("a");
     this.tab_on = this.myObj.find("a.on");
     this.arrTit = [];
@@ -216,6 +221,19 @@ $(document).ready(function() {
     var clickTxt = clickA.text();
     this.tab_a.removeClass("on");
     clickA.addClass("on");
+    
+    if(this.arrSec) {
+      console.log(typeof this.arrSec);
+      console.log(this.arrSec);
+      $.each(this.arrSec,function(i,o){
+        var showSec = $("*[data-sec-name=" + o.showSec +"]");
+        if(clickTxt == o.tabName){
+          showSec.show();
+        }else{
+          showSec.hide();
+        }
+      });
+    }
     $.each(this.arrTit, function(i,o){
       if($(o).text() == clickTxt) {
         $(o).closest(".row").show();

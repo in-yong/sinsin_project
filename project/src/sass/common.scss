@@ -67,6 +67,7 @@ table {
 		width:700px !important;
 	}
 }
+
 table.dataTable.nowrap th,table.dataTable.nowrap td {
     white-space: nowrap;
 }
@@ -405,7 +406,20 @@ td {
 		}
 	}
 }
-
+.frmInbtn{
+	position: relative;
+	padding-top: 1px;
+	padding-right:20px;
+	width: 90%;
+	margin:0 auto;
+	display: block;
+	height:100%;
+	input[type="button"] {
+		position: absolute;
+		right:-5px;
+		top:-1px;
+	}
+}
 .chTable {
 	display: table;
 	.chRow {

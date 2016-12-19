@@ -1,6 +1,10 @@
 @charset "UTF-8";
 // e_mat_mng_1
 /* f_qua_mag_1.css */
+.w1000{
+  width: 1000px!important;
+  margin: 0 auto;
+}
 .pl5{
   padding-left: 5px!important;
 }
@@ -43,15 +47,6 @@
 .w70{
   width: 70px!important;
 }
-.frm_w_1_w{
-  width: 170px!important;
-}
-.frm_w_1_w2{
-  width: 325px!important;
-}
-input[type=text] {
-    text-align: right;
-}
 .grid .col_7{
   width: 100%;
 }
@@ -64,7 +59,7 @@ input[type=text] {
     .row_box {
         margin-bottom: 30px;
     }
-    div >p {
+    div>p {
         height: 26px;
         line-height: 26px;
         float: left;
@@ -106,7 +101,12 @@ input[type=text] {
         border-bottom: 1px solid #000;
     }
 }
-
+.frm_w_1_w{
+  width: 150px!important;
+}
+.w113{
+  width: 113px!important;
+}
 .table_caption {
     margin-bottom: 10px;
 }
@@ -120,3 +120,9 @@ input[type=text] {
     top: 10px;
     left: 45px;
   }
+.row_box_wrap .row_box{
+  margin-bottom: 15px;
+}
+.ptb_23{
+  padding-top: 23px;
+}

@@ -12,7 +12,7 @@ fieldset{border:none;}
 .clearFix:after{content:"";display:block;clear:both;}
 .clearFix{*zoom:1;}
 caption{text-indent:-9999px;height:0;width:0;font-size:1px;}
-button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;} 
+button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;}
 body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select, button{font:12px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
 input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"]{border:1px solid #aaa;background-color:#fff;height:21px;line-height:21px;width:85px;padding:0 3px;}
 input{
@@ -46,16 +46,16 @@ table {
 	}
 	&.w_300 {
 		width:300px !important;
-	}	
+	}
 	&.w_350 {
 		width:350px !important;
-	}	
+	}
 	&.w_400 {
 		width:400px !important;
-	}	
+	}
 	&.w_450 {
 		width:450px !important;
-	}	
+	}
 	&.w_500 {
 		width:500px !important;
 	}
@@ -90,7 +90,7 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 				border-radius:5px;
 		}
 		>.section_1 {
-			margin-bottom:1px;		
+			margin-bottom:1px;
 			>.col {
 				>.tit_2{
 					margin:0 -10px 7px;
@@ -99,7 +99,7 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 				border:1px solid #bfbfbf;
 				padding:8px 20px 0;
 				border-radius:5px;
-				position:relative;				
+				position:relative;
 			}
 		}
 		.col {
@@ -116,16 +116,16 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 							border:1px solid #bfbfbf;
 							padding:20px 20px 0;
 							border-radius:5px;
-							position:relative;				
+							position:relative;
 							>.tit_2{
 								margin:0 -10px 20px;
-							}							
+							}
 						}
 					}
 				}
 
 			}
-		} 
+		}
 		&:after{
 			content:"";
 			display:block;
@@ -159,7 +159,7 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 	}
 	.col_55{
 		width:8.3333%*5.5;
-	}	
+	}
 	.col_6{
 		width:8.3333%*6;
 	}
@@ -186,7 +186,7 @@ table.dataTable.nowrap th,table.dataTable.nowrap td {
 	&.tit_hide{
 		padding-top:33px !important;
 		&.case_1{
-			padding-top:8px !important;			
+			padding-top:8px !important;
 			p[class*="frm_btn"] {
 				top:0 !important;
 			}
@@ -235,8 +235,8 @@ th{
 	}
 	&.bgColor_2{
 		background-color:#a1b1be;
-		color:#2c496f;	
-	}	
+		color:#2c496f;
+	}
 }
 .bgColor_3{
 		background-color: #ddd;
@@ -253,7 +253,7 @@ th{
 	text-align:right !important;
 }
 .ta_c{
-		text-align:center !important;	
+		text-align:center !important;
 }
 
 td {
@@ -268,7 +268,7 @@ td {
 		text-align:right;
 	}
 	&.ta_c{
-		text-align:center;	
+		text-align:center;
 	}
 	span.checkbox, span.radio{margin:0 !important;}
 }
@@ -325,7 +325,7 @@ td {
 				min-width:100%;
 			}
 		}
-	}	
+	}
 }
 
 .sth_2{
@@ -339,7 +339,7 @@ td {
 		padding-top:6px;
 		padding-bottom:6px;
 	}
-}	
+}
 
 .basic_table_row_1 {
 	margin-bottom:7px;
@@ -360,8 +360,8 @@ td {
 				&:before{
 					content:none;
 				}
-			}				
-		}		
+			}
+		}
 	}
 	tbody{
 		th {
@@ -408,8 +408,8 @@ td {
 		display: table-row;
 		.chTd{
 			&.th{
-				padding-right: 10px;	
-			}			
+				padding-right: 10px;
+			}
 			display: table-cell;
 			padding-bottom:3px;
 		}
@@ -434,7 +434,7 @@ td {
 		padding:1px 20px;
 		border-radius:3px;
 		border:1px solid #efefef;
-	}	
+	}
 	table{
 		table-layout: fixed;
 		&.nowrap{
@@ -474,7 +474,7 @@ td {
 				top:0;
 				right:-20px;
 			}
-		}	
+		}
   	}
   }
   .tbody_sc_wrap{
@@ -574,8 +574,8 @@ form{
 			&.top{
 				position:absolute;
 				top:-25px;
-				right:5px;		
-			}	
+				right:5px;
+			}
 		}
 	}
 }
@@ -586,7 +586,7 @@ form{
 		border-raidus:3px;
 		font-size:12px;
 	}
-} 
+}
 div[class*="btn_row_"]{
 	min-height:30px;
 	input[type=button] {
@@ -600,7 +600,7 @@ div[class*="btn_row_"]{
 	}
 }
 .btn_upload{
-	padding:4px 10px 3px 10px;	
+	padding:4px 10px 3px 10px;
 }
 /*폼양식*/
 .btn_search{
@@ -698,6 +698,8 @@ span {
 .ml_20{margin-left:20px;}
 .ml_25{margin-left:25px;}
 .ml_30{margin-left:30px;}
+
+.mb_20{margin-bottom: 20px;}
 
 .pr_5{padding-right:5px;}
 .pr_10{padding-right:10px;}
@@ -836,3 +838,4 @@ span {
 	}
 }
 .fs_13 {font-size: 13px;}
+.frm_popup{background: url(../images/common/ico_open_popup.png) 99% 2px no-repeat;}

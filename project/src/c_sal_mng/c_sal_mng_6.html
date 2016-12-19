@@ -33,10 +33,10 @@
 										<input type="button" class="btn_search" value="찾기">
 									</p>
 									<p>
-										<label for="produc_code_1_1">거래처코드</label>
-										<input type="text" name="produc_code_1_1" id="produc_code_1_1">
+										<label for="produc_code_2_1">거래처코드</label>
+										<input type="text" name="produc_code_2_1" id="produc_code_2_1">
 										<input type="button" class="btn_search" value="찾기">
-										<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+										<input type="text" name="produc_code_2_2" id="produc_code_2_2" readonly>
 									</p>
 								</div>
 							</div> 
@@ -45,14 +45,16 @@
 									<p  class="pb_3">
 										<label for="date_in_1_1">수주일자</label>
 										<input type="text" name="date_in_1_1" id="date_in_1_1">
+                                        <input type="button" class="btn_date start" value="달력">
 										<span class="space"> ~ </span>
-										<input type="text" name="date_in_1_2" id="date_in_1_2">                    
+										<input type="text" name="date_in_1_2" id="date_in_1_2">
+                                         <input type="button" class="btn_date start" value="달력">
 									</p>
 									<p  class="pb_3" >
-										<label for="date_in_1_1">제품코드</label>
-										<input type="text" name="date_in_1_1" id="date_in_1_1">
+										<label for="date_in_2_1">제품코드</label>
+										<input type="text" name="date_in_2_1" id="date_in_2_1">
 										<input type="button" class="btn_search" value="찾기">
-										<input type="text" name="date_in_1_2" id="date_in_1_2">                    
+										<input type="text" name="date_in_2_2" id="date_in_2_2" readonly>                    
 									</p>
 								</div>
 							</div> 
@@ -89,10 +91,11 @@
 												<th scope="col">납기일자</th>
 												<th scope="col">수주거래처명</th>
 												<th scope="col">제품명</th>
-												<th scope="col">출하검사완료일</th>
+												<th scope="col">출하번호</th>
+												<th scope="col">출하검사<br/>완료일</th>
 												<th scope="col">출하검사수량</th>
-												<th scope="col">출하검사(정상)수량</th>
-												<th scope="col">출하검사(불량)수량</th>
+												<th scope="col">출하검사<br/>(정상)수량</th>
+												<th scope="col">출하검사<br/>(불량)수량</th>
 												<th scope="col">판매수량</th>
 												<th scope="col">잔고수량</th>
 												<th scope="col">판매완료여부</th>
@@ -111,12 +114,13 @@
 						            <tbody>
 						            	<tr>
 						            		<td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-						            		<td class="ta_c">1</td>
+						            		<td>1</td>
 						            		<td>SJ0001</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">내용1</td>
+						            		<td>2011/04/25</td>
+						            		<td>2011/04/25</td>
+						            		<td>내용1</td>
 						            		<td>내용2</td>
+						            		<td>num</td>
 						            		<td>2015/4/25</td>
 						            		<td>1,000</td>
 						            		<td>1,000</td>
@@ -127,12 +131,13 @@
 						            	</tr>
 						            	<tr>
 						            		<td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_2" id="chk_opt_t1_2" value="2"><label for="chk_opt_t1_2">선택</label></span></td>
-						            		<td class="ta_c">2</td>
+						            		<td>2</td>
 						            		<td>SJ0001</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">내용1</td>
+						            		<td>2011/04/25</td>
+						            		<td>2011/04/25</td>
+						            		<td>내용1</td>
 						            		<td>내용2</td>
+						            		<td>num</td>
 						            		<td>2015/4/25</td>
 						            		<td>1,000</td>
 						            		<td>1,000</td>
@@ -143,12 +148,13 @@
 						            	</tr>
 						            	<tr>
 						            		<td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_4" id="chk_opt_t1_4" value="4"><label for="chk_opt_t1_4">선택</label></span></td>
-						            		<td class="ta_c">4</td>
+						            		<td>4</td>
 						            		<td>SJ0001</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">내용1</td>
+						            		<td>2011/04/25</td>
+						            		<td>2011/04/25</td>
+						            		<td>내용1</td>
 						            		<td>내용2</td>
+						            		<td>num</td>
 						            		<td>2015/4/25</td>
 						            		<td>1,000</td>
 						            		<td>1,000</td>
@@ -159,12 +165,13 @@
 						            	</tr>
 						            	<tr>
 						            		<td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_5" id="chk_opt_t1_5" value="5"><label for="chk_opt_t1_5">선택</label></span></td>
-						            		<td class="ta_c">5</td>
+						            		<td>5</td>
 						            		<td>SJ0001</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">내용1</td>
+						            		<td>2011/04/25</td>
+						            		<td>2011/04/25</td>
+						            		<td>내용1</td>
 						            		<td>내용2</td>
+						            		<td>num</td>
 						            		<td>2015/4/25</td>
 						            		<td>1,000</td>
 						            		<td>1,000</td>
@@ -175,12 +182,13 @@
 						            	</tr>
 						            	<tr>
 						            		<td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_6" id="chk_opt_t1_6" value="6"><label for="chk_opt_t1_6">선택</label></span></td>
-						            		<td class="ta_c">6</td>
+						            		<td>6</td>
 						            		<td>SJ0001</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">2011/04/25</td>
-						            		<td class="ta_c">내용1</td>
+						            		<td>2011/04/25</td>
+						            		<td>2011/04/25</td>
+						            		<td>내용1</td>
 						            		<td>내용2</td>
+						            		<td>num</td>
 						            		<td>2015/4/25</td>
 						            		<td>1,000</td>
 						            		<td>1,000</td>
@@ -214,6 +222,7 @@
 									<th scope="col">납기일자</th>
 									<th scope="col">거래처명</th>
 									<th scope="col">제품명</th>
+									<th scope="col">출하번호</th>
 									<th scope="col">판매번호</th>
 									<th scope="col">판매일자</th>
 									<th scope="col">판매수량</th>
@@ -222,8 +231,8 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td class="ta_c">1</td>
-									<td class="ta_c">내용1</td>
+									<td>1</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -232,10 +241,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">2</td>
-									<td class="ta_c">내용1</td>
+									<td>2</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -244,10 +254,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">3</td>
-									<td class="ta_c">내용1</td>
+									<td>3</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -256,10 +267,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">4</td>
-									<td class="ta_c">내용1</td>
+									<td>4</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -268,10 +280,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">5</td>
-									<td class="ta_c">내용1</td>
+									<td>5</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -280,10 +293,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">6</td>
-									<td class="ta_c">내용1</td>
+									<td>6</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -292,10 +306,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">7</td>
-									<td class="ta_c">내용1</td>
+									<td>7</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -304,10 +319,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">8</td>
-									<td class="ta_c">내용1</td>
+									<td>8</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -316,10 +332,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">9</td>
-									<td class="ta_c">내용1</td>
+									<td>9</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -328,10 +345,11 @@
 									<td>내용7</td>
 									<td>내용8</td>
 									<td>내용9</td>
+									<td>내용9</td>
 								</tr>
 								<tr>
-									<td class="ta_c">10</td>
-									<td class="ta_c">내용1</td>
+									<td>10</td>
+									<td>내용1</td>
 									<td>내용2</td>
 									<td>내용3</td>
 									<td>내용4</td>
@@ -339,6 +357,7 @@
 									<td>내용6</td>
 									<td>내용7</td>
 									<td>내용8</td>
+									<td>내용9</td>
 									<td>내용9</td>
 								</tr>
 							</tbody>

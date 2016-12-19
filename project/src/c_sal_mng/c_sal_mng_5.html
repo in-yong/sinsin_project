@@ -36,10 +36,10 @@
                                             <input type="button" class="btn_search" value="찾기">
                                         </p>
                                         <p>
-                                            <label for="produc_code_1_1">거래처코드</label>
-                                            <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                                            <label for="produc_code_2_1">거래처코드</label>
+                                            <input type="text" name="produc_code_2_1" id="produc_code_2_1">
                                             <input type="button" class="btn_search" value="찾기">
-                                            <input type="text" name="produc_code_1_2" id="produc_code_1_2">
+                                            <input type="text" name="produc_code_2_2" id="produc_code_2_2" readonly>
                                         </p>
                                     </div>
                                 </div>
@@ -48,14 +48,16 @@
                                         <p class="pb_3">
                                             <label for="date_in_1_1">납품일자</label>
                                             <input type="text" name="date_in_1_1" id="date_in_1_1">
+                                            <input type="button" class="btn_date start" value="달력">
                                             <span class="space"> ~ </span>
                                             <input type="text" name="date_in_1_2" id="date_in_1_2">
+                                            <input type="button" class="btn_date start" value="달력">
                                         </p>
                                         <p class="pb_3">
                                             <label for="date_in_1_1">제품코드</label>
                                             <input type="text" name="date_in_1_1" id="date_in_1_1">
                                             <input type="button" class="btn_search" value="찾기">
-                                            <input type="text" name="date_in_1_2" id="date_in_1_2">
+                                            <input type="text" name="date_in_1_2" id="date_in_1_2" readonly>
                                         </p>
                                     </div>
                                 </div>
@@ -82,19 +84,20 @@
                         <div class="col">
                             <h1 class="tit_2">영업창고 총재고현황</h1>
                             <form action="#" method="post" class="pos_r">
-                                <p class="mb_45">
-                                    <label for="produc_code_1_1">제품코드</label>
-                                    <input type="text" name="produc_code_1_1" id="produc_code_1_1">
+                                <p>
+                                    <label for="produc_code_3_1">제품코드</label>
+                                    <input type="text" name="produc_code_3_1" id="produc_code_3_1">
                                     <input type="button" class="btn_search" value="찾기">
-                                    <input type="text" name="produc_code_1_2" id="produc_code_1_2">
+                                    <input type="text" name="produc_code_3_2" id="produc_code_3_2">
                                 </p>
                                 <p class="frm_btn_1 top">
-                                    <input type="submit" value="조회">
+                                    <input type="button" value="조회">
+                                    <input type="submit" value="저장">
                                 </p>
                                 <div class="row">
                                     <div class="col_12">
                                         <div class="basic_table_column_1 m_0">
-                                            <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
+                                            <table class="table_column_1 display nowrap max_h_init" cellspacing="0" width="100%">
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">제품코드</th>
@@ -106,68 +109,65 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td class="ta_c">내용1</td>
+                                                        <td>내용1</td>
                                                         <td>내용2</td>
                                                         <td>내용3</td>
                                                         <td><input type="text" name="cot_1" id="cot_1"></td>
                                                         <td><input type="text" name="cot_2" id="cot_2"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">내용1</td>
+                                                        <td>내용1</td>
                                                         <td>내용2</td>
                                                         <td>내용3</td>
-                                                        <td><input type="text" name="cot_1" id="cot_1"></td>
-                                                        <td><input type="text" name="cot_2" id="cot_2"></td>
+                                                        <td><input type="text" name="cot_1" id="cot_3"></td>
+                                                        <td><input type="text" name="cot_2" id="cot_4"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">내용1</td>
+                                                        <td>내용1</td>
                                                         <td>내용2</td>
                                                         <td>내용3</td>
-                                                        <td><input type="text" name="cot_1" id="cot_1"></td>
-                                                        <td><input type="text" name="cot_2" id="cot_2"></td>
+                                                        <td><input type="text" name="cot_1" id="cot_5"></td>
+                                                        <td><input type="text" name="cot_2" id="cot_6"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">내용1</td>
+                                                        <td>내용1</td>
                                                         <td>내용2</td>
                                                         <td>내용3</td>
-                                                        <td><input type="text" name="cot_1" id="cot_1"></td>
-                                                        <td><input type="text" name="cot_2" id="cot_2"></td>
+                                                        <td><input type="text" name="cot_1" id="cot_7"></td>
+                                                        <td><input type="text" name="cot_2" id="cot_8"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">내용1</td>
+                                                        <td>내용1</td>
                                                         <td>내용2</td>
                                                         <td>내용3</td>
-                                                        <td><input type="text" name="cot_1" id="cot_1"></td>
-                                                        <td><input type="text" name="cot_2" id="cot_2"></td>
+                                                        <td><input type="text" name="cot_1" id="cot_9"></td>
+                                                        <td><input type="text" name="cot_2" id="cot_10"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">내용1</td>
+                                                        <td>내용1</td>
                                                         <td>내용2</td>
                                                         <td>내용3</td>
-                                                        <td><input type="text" name="cot_1" id="cot_1"></td>
-                                                        <td><input type="text" name="cot_2" id="cot_2"></td>
+                                                        <td><input type="text" name="cot_1" id="cot_11"></td>
+                                                        <td><input type="text" name="cot_2" id="cot_12"></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
-                                <p class="frm_btn_3 top_2">
-                                    <input type="submit" value="저장">
-                                </p>
                             </form>
                         </div>
                     </section>
                 </div>
                 <div class="r_wrap col_8">
                     <section class="section_1 col_12">
-                        <div class="col min_h_353">
-                            <h1 class="tit_2">해당제품의 미판매 수주건</h1>
+                        <div class="col">
+                            <h1 class="tit_2">출하검사요청관리</h1>
                             <form action="#" method="post" class="pos_r m_0">
                                 <div class="row">
                                     <div class="col_12">
-                                        <div class="basic_table_column_1">
-                                            <table class="table_column_1 display nowrap" data-table-height="257px" cellspacing="0" width="100%">
+                                        <div class="basic_table_column_1 min_h_270">
+                                            <table class="table_column_1 display nowrap" cellspacing="0" width="100%">
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">선택</th>
@@ -177,7 +177,7 @@
                                                         <th scope="col">제품코드</th>
                                                         <th scope="col">제품명</th>
                                                         <th scope="col">수주량</th>
-                                                        <th scope="col">창고출고수량</th>
+                                                        <th scope="col">출하검사요청수량</th>
                                                         <th scope="col">잔고수량</th>
                                                         <th scope="col">출하검사요청일</th>
                                                         <th scope="col">출하검사요청수량</th>
@@ -196,11 +196,11 @@
                                                 <tbody>
                                                     <tr>
                                                         <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_1" id="chk_opt_t1_1" value="1"><label for="chk_opt_t1_1">선택</label></span></td>
-                                                        <td class="ta_c">1</td>
+                                                        <td>1</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                         <td>내용7</td>
@@ -209,11 +209,11 @@
                                                     </tr>
                                                     <tr>
                                                         <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_2" id="chk_opt_t1_2" value="2"><label for="chk_opt_t1_2">선택</label></span></td>
-                                                        <td class="ta_c">2</td>
+                                                        <td>2</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                         <td>내용7</td>
@@ -222,11 +222,11 @@
                                                     </tr>
                                                     <tr>
                                                         <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_4" id="chk_opt_t1_4" value="4"><label for="chk_opt_t1_4">선택</label></span></td>
-                                                        <td class="ta_c">4</td>
+                                                        <td>4</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                         <td>내용7</td>
@@ -235,11 +235,11 @@
                                                     </tr>
                                                     <tr>
                                                         <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_5" id="chk_opt_t1_5" value="5"><label for="chk_opt_t1_5">선택</label></span></td>
-                                                        <td class="ta_c">5</td>
+                                                        <td>5</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                         <td>내용7</td>
@@ -248,11 +248,11 @@
                                                     </tr>
                                                     <tr>
                                                         <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_6" id="chk_opt_t1_6" value="6"><label for="chk_opt_t1_6">선택</label></span></td>
-                                                        <td class="ta_c">6</td>
+                                                        <td>6</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                         <td>내용7</td>
@@ -261,11 +261,11 @@
                                                     </tr>
                                                     <tr>
                                                         <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_7" id="chk_opt_t1_7" value="7"><label for="chk_opt_t1_7">선택</label></span></td>
-                                                        <td class="ta_c">7</td>
+                                                        <td>7</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                         <td>내용7</td>
@@ -274,11 +274,11 @@
                                                     </tr>
                                                     <tr>
                                                         <td><span class="checkbox no_txt"><input type="checkbox" name="chk_opt_t1_8" id="chk_opt_t1_8" value="8"><label for="chk_opt_t1_8">선택</label></span></td>
-                                                        <td class="ta_c">8</td>
+                                                        <td>8</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                         <td>내용7</td>
@@ -316,7 +316,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="ta_c">내용1</td>
+                                            <td>내용1</td>
                                             <td>내용2</td>
                                             <td>내용3</td>
                                             <td>내용4</td>
@@ -326,7 +326,7 @@
                                             <td>내용8</td>
                                         </tr>
                                         <tr>
-                                            <td class="ta_c">내용1</td>
+                                            <td>내용1</td>
                                             <td>내용2</td>
                                             <td>내용3</td>
                                             <td>내용4</td>
@@ -336,7 +336,7 @@
                                             <td>내용8</td>
                                         </tr>
                                         <tr>
-                                            <td class="ta_c">내용1</td>
+                                            <td>내용1</td>
                                             <td>내용2</td>
                                             <td>내용3</td>
                                             <td>내용4</td>
@@ -346,7 +346,7 @@
                                             <td>내용8</td>
                                         </tr>
                                         <tr>
-                                            <td class="ta_c">내용1</td>
+                                            <td>내용1</td>
                                             <td>내용2</td>
                                             <td>내용3</td>
                                             <td>내용4</td>
@@ -356,7 +356,7 @@
                                             <td>내용8</td>
                                         </tr>
                                         <tr>
-                                            <td class="ta_c">내용1</td>
+                                            <td>내용1</td>
                                             <td>내용2</td>
                                             <td>내용3</td>
                                             <td>내용4</td>
@@ -366,7 +366,7 @@
                                             <td>내용8</td>
                                         </tr>
                                         <tr>
-                                            <td class="ta_c">내용1</td>
+                                            <td>내용1</td>
                                             <td>내용2</td>
                                             <td>내용3</td>
                                             <td>내용4</td>
@@ -376,7 +376,7 @@
                                             <td>내용8</td>
                                         </tr>
                                         <tr>
-                                            <td class="ta_c">내용1</td>
+                                            <td>내용1</td>
                                             <td>내용2</td>
                                             <td>내용3</td>
                                             <td>내용4</td>
@@ -423,65 +423,65 @@
 										            </tfoot> -->
                                                 <tbody>
                                                     <tr>
-                                                        <td class="ta_c">1</td>
+                                                        <td>1</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">2</td>
+                                                        <td>2</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">4</td>
+                                                        <td>4</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">5</td>
+                                                        <td>5</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">6</td>
+                                                        <td>6</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">7</td>
+                                                        <td>7</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="ta_c">8</td>
+                                                        <td>8</td>
                                                         <td>내용1</td>
-                                                        <td class="ta_c">내용2</td>
-                                                        <td class="ta_c">내용3</td>
-                                                        <td class="ta_c">내용4</td>
+                                                        <td>내용2</td>
+                                                        <td>내용3</td>
+                                                        <td>내용4</td>
                                                         <td>내용5</td>
                                                         <td>내용6</td>
                                                     </tr>

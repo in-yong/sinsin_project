@@ -32,7 +32,7 @@
 										<label for="produc_code_1_1">거래처코드</label>
 										<input type="text" name="produc_code_1_1" id="produc_code_1_1">
 										<input type="button" class="btn_search" value="찾기">
-										<input type="text" name="produc_code_1_2" id="produc_code_1_2">
+										<input type="text" name="produc_code_1_2" id="produc_code_1_2" readonly>
 									</p>
 								</div>
 							</div> 
@@ -42,7 +42,7 @@
 										<label for="date_in_1_1">제품코드</label>
 										<input type="text" name="date_in_1_1" id="date_in_1_1">
 										<input type="button" class="btn_search" value="찾기">
-										<input type="text" name="date_in_1_2" id="date_in_1_2">                    
+										<input type="text" name="date_in_1_2" id="date_in_1_2" readonly>                    
 									</p>
 								</div>
 							</div> 
@@ -50,9 +50,10 @@
 								<div class="col ">
 								<p class="pb_3 radio_wrap">
 									<em>거래처구분</em>
-									<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">수주</label></span>
-									<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_2" value="2"><label for="cpl_1_2">발주</label></span>
+									<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_1" value="1"><label for="cpl_1_1">매출</label></span>
+									<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_2" value="2"><label for="cpl_1_2">매입</label></span>
 									<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_3" value="3"><label for="cpl_1_3">외주</label></span>
+									<span class="radio"><input type="radio" name="cpl_1" id="cpl_1_4" value="4"><label for="cpl_1_4">전체</label></span>
 								</p>
 								</div>
 							</div> 
@@ -86,8 +87,8 @@
 			              </thead>
 			              <tbody>
 			                <tr>
-			                  <td class="ta_c">1</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>1</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -99,8 +100,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">2</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>2</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -112,8 +113,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">3</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>3</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -125,8 +126,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">4</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>4</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -138,8 +139,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">5</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>5</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -151,8 +152,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">6</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>6</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -164,8 +165,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">7</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>7</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -177,8 +178,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">8</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>8</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -190,8 +191,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">9</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>9</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -203,8 +204,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">10</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>10</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -216,8 +217,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">11</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>11</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -229,8 +230,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">12</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>12</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -242,8 +243,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">13</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>13</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -255,8 +256,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">14</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>14</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -268,8 +269,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">15</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>15</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -281,8 +282,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">16</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>16</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -294,8 +295,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">17</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>17</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -307,8 +308,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">18</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>18</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>
@@ -320,8 +321,8 @@
 			                  <td>내용10</td>
 			                </tr>
 			                <tr>
-			                  <td class="ta_c">19</td>
-			                  <td class="ta_c">내용1</td>
+			                  <td>19</td>
+			                  <td>내용1</td>
 			                  <td>내용2</td>
 			                  <td>내용3</td>
 			                  <td>내용4</td>

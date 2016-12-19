@@ -96,6 +96,7 @@
 }
 .d_h_1{min-height:327px;}
 .d_h_2{min-height:274px;}
+.d_h_3{min-height:150px;}
 /*//d_common*/
 
 /*d_prd_mng_1*/
@@ -192,10 +193,10 @@
 
 /*d_prd_mng_5*/
 .d_prd_mng_5_con{
-	max-height:227px;
+	min-height:150px;
 	margin-left:10px;
 	border:1px solid #bfbfbf;
-	padding:5px 5px 115px;
+	padding:5px;
   border-radius:5px;
 }
 .d_5_table{

@@ -43,12 +43,6 @@
 .w70{
   width: 70px!important;
 }
-.frm_w_1_w{
-  width: 170px!important;
-}
-.frm_w_1_w2{
-  width: 325px!important;
-}
 input[type=text] {
     text-align: right;
 }
@@ -106,7 +100,12 @@ input[type=text] {
         border-bottom: 1px solid #000;
     }
 }
-
+.frm_w_1_w{
+  width: 150px!important;
+}
+.w113{
+  width: 113px!important;
+}
 .table_caption {
     margin-bottom: 10px;
 }
@@ -120,3 +119,9 @@ input[type=text] {
     top: 10px;
     left: 45px;
   }
+.row_box_wrap .row_box{
+  margin-bottom: 15px;
+}
+.ptb_23{
+  padding-top: 23px;
+}

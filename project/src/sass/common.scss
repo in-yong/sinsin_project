@@ -13,7 +13,7 @@ fieldset{border:none;}
 .clearFix{*zoom:1;}
 caption{text-indent:-9999px;height:0;width:0;font-size:1px;}
 button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;} 
-body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{font:12px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
+body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select, button{font:12px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
 input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"]{border:1px solid #aaa;background-color:#fff;height:21px;line-height:21px;width:85px;padding:0 3px;}
 input{
 	&[readonly] {
@@ -431,7 +431,7 @@ td {
 .sctable{
 	.btn{
 		border: none;
-		padding:3px 20px;
+		padding:1px 20px;
 		border-radius:3px;
 		border:1px solid #efefef;
 	}	

@@ -1,6 +1,7 @@
 @charset "utf-8";
 $tb_color_1:#4e6678;
 $font_c_1:#fff;
+$font_c_2:#4e6678;
 $td_height:24px;
 *{margin:0;padding:0;box-sizing:border-box;}
 *:after, *:before{box-sizing:border-box;}
@@ -371,7 +372,7 @@ td {
 		th {
 			min-width:80px;
 			background:transparent;
-			color:$tb_color_1;
+			color:$font_c_2;
 			position:relative;
 			border-bottom:1px solid $tb_color_1;
 			text-align:right;
@@ -755,6 +756,8 @@ span {
 .frm_w_3 {width:200px !important;}
 .frm_w_4 {width:150px !important;}
 .frm_w_5 {width:100px !important;}
+.frm_w_6 {width:70px !important;}
+.frm_w_7 {width:50px !important;}
 
 #container{
 	background-color:#dcdcdc;

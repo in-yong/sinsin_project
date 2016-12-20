@@ -238,9 +238,11 @@
 
 /*d_prd_mng_9*/
 .d_9_txt_c{
-	text-align:center;
-	img{
-		width: 50%;
+	overflow:hidden;
+	p{
+		float:left;
+		width:50%;
+		text-align:center;
 	}
 }
 .d_9_mt{margin-top:20px;}
@@ -248,12 +250,13 @@
 .d_9_w2{width:50px !important;}
 .d_9_w3{width:150px !important;}
 .d_9_w4{width:50%;}
+.d_9_w5{width:105px !important;}
 .basic_table_column_1 .dataTables_scrollHead th.d_9_after_1:after{
 	height:70px;			
 	border-bottom:1px solid #afafaf;
 }
 .d_9_after_2:after{display:none;}
-.w600{
+.w800{
 	width: 800px !important;
 }
 

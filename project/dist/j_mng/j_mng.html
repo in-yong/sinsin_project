@@ -7,24 +7,24 @@
   <meta name="Description" content="">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">   
   <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
-  <link rel="stylesheet" type="text/css" href="../css/p2.css" media="all" />
   <script type="text/javascript" src="../js/jquery.js"></script>  
 	<script type="text/javascript" src="../js/html5shiv.min.js"></script>
   <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="../js/common.js"></script> 
-  <title>생산관리 작업자별생산결과공정표</title>
+  <title>외주작업자별생산결과공정표</title>
   <link rel="stylesheet" type="text/css" href="../css/d_prd_mng.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="../css/j_mng.css" media="all" />
  </head>
  <body>
 	<section>
 		<header id="sub_header">
-			<h1 class="tit_1"><span class="tit_bd_wrap">작업자별생산결과공정표</span></h1>
+			<h1 class="tit_1"><span class="tit_bd_wrap">외주작업자별생산결과공정표</span></h1>
 		</header>
 		<div id="sub_wrap" class="grid">
 			<div class="row">
 				<section class="section_1 col_12">
 					<div class="col">
-						<h1 class="tit_2"><span class="tit_bd_wrap">공정표</span></h1>
+						<h1 class="tit_2"><span class="tit_bd_wrap">외주공정표</span></h1>
 						<form action="#" method="post" class="pos_r">
 							<div class="basic_table_column_1 sth_1">
 								<table class="table_column_1 display nowrap notScroll" cellspacing="0" width="100%">
@@ -37,7 +37,7 @@
 										<tr>
 											<th scope="col" class="d_9_w1">제품코드</th>
 											<th scope="col">업체명</th>
-											<th scope="col" class="d_9_w1">최종납품처</th>
+											<th scope="col">최종납품처</th>
 											<th scope="col" colspan="2">제품명</th>
 											<th scope="col" colspan="4">규격</th>
 											<th scope="col" colspan="4">LOT수량</th>
@@ -51,14 +51,14 @@
 											<td colspan="2">출수센서200</td>
 											<td colspan="4">G349H39GEU-A074</td>
 											<td colspan="4">2,000 EA</td>
-											<th scope="row" colspan="4">생산투입일자료</th><!-- 20161220 텍스트수정 -->
+											<th scope="row" colspan="4">생산투입일자료</th>
 											<td colspan="2">2016.12.07</td>
 										</tr>
 										<tr>
 											<th scope="col">공정순서</th>
 											<th scope="col" class="d_9_w1">현재공정</th>
-											<th scope="col" class="d_9_w5">입고요청일자료</th><!-- 20161220 텍스트수정 -->
-											<th scope="col" class="d_9_w5">작업지시일자료</th><!-- 20161220 텍스트수정 -->
+											<th scope="col" class="j_w">입고요청일자료</th>
+											<th scope="col" class="j_w">작업지시일자료</th>
 											<th scope="col">표준ST</th>
 											<th scope="col" colspan="3">작업수량</th>
 											<th scope="col" colspan="3">작업자</th>
@@ -86,7 +86,7 @@
 							<div class="d_9_txt_c">
 								<p><img src="../images/sub_d/img01.jpg" alt="BOM등록의 공정별 사진" /></p>
 								<p><img src="../images/sub_d/img02.jpg" alt="BOM등록의 완제품 사진" /></p>
-							</div><!-- 2016-12-20이미지를 떨어뜨리고 가운데 정렬시킴 -->
+							</div>
 							<div class="basic_table_column_1 d_9_mt sth_1">
 									<table class="table_column_1 display nowrap " cellspacing="0" width="100%" data-table-height="90px">
 											<thead>
@@ -1060,101 +1060,153 @@
 											</tbody>
 									</table>
 							</div>
-							<div class="basic_table_column_1 sth_1 w800">
-							<!-- 20161220 테이블너비변경(축소) -->
-									<table class="table_column_1 display nowrap" cellspacing="0" width="100%" data-table-height="120px">
-											<thead>
-													<tr>
-															<th scope="col" colspan="3">불량내역상세</th>
-													</tr>
-													<tr>
-															<th scope="col">불량유형명</th>
-															<th scope="col">불량(재생)</th>
-															<th scope="col">폐기</th>
-													</tr>
-											</thead>
-											<tbody>
-													<tr>
-															<td>납땜불량</td>
-																	<td>
-																			<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-																	</td>
-																	<td>
-																			<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-																	</td>
-													</tr>
-													<tr>
-															<td>접선불량</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-													</tr>
-													<tr>
-															<td>납땜불량</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-													</tr>
-													<tr>
-															<td>납땜불량</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-													</tr> <tr>
-															<td>납땜불량</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-													</tr> <tr>
-															<td>납땜불량</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-													</tr> <tr>
-															<td>납땜불량</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-													</tr> <tr>
-															<td>납땜불량</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-													</tr> <tr>
-															<td>납땜불량</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-															<td>
-																	<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
-															</td>
-													</tr>
-											</tbody>
-									</table>
+							<div class="basic_table_column_1 sth_1">
+								<table class="table_column_1 display nowrap" cellspacing="0" width="100%" data-table-height="120px">
+									<thead>
+										<tr>
+											<th scope="col" colspan="12">불량내역상세</th>
+										</tr>
+										<tr>
+											<th scope="col">불량유형명</th>
+											<th scope="col">불량(재생)</th>
+											<th scope="col">폐기</th>
+											<th scope="col">불량유형명</th>
+											<th scope="col">불량(재생)</th>
+											<th scope="col">폐기</th>
+											<th scope="col">불량유형명</th>
+											<th scope="col">불량(재생)</th>
+											<th scope="col">폐기</th>
+											<th scope="col">불량유형명</th>
+											<th scope="col">불량(재생)</th>
+											<th scope="col">폐기</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+										</tr>
+										<tr>
+											<td>접선불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>접선불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>접선불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>접선불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+										</tr>
+										<tr>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+										</tr>
+										<tr>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>납땜불량</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+											<td>
+												<input type="text" name="frm_inp_3_2" class="frm_w_1" title=" ">
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 							<p class="frm_btn_3 top">
-								<input type="button" value="저장">
+								<input type="button" value="출력">
 								<input type="submit" value="닫기">
 							</p>
 						</form>             

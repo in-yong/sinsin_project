@@ -12,6 +12,8 @@ fieldset{border:none;}
 .hide{display:none;}
 .clearFix:after{content:"";display:block;clear:both;}
 .clearFix{*zoom:1;}
+.fl_l{float: left;}
+.fl_r{float: right;}
 caption{text-indent:-9999px;height:0;width:0;font-size:1px;}
 button, input[type=submit], input[type=reset], input[type=button]{cursor:pointer;}
 body, input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], textarea, select, button{font:12px Malgun Gothic,"맑은고딕",gulim,"굴림",sans-serif;color:#222;}
@@ -598,10 +600,9 @@ form{
 	}
 }
 
-.frm_btn_1, .frm_btn_3 {
+.frm_btn_1, .frm_btn_3, .btn_wrap {
 	input[type=button], input[type=submit], button, input[type=reset]{
 		padding:1px 8px;
-		border-raidus:3px;
 		font-size:12px;
 	}
 }

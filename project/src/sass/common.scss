@@ -22,6 +22,9 @@ input[type="text"], input[type="password"], input[type="tel"], input[type="url"]
 input{
 	&[readonly] {
 		background-color: #cfcfcf !important;
+		&.white {
+			background-color:#fff !important;
+		}
 	}
 }
 select{vertical-align:middle;}

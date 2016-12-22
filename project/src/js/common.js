@@ -1,32 +1,7 @@
 $(document).ready(function() {
-    $.each($('.table_column_1').not(".notScroll"), function(i,o){
-      var scrollTable = $(o);
-      var dataTableHeight = $(o).attr("data-table-height");
-      var dataTableScrollY = $(o).attr("data-table-scrolly");
-      var dataTableScrollX = $(o).attr("data-table-scrollx");
-      var scrollTableDefault = {
-        "scrollY":"200px",
-        "scrollX":true,
-        "scrollCollapse":true,
-        "autoWidth": false,
-        "info":false,
-        "bFilter": false,
-        "paging":false,
-        "bSort":false
-      }
-
-      if(dataTableHeight) {
-        $.extend(scrollTableDefault, {"scrollY":dataTableHeight});
-      }
-      if(dataTableScrollY) {
-        $.extend(scrollTableDefault, {"scrollY":eval(dataTableScrollY)});
-      }
-      if(dataTableScrollX) {
-        $.extend(scrollTableDefault, {"scrollY":eval(dataTableScrollX)});
-      }
-
-      scrollTable.DataTable(scrollTableDefault);
-  });
+  //S: 2016-12-22
+  var thColor_1 = "#4e6678";
+  //E: 2016-12-22
 
   var gnbHideInterval = null;
   function resetGnb() {
@@ -250,4 +225,41 @@ $(document).ready(function() {
     });
   };
   $(".tabmenu_wrap").tabMenu_a();
+  
+  //S: 2016-12-22
+  var thColorStyle = "<style>";
+  thColorStyle += "th {background-color:" + thColor_1 + "}";
+  thColorStyle += ".basic_table_column_1 .dataTables_scrollHead th:last-child:after {background-color:" + thColor_1 + "}";
+  thColorStyle += "</style>";
+  $("head").append(thColorStyle);    
+
+  $.each($('.table_column_1').not(".notScroll"), function(i,o){
+    var scrollTable = $(o);
+    var dataTableHeight = $(o).attr("data-table-height");
+    var dataTableScrollY = $(o).attr("data-table-scrolly");
+    var dataTableScrollX = $(o).attr("data-table-scrollx");
+    var scrollTableDefault = {
+      "scrollY":"200px",
+      "scrollX":true,
+      "scrollCollapse":true,
+      "autoWidth": false,
+      "info":false,
+      "bFilter": false,
+      "paging":false,
+      "bSort":false
+    }
+
+    if(dataTableHeight) {
+      $.extend(scrollTableDefault, {"scrollY":dataTableHeight});
+    }
+    if(dataTableScrollY) {
+      $.extend(scrollTableDefault, {"scrollY":eval(dataTableScrollY)});
+    }
+    if(dataTableScrollX) {
+      $.extend(scrollTableDefault, {"scrollY":eval(dataTableScrollX)});
+    }
+
+    scrollTable.DataTable(scrollTableDefault);
+  });
+  //E: 2016-12-22
 }); 
